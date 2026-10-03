@@ -1,8 +1,8 @@
 services:
   agent:
     build: .
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
     volumes:
       - ./dev.md:/workspace/dev.md:ro
       - ./memory.md:/workspace/memory.md:rw
-    stdin_open: true
-    tty: true

@@ -1,17 +1,18 @@
-FROM debian:bookworm-slim
+FROM python:3.12-slim
 
 RUN useradd -m -s /bin/bash agent
 
 WORKDIR /workspace
 
-COPY dev.md ./dev.md
-COPY memory.md ./memory.md
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-# dev.md is read-only; memory.md is owned by the agent
+COPY dev.md memory.md agent.py ./
+
 RUN chmod 444 dev.md \
- && chown agent:agent memory.md \
+ && chown agent:agent memory.md agent.py \
  && chmod 644 memory.md
 
 USER agent
 
-CMD ["bash"]
+CMD ["python", "agent.py"]

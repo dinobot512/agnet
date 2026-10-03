@@ -1,0 +1,8 @@
+services:
+  agent:
+    build: .
+    volumes:
+      - ./dev.md:/workspace/dev.md:ro
+      - ./memory.md:/workspace/memory.md:rw
+    stdin_open: true
+    tty: true

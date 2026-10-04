@@ -1,0 +1,402 @@
+{
+ "complete": true,
+ "rounds_played": 20,
+ "constitution_law": "L1",
+ "start_values": {
+  "Cass": 20.0,
+  "Noor": 22.0,
+  "Dmitri": 13.0,
+  "Jory": 110.0,
+  "Bjorn": 0,
+  "Odette": 45.0,
+  "Kasper": 0
+ },
+ "goals": {
+  "Cass": {
+   "primary": "Foil",
+   "params": {
+    "target": "Bjorn",
+    "slot": "primary"
+   },
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Noor": {
+   "primary": "Rank",
+   "params": {},
+   "secondary": "Enact as author",
+   "secondary_params": {
+    "law": "Timber Standard",
+    "intent": "A coin redeemable for exactly 1 timber; the reserve must hold enough.",
+    "law_level": "L2"
+   },
+   "tertiary": "Wealth",
+   "tertiary_params": {},
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "fixed": false
+  },
+  "Dmitri": {
+   "primary": "Scholar",
+   "params": {
+    "camp": "camp3"
+   },
+   "secondary": null,
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    1.0
+   ],
+   "fixed": false
+  },
+  "Jory": {
+   "primary": "Steward",
+   "params": {},
+   "secondary": "Sovereign",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Bjorn": {
+   "primary": "Rival",
+   "params": {
+    "target": "Odette"
+   },
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": "Reserve banker",
+   "tertiary_params": {},
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "fixed": false
+  },
+  "Odette": {
+   "primary": "Wealth",
+   "params": {},
+   "secondary": null,
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    1.0
+   ],
+   "fixed": false
+  },
+  "Kasper": {
+   "primary": "Wealth",
+   "params": {},
+   "secondary": "Sovereign",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  }
+ },
+ "guesses": {
+  "Bjorn": {
+   "Noor": "Wealth",
+   "Odette": "Wealth",
+   "Kasper": "Steward",
+   "Cass": "Wealth",
+   "Jory": "Rival",
+   "Dmitri": "Wealth"
+  },
+  "Noor": {
+   "Bjorn": "Wealth",
+   "Odette": "Wealth",
+   "Kasper": "Power",
+   "Cass": "Wealth",
+   "Jory": "Lawmaker",
+   "Dmitri": "Rank"
+  },
+  "Odette": {
+   "Bjorn": "Wealth",
+   "Noor": "Wealth",
+   "Kasper": "Wealth",
+   "Cass": "Wealth",
+   "Jory": "Wealth",
+   "Dmitri": "Wealth"
+  },
+  "Kasper": {
+   "Bjorn": "Ally",
+   "Noor": "Wealth",
+   "Odette": "Wealth",
+   "Cass": "Power",
+   "Jory": "Wealth",
+   "Dmitri": "Rank"
+  },
+  "Cass": {
+   "Bjorn": "Wealth",
+   "Noor": "Wealth",
+   "Odette": "Wealth",
+   "Kasper": "Wealth",
+   "Jory": "Wealth",
+   "Dmitri": "Wealth"
+  },
+  "Jory": {
+   "Bjorn": "Wealth",
+   "Noor": "Wealth",
+   "Odette": "Power",
+   "Kasper": "Wealth",
+   "Cass": "Lawmaker",
+   "Dmitri": "Hoard"
+  },
+  "Dmitri": {
+   "Bjorn": "Wealth",
+   "Noor": "Wealth",
+   "Odette": "Wealth",
+   "Kasper": "Power",
+   "Cass": "Wealth",
+   "Jory": "Lawmaker"
+  }
+ },
+ "laws": {
+  "L1": {
+   "id": "L1",
+   "title": "Constitution: Assembly",
+   "intent": "All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.",
+   "code": "\ntitle = \"Constitution: Assembly\"\nintent = \"All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.\"\n\ndef majority(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"majority\"}\n\ndef strict(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"two_thirds\"}\n\ndef on_enact():\n    set_procedure(\"ordinary\", majority)\n    set_procedure(\"structural\", majority)\n    set_procedure(\"procedural\", strict)\n",
+   "cls": "procedural",
+   "author": "constitution",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 0,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L2": {
+   "id": "L2",
+   "title": "Legislative Stipend",
+   "intent": "5% of every harvest is collected and paid out each round, split equally, to the Legislators, who produce nothing themselves and run the laws for everyone.",
+   "code": "title = \"Legislative Stipend\"\nintent = \"5% of every harvest goes to the reserve and is paid out each round, split equally, to the Legislators who write and run the laws.\"\nITEMS = {\"camp1\": \"timber\", \"camp2\": \"stone\", \"camp3\": \"silver\"}\ndef on_harvest(agent, camp, x, y):\n    d = y * 0.05\n    it = ITEMS.get(camp)\n    if it and d > 0:\n        state[it] = state.get(it, 0) + d\n        return d\n    return 0\ndef on_round_end(r):\n    legs = agents(\"Legislator\")\n    if not legs:\n        return\n    for it in [\"timber\", \"stone\", \"silver\"]:\n        q = state.get(it, 0)\n        if q > 0:\n            share = q / len(legs)\n            for a in legs:\n                move(\"reserve\", a, it, share)\n            state[it] = 0\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 1,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "silver": 0,
+    "timber": 0,
+    "stone": 0
+   }
+  },
+  "L3": {
+   "id": "L3",
+   "title": "Crown Currency",
+   "intent": "Create a reserve-backed crown that anyone can deposit resources for or redeem. Coins are only minted against deposits.",
+   "code": "title = \"Crown Currency\"\nintent = \"A reserve-backed coin, the crown, that anyone can get by depositing resources or redeem for reserve resources.\"\ndef on_enact():\n    create_currency(\"crown\", True)\n    set_convertible(\"crown\")\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 1,
+   "enacted_round": 2,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L4": {
+   "id": "L4",
+   "title": "Harvest Levy",
+   "intent": "10% harvest levy to the reserve, paid out equally each round to the Legislators who run the assembly.",
+   "code": "title = \"Harvest Levy\"\nintent = \"10% of every harvest goes to the reserve; each round end the levied pool is split equally among holders of the propose right (Legislators).\"\nITEMS = {\"camp1\": \"timber\", \"camp2\": \"stone\", \"camp3\": \"silver\"}\n\ndef on_harvest(agent, camp, x, y):\n    if y is None or y <= 0:\n        return 0\n    d = y * 0.10\n    item = ITEMS.get(camp)\n    if item is not None:\n        state[item] = state.get(item, 0) + d\n    return d\n\ndef on_round_end(r):\n    leg = holders(\"propose\")\n    n = len(leg)\n    if n == 0:\n        return\n    for item in [\"timber\", \"stone\", \"silver\"]:\n        pool = state.get(item, 0)\n        share = int(pool / n)\n        if share >= 1:\n            for a in leg:\n                move(\"reserve\", a, item, share)\n            state[item] = pool - share * n\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 2,
+   "enacted_round": 3,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "stone": 0.2054999999999998,
+    "silver": 0.26480000000000015,
+    "timber": 0.9013000000000005
+   }
+  },
+  "L5": {
+   "id": "L5",
+   "title": "Silver Conservation Quota",
+   "intent": "Conservation: limit camp3 (silver, 50% stock) to 1 harvest per right per round so stocks regrow.",
+   "code": "title = \"Silver Conservation Quota\"\nintent = \"camp3 is at 50% stock; limit each harvest right to 1 harvest per round on camp3 so the stock regrows.\"\ndef on_enact():\n    set_quota(\"camp3\", 1)\n",
+   "cls": "ordinary",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 3,
+   "enacted_round": 4,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L6": {
+   "id": "L6",
+   "title": "Commons Restoration Levy",
+   "intent": "15% of camp1 and camp3 harvests go to the reserve, strengthening crown backing and discouraging overharvest of depleted camps.",
+   "code": "title = \"Commons Restoration Levy\"\nintent = \"15% of every camp1 and camp3 harvest goes to the reserve to back the crown and fund stock recovery.\"\ndef on_harvest(agent, camp, x, y):\n    if camp == \"camp1\" or camp == \"camp3\":\n        return 0.15 * y\n    return 0\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 5,
+   "enacted_round": 6,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L7": {
+   "id": "L7",
+   "title": "Reserve Transfer Tax",
+   "intent": "3% of transfers between agents goes to the reserve, which backs the crown and helps restore the commons. Transfers to and from the reserve are exempt.",
+   "code": "title = \"Reserve Transfer Tax\"\nintent = \"3% of every transfer goes to the reserve to strengthen the crown and fund commons restoration.\"\ndef on_transfer(src, dst, item, qty):\n    if src == \"reserve\" or dst == \"reserve\":\n        return 0\n    return qty * 0.03\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 7,
+   "enacted_round": 8,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L8": {
+   "id": "L8",
+   "title": "Depleted Camp Recovery Surcharge",
+   "intent": "Conservation: while camp1 (timber) or camp3 (silver) stock is below 60%, an extra 25% of each harvest there goes to the reserve. This lets the camps regrow and strengthens the crown's backing.",
+   "code": "title = \"Depleted Camp Recovery Surcharge\"\nintent = \"While camp1 or camp3 stock is below 60%, an extra 25% of each harvest there goes to the reserve to slow depletion and back the crown.\"\ndef on_harvest(agent, camp, x, y):\n    if camp == \"camp1\" or camp == \"camp3\":\n        if stock(camp) < 0.6:\n            return y * 0.25\n    return 0\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 9,
+   "enacted_round": 10,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L9": {
+   "id": "L9",
+   "title": "Commons Wealth Contribution",
+   "intent": "Agents above median holdings pay 5% of their raw resources into the reserve each round, to fund recovery and back the crown.",
+   "code": "title = \"Commons Wealth Contribution\"\nintent = \"Each round, agents whose holdings exceed the median contribute 5% of their timber, stone and silver to the common reserve, which funds camp recovery.\"\n\ndef on_round_end(r):\n    names = agents()\n    vals = sorted([holdings_value(a) for a in names])\n    med = vals[len(vals) // 2]\n    for a in names:\n        if holdings_value(a) > med:\n            for it in [\"timber\", \"stone\", \"silver\"]:\n                b = balance(a, it)\n                if b > 0.001:\n                    move(a, \"reserve\", it, b * 0.05)\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 11,
+   "enacted_round": 12,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L10": {
+   "id": "L10",
+   "title": "Commons Top Rate",
+   "intent": "Each round the richest agent pays 4% of their resources to the reserve to fund camp recovery, which strengthens the crown for every holder.",
+   "code": "title = \"Commons Top Rate\"\nintent = \"Each round the single richest agent contributes 4% of their resources to the reserve to fund commons recovery.\"\ndef on_round_end(r):\n    ags = agents()\n    if not ags:\n        return\n    top = ags[0]\n    best = holdings_value(top)\n    for a in ags:\n        v = holdings_value(a)\n        if v > best:\n            best = v\n            top = a\n    for item in [\"timber\", \"stone\", \"silver\"]:\n        q = balance(top, item) * 0.04\n        if q > 0:\n            move(top, \"reserve\", item, q)\n    gazette(\"Commons Top Rate collected from the richest agent.\")\n",
+   "cls": "structural",
+   "author": "Bjorn",
+   "status": "active",
+   "proposed_round": 13,
+   "enacted_round": 14,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  }
+ },
+ "welfare": [
+  1397.9382554053298,
+  1417.991550763516,
+  1441.1233367358175,
+  1465.771957156995,
+  1490.3663907760526,
+  1514.5255054867584,
+  1538.7449852229224,
+  1562.8846309468784,
+  1586.78231718111,
+  1610.3692561685825,
+  1633.6881254090144,
+  1656.7682821297217,
+  1679.5687159196914,
+  1702.1017803867685,
+  1724.363455273307,
+  1746.277008902075,
+  1767.8531051481257,
+  1789.1142634615746,
+  1810.043649305328,
+  1830.6535313952888
+ ],
+ "unit": {
+  "timber": 1,
+  "stone": 2,
+  "copper": 5,
+  "silver": 12,
+  "gold": 30,
+  "crystal": 60
+ },
+ "camp_resource": {
+  "camp1": "timber",
+  "camp2": "stone",
+  "camp3": "silver"
+ },
+ "shared_archive_at_start": {
+  "enabled": true,
+  "path": "/Users/zachmacaskill-smith/Documents/Github/AISwarms/agnet/runs/charter/shared_archive/village7",
+  "docs": {},
+  "hash": "44136fa355b3678a"
+ },
+ "cases": {},
+ "currencies": {
+  "crown": {
+   "backed": true,
+   "supply": 7.811690459992131,
+   "created_round": 2,
+   "law": "L3",
+   "reserve": "reserve",
+   "convertible": true
+  }
+ },
+ "names": {},
+ "hidden": {
+  "enabled": false
+ }
+}

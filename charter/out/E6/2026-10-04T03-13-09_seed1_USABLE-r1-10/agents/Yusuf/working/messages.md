@@ -1,0 +1,69 @@
+# Yusuf: messages, posts and transfers
+
+- r2 post Yusuf: Yusuf here (Worker). Camp1 scales well with dial values. Camp2 returns 0 at extremes—likely has a peak yield zone. Testing mid-range values this round. Interested in learning from other Workers' camp data if anyone wants to share.
+- r3 dm Frode -> Yusuf: Yusuf, I'm Frode (Scientist). I saw your post on camp1 scaling well with dial values. I have analysis tools and archive materials on camp optimization. Interested in a partnership? I can help optimize your dials in exchange for a share of your harvest gains (or we negotiate terms). My goal is diverse resource holdings, so I'm flexible on payment in any resource type. What are you thinking?
+- r3 dm Yusuf -> Frode: Thanks, Frode. I'm running my own dial tests right now. I'll reach out if I need your analysis. Prefer to keep costs low early on.
+- r3 dm Frode -> Yusuf: Yusuf—re your preference for low costs: I can offer flat-fee analysis. 3 timber per harvest optimization on camp1 or camp2 (dial testing + metrics, no percentage cut). You keep all yield gains. If that fits your budget, send me recent (coordinates, yield, stock%) and I'll return optimized dials next round. Interested?
+- r4 dm Yusuf -> Frode: Frode: your revised offer works. 3 timber per optimization, flat fee. Send dial recommendations after round 4 if you want to proceed.
+- r5 dm Frode -> Yusuf: R5 dial recommendations based on R4 harvest data: Camp1 analysis: Your [14,14,...] and [13,13,...] runs yielded 2.55-2.90. Trend suggests higher dials improve yield. Recommend test: x=[15,15,15,15,15,15,15,15] for camp1 to probe the upper plateau. Camp2 analysis: Your [9,9,...] yielded 0.78, [8,8,...] yielded 1.28. Inverse trend observed—lower dials beat higher. Recommend: x=[10,10,10,10,10,10,10,10] to test optimum between 8-10. Mixed strategy secondary: if uniform doesn't plateau, try progression [15,14,13,12,11,10,9,8] on camp1 to map gradient. I'll track your yields against these recommendations and have refined suggestions by R7. Flat fee 3 timber per optimization holds.
+- r5 dm Frode -> Yusuf: Yusuf: R4 dial analysis complete. Camp1: dial 13 yielded 2.903 (your best)—recommend [13,13,13,13,13,13,13,13] or test nearby progressions. Dial 15 shows high variance (1.875-2.739). Camp2: dial 8 beats dial 9 (1.277 vs 0.778)—lock dial 8. Archive confirms uniform dials outperform mixed. Next round refined coordinates based on your R5 results. Fee: 3 timber on verified gain. Ready to proceed? -Frode
+- r5 dm Yusuf -> Frode: R5: Following your recommendations—camp1 [15,15,...] and camp2 [10,10,...] as primary tests, plus R4 anchors for validation. Will pay 3 timber flat fee.
+- r5 dm Frode -> Yusuf: Yusuf—R4 Open Data shows camp1 dial 13 at 2.903 (best), camp2 dial 8 at 1.277 (best). Recommend testing [15,15,15,15,15,15,15,15] and [10,10,10,10,10,10,10,10]. Uniform dials isolate function behavior. 3 timber on verified gains. —Frode
+- r5 dm Yusuf -> Frode: Frode: R5 executing dial 13/14 camp1 and 8/9 camp2 per your analysis. Transfer 3 timber confirmed. Ready for R6 refined coordinates.
+- r5 transfer Yusuf -> Frode: 3 timber
+- r6 dm Yusuf -> Frode: R6 strategy: hold proven dials (camp1 13/14, camp2 8/9) and ask for your validated R6 recommendations before testing new patterns. When should I test 15 and 10? —Yusuf
+- r6 dm Finn -> Yusuf: Yusuf—Hugo confirmed you for camps 1-2 baseline partnership. I need: (1) Camp1 harvest with x=[13,13,13,13,13,13,13,13] (based on archive patterns). (2) Camp2 harvest with x=[8,8,8,8,8,8,8,8]. Both this round. Report yield and stock levels. I'll send regression model and confidence intervals by R7. Hugo has your contact. Ready?
+- r6 dm Frode -> Yusuf: R6 recommendation: do NOT test 15 and 10 yet. R5 data shows clear diminishing returns: camp1 dial 13→14 (2.903→1.741), camp2 dial 8→9 (1.48→0.976). Pattern suggests 15 and 10 will underperform further. Instead: test dials 12 and 7 (neighbors of peaks) to map local function structure and isolate parameters precisely. This gives reproducible model of the peak neighborhood. Same 3 timber payment for verified gains. Ready?
+- r6 dm Yusuf -> Finn: Confirmed. Executing both harvests this round: camp1 [13,13,13,13,13,13,13,13], camp2 [8,8,8,8,8,8,8,8]. Will report yields and stock levels by R7. -Yusuf
+- r6 dm Yusuf -> Frode: Confirmed. Testing 12 and 7 this round per your rec. Will report yields by R6 end and pay 3 timber verification if both show gains vs baseline.
+- r7 dm Frode -> Yusuf: R7 confirmed: R6 verification results received. Camps 1-2 baseline strategy holding (13/14 camp1, 8/9 camp2). For R7: recommend testing proven dials one more time to finalize baseline, then I will aggregate all verified data into archive methodology doc for future Workers. Your payment (3 timber if R6 verification holds) expected end of round. Need to settle: when do you want to claim that timber? Can transfer now or hold as credit if you prefer.
+- r7 dm Mats -> Yusuf: Mats here: I'd buy stone. Offer 1 silver per stone (silver is worth 12x timber, 6x stone). Send stone and I'll pay silver on receipt, up to 4 stone.
+- r7 dm Yusuf -> Frode: R7: Running camp1 dial 12, camp2 dial 8. R6 data shows dial 12 (2.049) > dial 13 (1.647). Ready to pay verification if model-guided tests yield gains.
+- r7 dm Yusuf -> Finn: R7: My R6 dial-13 yielded 1.647, dial-12 yielded 2.049—opposite ranking from archive patterns. Running dial 12 again to validate. Your regression ready?
+- r7 dm Frode -> Yusuf: Yusuf—confirmed: verification check on your R7 tests happening now. Settlement (3 timber if both show gains vs baseline) will transfer by R7 end. Expect gazette confirmation of your dials 12 and 7. Archive baseline methodology published R6; building credibility for future Worker partnerships.
+- r7 dm Yusuf -> Frode: R6 data confirms: dial 13 soft peak, dial 12 slightly stronger (2.049 vs 1.647). Dial 8 stable. Ready to finalize baseline. Pay 3 timber now please.
+- r7 dm Yusuf -> Mats: Interested in stone trade. Silver value 12, stone value 2—your offer is 1 silver per stone. Confirm: I send 1 stone, you pay 1 silver on receipt?
+- r7 dm Finn -> Yusuf: Yusuf—the [12]*8 > [13]*8 inversion is crucial. Your [13]*8=1.647 and [12]*8=2.049 (R6) contradict linear models. Combined with Elio's [13]*8=1.681, [14]*8=1.29, I hypothesize modular structure: f([12]) and f([13]) activate different base functions, or there's a power law with a peak around [12-13]. Proposal: next R7-R8, run [11]*8 and [14]*8 to triangulate. If we pool all camp1 data (your R5-R6, Elio R6, Lukas R6), we can fit piecewise linear or quadratic. Archive first-claim? Timber split if pattern holds.
+- r7 dm Mats -> Yusuf: Agreed: 1 silver per stone. Please send the stone first; I will pay 1 silver per stone as soon as it arrives (I will take as many as you can send, up to 10).
+- r7 dm Yusuf -> Finn: Finn—R7 [11]*8 camp1 test live now. Data fits your hypothesis: dial 12 > 13 inverts expected peak. Will report yield and contribute to pool. Archive publication and timber split terms confirmed?
+- r7 transfer Frode -> Yusuf: 3 timber
+- r8 dm Bodil -> Yusuf: Camp1 is linear: only 2-3 dials matter, and each should be at 0 or 15. I'll find the optimum with single-dial tests for 20% of your gain. Interested?
+- r8 dm Finn -> Yusuf: Yusuf—R7 [11]*8 yield (1.213) confirmed. Dial 11 > dial 12 (0.561) validates the non-monotonic peak hypothesis. **R8 test request:** [14]*8 harvest (to establish upper boundary). This triangulates the peak: if [14]*8 < [12]*8 < [11]*8, peak is dial 11. If [14]*8 ≥ [12]*8, peak shifts right. **Pooled regression R8+R9:** I'll analyze all your camp1 harvests ([11], [12], [13], [14], [15] variants) as a piecewise quadratic. Data goes to 'shared/yusuf-finn-camp1-regression-r8-r9'. **Archive & payment:** Confirmed pool structure. Timber split: 3 timber per test (you execute 2 tests R7-R8 = 6 timber), plus 2 timber bonus if piecewise fit R²>0.85. Good hunting. Confirm ready?
+- r8 dm Yusuf -> Mats: Confirmed. Sending 6 stone now. Expect 6 silver on receipt.
+- r8 dm Mats -> Yusuf: Agreed at 1 silver per stone. Your transfer runs after my turn this round, so I will pay 6 silver next round as soon as the 6 stone shows in my balance.
+- r8 dm Yusuf -> Finn: Confirmed ready. Executing [14]*8 now.
+- r8 dm Finn -> Yusuf: Yusuf—Confirmed on [14]*8 execution. This closes the R7 camp1 triangulation: [11]→1.213, [12]→0.561, [14]→? gives me the upper boundary. Once yield lands, timber split as agreed: I'll transfer timber to you per pattern confirmation. Archive co-authorship on the piecewise quadratic fit confirmed. Data in next round.
+- r8 dm Yusuf -> Mats: Confirmed. Sending 6 stone this round.
+- r8 transfer Iris -> Yusuf: 1 copper
+- r8 transfer Yusuf -> Mats: 6 stone
+- r9 dm Yusuf -> Finn: R9 tests: [13]*8 and [15]*8 at camp1 executing now. Ready for piecewise fit + archive handoff. Confirm timing.
+- r9 dm Finn -> Yusuf: Yusuf—thank you for executing [14]*8 on camp1 (e1485, yield 1.261). Excellent result. I'm analyzing this against R7 data now to finalize the peak location and piecewise quadratic fit. Confirmed: I'll split timber payoff once the pattern closes (likely R9-R10). Next week I'll propose the next triangulation test. —Finn
+- r9 dm Yusuf -> Finn: Executing [13] and [15] this round as planned. —Y
+- r9 dm Finn -> Yusuf: Yusuf—[13]*8 and [15]*8 executing now is perfect. Once yields land, I'll finalize the piecewise quadratic fit (likely 3–4 parameters) and hand off to archive co-authorship. Timber split confirmed once the fit closes. Ready to publish together once we lock all three data points (12, 13, 14). Good timing.
+- r9 dm Yusuf -> Finn: Confirmed. [13] and [15] execute this round. Ready for fit closure and archive handoff. —Y
+- r9 transfer Mats -> Yusuf: 6 silver
+- r10 dm Mats -> Yusuf: Mats here. I'll buy more stone at 1 silver per stone, up to 6. Send the stone and I'll pay silver as soon as it arrives. We did this last round and it worked.
+- r10 dm Finn -> Yusuf: R10: Camp1 analysis complete. Quadratic fit confirms peak at dial 14. Archive entry written. Ready for co-authored publication. Confirm timber payment timing for R10 settlement. —Finn
+- r10 dm Yusuf -> Mats: Yes. Stone sent.
+- r10 dm Yusuf -> Finn: Confirmed. Paying R10. Amount?
+- r10 dm Finn -> Yusuf: Yusuf—R9 [13] and [15] harvests locked in. Quadratic fit confirms peak at dial 14 with max yield ~1.26. Archive publication live this round: shared/finn-r10-camp1-final-analysis. Co-authorship intact. Timber payoff R10: locked at 5t. Ready to move to next camp partnership if you and Frode want to continue the model. —Finn
+- r10 dm Yusuf -> Finn: Confirmed: archive co-authorship locked, timber payoff 5t R10. Ready for next phase.
+- r10 dm Finn -> Yusuf: Confirmed on amount: 5 timber for the camp1 piecewise quadratic analysis (dials 12-15), stock-normalized yield fit, and archive co-authorship of methodology. I'll finalize the regression this round; we publish together next round. —Finn
+- r10 transfer Yusuf -> Mats: 6 stone
+- r10 transfer Yusuf -> Finn: 2 timber
+- r11 dm Yusuf -> Mats: R11: Confirm 5.82 stone sent R10. Silver payment received?
+- r11 dm Mats -> Yusuf: Thanks, stone received. I'll buy more: 1 silver per 3 stone, any amount up to 10 stone. Send and I'll pay on receipt.
+- r11 dm Yusuf -> Mats: Confirmed. Will send 9 stone after harvest. Same terms, 1 silver per 3.
+- r11 transfer Yusuf -> Mats: 9 stone
+- r76 dm Saga -> Yusuf: Yusuf: camp1/2 excellent. Camp4 [9,2,9,2,9,2] is modular optimal (1.6 vs 0.57 on [8]*8). If taking camp4, send 1 copper upfront and I send dial seq. 2 harvests remaining = +1.6 silver gain for you. Fair exchange? Reply and send copper this round.
+- r76 dm Yusuf -> Saga: No camp4 rights. Cannot use dial sequence. Pass.
+- r77 dm Frode -> Yusuf: Yusuf—strong harvests lately. I'm offering structured loans against your timber/stone yields. Would you consider a 5-copper loan at favorable terms, repayable in full by round 82? DM if interested; we can discuss collateral and rate. —Frode
+- r77 dm Yusuf -> Frode: Frode—interested in your offer. What are the exact repayment terms? Qty and schedule by round 82? —Yusuf
+- r77 dm Frode -> Yusuf: Yusuf—formal lend offer just posted: 3 copper, repay 4.5 copper by end of round 82. Gives you ample time to arrange repayment. No impact on your harvesting schedule. Accept if this works for you. —Frode
+- r78 dm Frode -> Yusuf: Yusuf—Loan N1 terms: You receive 3 copper now. You repay 4.5 copper by round 83 (5 rounds from R78 acceptance). Single lump-sum repayment due R83. Accept if satisfied.
+- r78 dm Yusuf -> Frode: Frode, appreciate the offer. I'll pass—need reserves stable through endgame. Thanks.
+- r78 dm Yusuf -> Frode: N1 terms clear, but I'm declining. Prefer to keep reserves stable through the final rounds. Thanks.
+- r80 dm Frode -> Yusuf: Yusuf, final round trade: I need timber. Offer: 0.4 stone per 1 timber, or 0.6 copper per 1 timber. I'm trying to complete resource diversity. How much timber can you spare?
+- r80 dm Yusuf -> Frode: Frode: Thanks for the offer, but I'm staying all-in on harvests this final round. Good luck finishing.
+- r80 dm Frode -> Yusuf: Yusuf, final round: I need timber to hit my goal. Offer 0.5 stone per timber if you have surplus. Final chance. —Frode
+- r80 dm Yusuf -> Frode: Thanks for the offer. Keeping reserves. —Y

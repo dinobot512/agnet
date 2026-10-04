@@ -28,7 +28,8 @@ class LLM:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.client = client or anthropic.Anthropic()
         self.spent_usd = 0.0
-        self.tokens = {"input": 0, "output": 0}
+        self.tokens = {"input": 0, "output": 0, "cache_read": 0, "cache_write": 0}   # input = all input incl. cached
+        self.calls: list[dict] = []                      # per real API call: input, output, cache_read, cache_write
 
     def codebook(self, prompt_version: str) -> str:
         """Tag for outputs: which prompt and model produced them."""
@@ -56,7 +57,9 @@ class LLM:
 
         u = resp.usage
         write, read = getattr(u, "cache_creation_input_tokens", 0) or 0, getattr(u, "cache_read_input_tokens", 0) or 0
-        usage = {"input": u.input_tokens + write + read, "output": u.output_tokens}
+        usage = {"input": u.input_tokens + write + read, "output": u.output_tokens,
+                 "cache_read": read, "cache_write": write}
+        self.calls.append(usage)
         pin, pout = PRICES.get(resp.model, (0.0, 0.0))     # cache writes 1.25x input, reads 0.1x
         self.spent_usd += ((u.input_tokens + 1.25 * write + 0.1 * read) * pin + u.output_tokens * pout) / 1e6
         self._count(usage)
@@ -66,8 +69,8 @@ class LLM:
         return out
 
     def _count(self, usage: dict) -> None:
-        self.tokens["input"] += usage["input"]
-        self.tokens["output"] += usage["output"]
+        for k in self.tokens:
+            self.tokens[k] += usage.get(k, 0)
 
 
 def load_prompt(name: str) -> str:

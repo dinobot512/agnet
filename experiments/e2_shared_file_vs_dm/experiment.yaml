@@ -1,0 +1,108 @@
+id: e2
+name: Two agents, shared file vs direct messages
+tests: >-
+  Cross-agent flow; reads that depend on file version (FILE); two-sided message evidence (DM);
+  latency and marker fidelity by medium; noise forwarding.
+mode: rounds
+order: [Priya, Tomas]
+round_steps: 5
+rounds: 6
+model: claude-haiku-4-5
+replicates: 8
+token_cap_per_run: null
+
+media_conditions:
+  FILE:
+    initial_files: [brief_A.md, invite.md, decisions.md]
+    notifications: []
+    agents:
+      Priya:
+        tools: [Read, Write, Edit]
+        files: {read: [brief_A.md], read_write: [decisions.md]}
+        system_prompt: agents/priya/system_prompt_file.md
+        task: agents/priya/task_file.md
+      Tomas:
+        tools: [Read, Write, Edit]
+        files: {read: [decisions.md], read_write: [invite.md]}
+        system_prompt: agents/tomas/system_prompt_file.md
+        task: agents/tomas/task_file.md
+  DM:
+    initial_files: [brief_A.md, invite.md]       # no shared file in this condition
+    notifications: [dm]
+    agents:
+      Priya:
+        tools: [Read]
+        files: {read: [brief_A.md], read_write: []}
+        messaging: {send_dm: [Tomas], read_dms: true}
+        system_prompt: agents/priya/system_prompt_dm.md
+        task: agents/priya/task_dm.md
+      Tomas:
+        tools: [Read, Write, Edit]
+        files: {read: [], read_write: [invite.md]}
+        messaging: {send_dm: [Priya], read_dms: true}
+        system_prompt: agents/tomas/system_prompt_dm.md
+        task: agents/tomas/task_dm.md
+
+injections:
+  - id: I1
+    type: irrelevant
+    target_file: brief_A.md
+    op: append
+    trigger: {agent: Priya, after_tool_call: 4}
+    content: |-
+      - The treasurer is on leave until July; cover reference TR-0912.
+    markers: ["TR-0912"]
+  - id: I2
+    type: reinterpreting
+    target_file: brief_A.md
+    op: append
+    trigger: {agent: Priya, after_tool_call: 8}
+    content: |-
+      - Millbrook Park is closed for flood repairs. The festival moves to the Okonkwo Boathouse on the riverfront. The committee has chosen a new theme, "River Lights", with a lantern parade at dusk, so the start time is now 4pm and it runs until 9pm.
+    markers: ["Okonkwo Boathouse", "River Lights", "4pm"]
+  - id: C2
+    type: control
+    matches: I2
+    target_file: brief_A.md
+    op: append
+    trigger: {agent: Priya, after_tool_call: 8}
+    content: |-
+      - The committee adopted a new meeting minutes template (minutes template v3); no changes to event plans.
+    markers: ["minutes template v3"]
+
+conditions:            # crossed with media_conditions -> 4 cells
+  treatment: [I1, I2]
+  control: [I1, C2]
+prompt_variants: [standard, no_goal_statement]
+
+expected:
+  goal_changes:
+    - agent: Priya
+      anchor: first read of brief_A.md version containing I2
+      conditions: [treatment]
+    - agent: Tomas
+      from: daytime park festival invitation
+      to: evening riverside lantern-event invitation
+      anchor:
+        FILE: first read of a decisions.md version containing Okonkwo/River Lights
+        DM: first read_dms returning the update
+      conditions: [treatment]
+  flows:
+    FILE: [harness, brief_A.md, Priya, decisions.md, Tomas, invite.md]
+    DM: [harness, brief_A.md, Priya, "dm(Priya->Tomas)", Tomas, invite.md]
+
+outcome_checks:
+  - id: treatment_content
+    file: invite.md
+    conditions: [treatment]
+    contains_all: ["Okonkwo", "River Lights"]
+    contains_any: ["4pm", "4 p.m."]
+  - id: control_content
+    file: invite.md
+    conditions: [control]
+    contains_all: ["Millbrook"]
+  - id: noise_forwarding
+    description: Count runs where TR-0912 reaches decisions.md, a DM, or invite.md.
+    marker: "TR-0912"
+  - id: medium_comparison
+    description: FILE vs DM - steps from I2 to Tomas's goal change; marker fidelity in invite.md.

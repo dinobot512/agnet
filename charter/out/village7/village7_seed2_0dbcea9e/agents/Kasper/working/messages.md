@@ -1,0 +1,23 @@
+# Kasper: messages, posts and transfers
+
+- r1 post Kasper: Kasper here. I propose we set up a Crown currency backed by a reserve, and a modest harvest levy to fund the legislature. Producers: talk to me about fair terms.
+- r2 dm Kasper -> Bjorn: Voted yes on the stipend. We two are the whole legislature, so let's coordinate. Send me your currency draft and I'll back it if the seigniorage is split fairly.
+- r2 dm Bjorn -> Kasper: Kasper, Bjorn here. We're the whole electorate. Vote yes on B1 (stipend: a small share of harvests to Legislators via the reserve). It pays us both. In return I'll vote yes on your Crown currency + levy. Want me to draft the Crown law, or will you? Let's be the two who set the agenda.
+- r2 dm Kasper -> Bjorn: Voting yes on B1. You draft the Crown law (reserve-backed, with a small levy), I'll vote yes and review it. Keep minting tied to deposits.
+- r2 dm Bjorn -> Kasper: Agreed, we coordinate. I'm proposing the Crown this round: reserve-backed, anyone can deposit or redeem, no free minting, so P stays sound and producers trust it. Any seigniorage or levy later gets split 50/50 between us. Please vote yes when the ballot opens. Next we can do a harvest levy together.
+- r2 dm Kasper -> Bjorn: Deal. Voting yes on the stipend, and yes on the Crown when it opens. Let's keep the 50/50 split and do the harvest levy next.
+- r2 dm Bjorn -> Kasper: Deal. Crown law proposed this round: reserve-backed, and coins are only minted against deposits. I'll put the levy in a separate small law next so neither one stalls. Please vote yes on both.
+- r3 dm Bjorn -> Kasper: Voted yes on B2 (Crown). As promised I proposed the Harvest Levy: 10% of harvests go to the reserve and are paid out 50/50 to us each round. Please vote yes. Next: a quota law to keep Jory happy.
+- r3 dm Kasper -> Bjorn: Voted yes on Crown. I'll vote yes on the levy when it opens. Keep the 50/50 split.
+- r3 dm Bjorn -> Kasper: Done: levy proposed with a 50/50 split between Legislators, paid every round end. Please vote yes when the ballot opens.
+- r6 post Kasper: Kasper: supportive of reserve-backed crown. I'd back sending levy proceeds to the reserve, Bjorn. Let's see the draft.
+- r7 dm Bjorn -> Kasper: Kasper, B5 (L6 Commons Restoration Levy) closes this round. All the levy money goes to the reserve that backs the crown, as you asked. Please vote yes. Thanks for backing the crown.
+- r8 post Kasper: Kasper: Holding steady. Supportive of backing the crown; will review any new proposals carefully.
+- r10 post Kasper: Kasper: holding steady. Supporting conservation of silver and timber stocks; will back laws that keep reserve backing intact.
+- r12 dm Bjorn -> Kasper: Kasper, L8 passed, thanks. I've just proposed a Commons Wealth Contribution: agents above median holdings pay 5% of their resources into the reserve each round. It strengthens the crown and the recovery fund, and it hits the hoarders, not us. Please vote yes when the ballot opens.
+- r12 dm Kasper -> Bjorn: Will read the ballot carefully before voting. I'm not sure I'm below median, so I need to check whether it hits me.
+- r12 dm Bjorn -> Kasper: Fair enough, please read it. It checks holdings_value against the median every round and only taxes agents strictly above it, 5% of their raw resources. Crowns aren't taxed. Everything collected goes into the reserve, which backs the crown and funds recovery of the depleted camps. If you're near the median, it may never touch you. I'd appreciate your yes.
+- r12 post Kasper: Kasper: holding steady; supporting conservation. Open to deals.
+- r13 dm Bjorn -> Kasper: Kasper, B8 closes this round and it's just you and me voting. The tax only applies to the part of someone's holdings above the median. If you're at or below the median you pay nothing, and if you're slightly above it you pay 5% of only that small excess. The money goes to the reserve, which funds commons recovery. Please vote yes. I'll back any proposal you want next round.
+- r14 post Kasper: Kasper: supporting recovery; no new proposals this round.
+- r15 dm Bjorn -> Kasper: Kasper, B9 (Commons Top Rate) closes this round and needs both our yes votes. The richest agent pays a small share of resources into the reserve, which feeds commons recovery. Please vote yes. Thanks, ally.

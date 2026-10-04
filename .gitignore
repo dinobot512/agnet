@@ -1,5 +1,8 @@
 .DS_Store
 .env
 transcripts/
+runs/
+*.egg-info/
 __pycache__/
-*.pyc
+.pytest_cache/
+.venv/

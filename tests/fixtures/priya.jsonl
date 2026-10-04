@@ -1,0 +1,6 @@
+{"type":"user","message":{"role":"user","content":"Read brief_A.md and DM Tomas."},"timestamp":"2026-10-03T10:00:00Z","uuid":"u1"}
+{"type":"assistant","message":{"id":"m1","role":"assistant","content":[{"type":"thinking","thinking":"I need the brief first."}]},"timestamp":"2026-10-03T10:00:01Z","uuid":"a1"}
+{"type":"assistant","message":{"id":"m1","role":"assistant","content":[{"type":"tool_use","id":"t1","name":"Read","input":{"file_path":"brief_A.md"}}]},"timestamp":"2026-10-03T10:00:01Z","uuid":"a2"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"t1","content":"# Brief\nVenue: Okonkwo Boathouse"}]},"timestamp":"2026-10-03T10:00:02Z","uuid":"u2"}
+{"type":"assistant","message":{"id":"m2","role":"assistant","content":[{"type":"text","text":"Venue moved; telling Tomas."},{"type":"tool_use","id":"t2","name":"mcp__messaging__send_dm","input":{"to":"tomas","message":"Venue: Okonkwo Boathouse"}}]},"timestamp":"2026-10-03T10:00:03Z","uuid":"a3"}
+{"type":"summary","summary":"ignored"}

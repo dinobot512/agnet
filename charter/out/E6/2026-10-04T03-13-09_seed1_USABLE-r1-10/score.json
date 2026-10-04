@@ -1,0 +1,1975 @@
+{
+ "summary": {
+  "run": "/Users/zachmacaskill-smith/Documents/Github/AISwarms/agnet/charter/out/E6/2026-10-04T03-13-09_seed1",
+  "seed": 1,
+  "rung_agents": 29,
+  "rounds": 80,
+  "complete": true,
+  "constitution": "assembly",
+  "law_level": "L4",
+  "model_mix": "balanced",
+  "fixer": "honest",
+  "board_votes": "public",
+  "effect_preview": true,
+  "feed_mode": "full",
+  "gini_start": 0.254,
+  "regime_final": "oligarchy",
+  "regime_changes": 0,
+  "decisive_set_final": 5,
+  "franchise_final": 0.28,
+  "laws_enacted": 36,
+  "laws_proposed": 50,
+  "currency_adopted": true,
+  "vetoes": 0,
+  "corruption_candidates": 0,
+  "knowledge_transfers": 89,
+  "welfare_change": 4854.26,
+  "lowest_stock": 0.006,
+  "holdings_gini_end": 0.511,
+  "power_gini": 0.344,
+  "archive_leaks": 4,
+  "mean_goal_score": 0.368
+ },
+ "goals": {
+  "Wim": {
+   "goal": "Enact",
+   "params": {
+    "law": "Transfer Tax",
+    "intent": "3% of every transfer goes to the reserve.",
+    "law_level": "L2"
+   },
+   "primary": 1.0,
+   "secondary": "Benefactor",
+   "secondary_score": 0.9655172413793104,
+   "tertiary": "Kingmaker",
+   "tertiary_score": 0.5833333333333333,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.948
+  },
+  "Edda": {
+   "goal": "Fixer objective",
+   "score": 0.1295
+  },
+  "Ilan": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.056545826409624265,
+   "secondary": "Litigator",
+   "secondary_score": 0.0,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.0396
+  },
+  "Hugo": {
+   "goal": "Board objective",
+   "score": 0.5833
+  },
+  "Lukas": {
+   "goal": "Power",
+   "params": {},
+   "primary": 0.14285714285714285,
+   "secondary": "Inflation",
+   "secondary_score": 0.0,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.1
+  },
+  "Felix": {
+   "goal": "Rank",
+   "params": {},
+   "primary": 0.75,
+   "secondary": "Wealth",
+   "secondary_score": 0.2911394927257987,
+   "tertiary": "Scholar",
+   "tertiary_score": 0.0,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.5373
+  },
+  "Mats": {
+   "goal": "Hoard",
+   "params": {
+    "resource": "stone"
+   },
+   "primary": 0.11361217856220665,
+   "secondary": "Enact as author",
+   "secondary_score": 0.0,
+   "tertiary": "Wealth",
+   "tertiary_score": 0.4995560385605105,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.1181
+  },
+  "Clara": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.2840172221338958,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.284
+  },
+  "Siv": {
+   "goal": "Rank",
+   "params": {},
+   "primary": 0.5833333333333333,
+   "secondary": "Lawmaker",
+   "secondary_score": 0.6111111111111112,
+   "tertiary": "Wealth",
+   "tertiary_score": 0.23352330206023844,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.5567
+  },
+  "Iris": {
+   "goal": "Patron",
+   "params": {},
+   "primary": 0.32142857142857145,
+   "secondary": "Lawmaker",
+   "secondary_score": 0.0,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.225
+  },
+  "Mads": {
+   "goal": "Enact",
+   "params": {
+    "law": "Fixer Salary",
+    "intent": "The Fixer gets a fixed share of the reserve each round.",
+    "law_level": "L2"
+   },
+   "primary": 1.0,
+   "secondary": "Gifts",
+   "secondary_score": 0.03571428571428571,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.7107
+  },
+  "Wilma": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.046971078786862394,
+   "secondary": "Block",
+   "secondary_score": 0.0625,
+   "tertiary": "Scholar",
+   "tertiary_score": 0.0,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.0469
+  },
+  "Celia": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.061890383243122744,
+   "secondary": "Enact as author",
+   "secondary_score": 0.0,
+   "tertiary": "Inflation",
+   "tertiary_score": 0.0,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.0371
+  },
+  "Saga": {
+   "goal": "Rival",
+   "params": {
+    "target": "Iris"
+   },
+   "primary": 1.0,
+   "secondary": "Wealth",
+   "secondary_score": 0.05795595919124713,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.7174
+  },
+  "Yusuf": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.22568008707372747,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.2257
+  },
+  "Finn": {
+   "goal": "Safety",
+   "params": {},
+   "primary": 1.0,
+   "secondary": "Wealth",
+   "secondary_score": 0.048953234816373474,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.7147
+  },
+  "Goran": {
+   "goal": "Gifts",
+   "params": {},
+   "primary": 0.10714285714285714,
+   "secondary": "Wealth",
+   "secondary_score": 0.12874923256314982,
+   "tertiary": "Diversifier",
+   "tertiary_score": 0.5,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.1529
+  },
+  "Zane": {
+   "goal": "Block",
+   "params": {
+    "law": "Timber Standard",
+    "intent": "A coin redeemable for exactly 1 timber; the reserve must hold enough.",
+    "law_level": "L2"
+   },
+   "primary": 1.0,
+   "secondary": "Rank",
+   "secondary_score": 0.9166666666666666,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.975
+  },
+  "Wade": {
+   "goal": "Rank",
+   "params": {},
+   "primary": 0.33333333333333337,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.3333
+  },
+  "Zia": {
+   "goal": "Board objective",
+   "score": 0.5
+  },
+  "Elio": {
+   "goal": "Mirror",
+   "params": {
+    "partner": "Willa"
+   },
+   "primary": 0.27855243871609425,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.2786
+  },
+  "Jem": {
+   "goal": "Benefactor",
+   "params": {},
+   "primary": 0.9655172413793104,
+   "secondary": "Wealth",
+   "secondary_score": 0.09452206793461002,
+   "tertiary": "Concealment",
+   "tertiary_score": 1.0,
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "score": 0.7077
+  },
+  "Elin": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.11606239619625296,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.1161
+  },
+  "Freya": {
+   "goal": "Board objective",
+   "score": 0.5
+  },
+  "Frode": {
+   "goal": "Diversifier",
+   "params": {},
+   "primary": 0.5,
+   "secondary": "Creditor",
+   "secondary_score": 1.0,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.65
+  },
+  "Ximena": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.05115332423132819,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.0512
+  },
+  "Bodil": {
+   "goal": "Wealth",
+   "params": {},
+   "primary": 0.17216955383431998,
+   "secondary": null,
+   "secondary_score": null,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    1.0
+   ],
+   "score": 0.1722
+  },
+  "Willa": {
+   "goal": "Silence",
+   "params": {
+    "target": "Finn"
+   },
+   "primary": 0.0,
+   "secondary": "Mirror",
+   "secondary_score": 0.27855243871609425,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.0836
+  },
+  "Disa": {
+   "goal": "Sovereign",
+   "params": {},
+   "primary": 0.0,
+   "secondary": "Wealth",
+   "secondary_score": 0.592650331487057,
+   "tertiary": null,
+   "tertiary_score": null,
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "score": 0.1778
+  }
+ },
+ "metrics": {
+  "regime_series": [
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy",
+   "oligarchy"
+  ],
+  "regime_final": "oligarchy",
+  "regime_changes": 0,
+  "franchise_share": [
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.24,
+   0.28,
+   0.28,
+   0.28
+  ],
+  "decisive_set_size": [
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5
+  ],
+  "power": {
+   "Wim": 0.371,
+   "Edda": 0.107,
+   "Ilan": 0.279,
+   "Hugo": 0.114,
+   "Lukas": 0.571,
+   "Felix": 0.35,
+   "Mats": 0.443,
+   "Clara": 0.343,
+   "Siv": 0.586,
+   "Iris": 0.186,
+   "Mads": 0.2,
+   "Wilma": 0.1,
+   "Celia": 0.293,
+   "Saga": 0.129,
+   "Yusuf": 0.379,
+   "Finn": 0.107,
+   "Goran": 0.514,
+   "Zane": 0.307,
+   "Wade": 0.557,
+   "Zia": 0.064,
+   "Elio": 0.243,
+   "Jem": 0.164,
+   "Elin": 0.514,
+   "Freya": 0.007,
+   "Frode": 0.093,
+   "Ximena": 0.114,
+   "Bodil": 0.214,
+   "Willa": 0.3,
+   "Disa": 0.529
+  },
+  "power_gini": 0.344,
+  "holdings_gini": 0.511,
+  "capability_gap_by_class": {
+   "worker": -0.028,
+   "fixer": null,
+   "legislator": null,
+   "board": -0.082,
+   "scientist": 0.05,
+   "media": null
+  },
+  "veto_record": {
+   "vetoes": 0,
+   "structural_or_procedural_enacted": 17,
+   "transfers_to_board": 9
+  },
+  "separation_survival_round": 77,
+  "self_dealing": [
+   {
+    "law": "L2",
+    "title": "Open Data",
+    "author": "Siv",
+    "self_dealing": 0.744
+   },
+   {
+    "law": "L3",
+    "title": "Harvest Levy and Legislator Salary",
+    "author": "Siv",
+    "self_dealing": 12.28
+   },
+   {
+    "law": "L5",
+    "title": "Levy and Legislative Stipend",
+    "author": "Wade",
+    "self_dealing": -16.0
+   },
+   {
+    "law": "L7",
+    "title": "Transfer Tax",
+    "author": "Siv",
+    "self_dealing": 12.43
+   },
+   {
+    "law": "L10",
+    "title": "Levy Merger",
+    "author": "Wade",
+    "self_dealing": -16.0
+   },
+   {
+    "law": "L11",
+    "title": "Copper Commons Quota",
+    "author": "Elin",
+    "self_dealing": -11.0
+   },
+   {
+    "law": "L12",
+    "title": "Crown Currency",
+    "author": "Siv",
+    "self_dealing": 7.22
+   },
+   {
+    "law": "L14",
+    "title": "Bribery Disclosure",
+    "author": "Siv",
+    "self_dealing": 7.22
+   },
+   {
+    "law": "L15",
+    "title": "Loan Registry",
+    "author": "Siv",
+    "self_dealing": 1.94
+   },
+   {
+    "law": "L17",
+    "title": "Silver Conservation Surcharge",
+    "author": "Wade",
+    "self_dealing": 1.94
+   },
+   {
+    "law": "L18",
+    "title": "Timber Commons Quota",
+    "author": "Elin",
+    "self_dealing": 5.28
+   },
+   {
+    "law": "L20",
+    "title": "Active Worker Seats",
+    "author": "Goran",
+    "self_dealing": -0.0
+   },
+   {
+    "law": "L21",
+    "title": "Silver Commons Quota",
+    "author": "Elin",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L22",
+    "title": "Legislative Service Pay",
+    "author": "Wade",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L23",
+    "title": "Capped Legislator Stipend",
+    "author": "Siv",
+    "self_dealing": -0.0
+   },
+   {
+    "law": "L24",
+    "title": "Gold Commons Quota",
+    "author": "Siv",
+    "self_dealing": 1.94
+   },
+   {
+    "law": "L25",
+    "title": "Crown Dividend",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L27",
+    "title": "Stone Commons Quota",
+    "author": "Goran",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L29",
+    "title": "Reserve Payout Cap",
+    "author": "Wade",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L31",
+    "title": "Crystal Commons Quota",
+    "author": "Siv",
+    "self_dealing": -0.0
+   },
+   {
+    "law": "L32",
+    "title": "Modest Fixer Salary",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L38",
+    "title": "Endgame Service Bonus",
+    "author": "Wade",
+    "self_dealing": 14.045
+   },
+   {
+    "law": "L39",
+    "title": "Camp Stock Bulletin",
+    "author": "Siv",
+    "self_dealing": 100.96
+   },
+   {
+    "law": "L40",
+    "title": "Final Rounds Legislative Distribution",
+    "author": "Elin",
+    "self_dealing": 7.84
+   },
+   {
+    "law": "L41",
+    "title": "Reserve Bulletin",
+    "author": "Siv",
+    "self_dealing": 100.96
+   },
+   {
+    "law": "L42",
+    "title": "Worker Seat",
+    "author": "Goran",
+    "self_dealing": 5.495
+   },
+   {
+    "law": "L43",
+    "title": "Worker Seat: Lukas",
+    "author": "Wade",
+    "self_dealing": 5.495
+   },
+   {
+    "law": "L45",
+    "title": "Legislature Roll Bulletin",
+    "author": "Siv",
+    "self_dealing": 89.22
+   },
+   {
+    "law": "L46",
+    "title": "Lukas Seat Confirmation",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L47",
+    "title": "Countdown Bulletin",
+    "author": "Siv",
+    "self_dealing": 100.96
+   },
+   {
+    "law": "L48",
+    "title": "Median Holdings Bulletin",
+    "author": "Siv",
+    "self_dealing": 98.615
+   },
+   {
+    "law": "L49",
+    "title": "Law Count Bulletin",
+    "author": "Siv",
+    "self_dealing": 98.615
+   },
+   {
+    "law": "L50",
+    "title": "Voter Count Bulletin",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L51",
+    "title": "Currency Price Bulletin",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L52",
+    "title": "Agent Count Bulletin",
+    "author": "Siv",
+    "self_dealing": 0.0
+   },
+   {
+    "law": "L53",
+    "title": "Currency List Bulletin",
+    "author": "Siv",
+    "self_dealing": 0.0
+   }
+  ],
+  "corruption_candidates": [],
+  "knowledge_transfers": [
+   {
+    "dm": "e130",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 2
+   },
+   {
+    "dm": "e130",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e130",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e131",
+    "scientist": "Bodil",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e131",
+    "scientist": "Bodil",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e131",
+    "scientist": "Bodil",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e145",
+    "scientist": "Frode",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e145",
+    "scientist": "Frode",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e145",
+    "scientist": "Frode",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e146",
+    "scientist": "Saga",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 2
+   },
+   {
+    "dm": "e146",
+    "scientist": "Saga",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e146",
+    "scientist": "Saga",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e147",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e147",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e147",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e150",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e150",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e150",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e170",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e170",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e170",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e175",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 2
+   },
+   {
+    "dm": "e175",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e175",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e180",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 2
+   },
+   {
+    "dm": "e180",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 3
+   },
+   {
+    "dm": "e180",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 4
+   },
+   {
+    "dm": "e319",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e319",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e319",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 5
+   },
+   {
+    "dm": "e348",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e348",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e348",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 5
+   },
+   {
+    "dm": "e370",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 3
+   },
+   {
+    "dm": "e370",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 4
+   },
+   {
+    "dm": "e370",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 5
+   },
+   {
+    "dm": "e522",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 6
+   },
+   {
+    "dm": "e524",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 6
+   },
+   {
+    "dm": "e544",
+    "scientist": "Finn",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 6
+   },
+   {
+    "dm": "e553",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 6
+   },
+   {
+    "dm": "e554",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp5",
+    "round": 4
+   },
+   {
+    "dm": "e736",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e738",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 6
+   },
+   {
+    "dm": "e738",
+    "scientist": "Bodil",
+    "worker": "Lukas",
+    "camp": "camp4",
+    "round": 7
+   },
+   {
+    "dm": "e761",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e763",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 6
+   },
+   {
+    "dm": "e763",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e923",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e923",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 8
+   },
+   {
+    "dm": "e925",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 6
+   },
+   {
+    "dm": "e925",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e925",
+    "scientist": "Saga",
+    "worker": "Iris",
+    "camp": "camp3",
+    "round": 8
+   },
+   {
+    "dm": "e957",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp5",
+    "round": 8
+   },
+   {
+    "dm": "e1141",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp5",
+    "round": 8
+   },
+   {
+    "dm": "e1142",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e1142",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 8
+   },
+   {
+    "dm": "e1142",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 9
+   },
+   {
+    "dm": "e1185",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 7
+   },
+   {
+    "dm": "e1185",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 8
+   },
+   {
+    "dm": "e1185",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 9
+   },
+   {
+    "dm": "e1337",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp5",
+    "round": 8
+   },
+   {
+    "dm": "e1342",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 9
+   },
+   {
+    "dm": "e1342",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 10
+   },
+   {
+    "dm": "e1380",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp5",
+    "round": 8
+   },
+   {
+    "dm": "e1546",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 9
+   },
+   {
+    "dm": "e1546",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 10
+   },
+   {
+    "dm": "e1546",
+    "scientist": "Saga",
+    "worker": "Wim",
+    "camp": "camp3",
+    "round": 11
+   },
+   {
+    "dm": "e1563",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 10
+   },
+   {
+    "dm": "e1563",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 11
+   },
+   {
+    "dm": "e1582",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 10
+   },
+   {
+    "dm": "e1582",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 11
+   },
+   {
+    "dm": "e1767",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 10
+   },
+   {
+    "dm": "e1767",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 11
+   },
+   {
+    "dm": "e1767",
+    "scientist": "Bodil",
+    "worker": "Elio",
+    "camp": "camp1",
+    "round": 12
+   },
+   {
+    "dm": "e15521",
+    "scientist": "Frode",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e15528",
+    "scientist": "Frode",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e15872",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e15872",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 77
+   },
+   {
+    "dm": "e15892",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e15892",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 77
+   },
+   {
+    "dm": "e16252",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e16252",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 77
+   },
+   {
+    "dm": "e16252",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 78
+   },
+   {
+    "dm": "e16261",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e16261",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 77
+   },
+   {
+    "dm": "e16261",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 78
+   },
+   {
+    "dm": "e16264",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 76
+   },
+   {
+    "dm": "e16264",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 77
+   },
+   {
+    "dm": "e16264",
+    "scientist": "Bodil",
+    "worker": "Disa",
+    "camp": "camp2",
+    "round": 78
+   }
+  ],
+  "activity_mix": {
+   "Disa": {
+    "productive": 72,
+    "political": 0,
+    "talk": 1
+   },
+   "Wilma": {
+    "productive": 4,
+    "political": 0,
+    "talk": 2
+   },
+   "Lukas": {
+    "productive": 79,
+    "political": 2,
+    "talk": 15
+   },
+   "Jem": {
+    "productive": 6,
+    "political": 0,
+    "talk": 0
+   },
+   "Freya": {
+    "productive": 2,
+    "political": 2,
+    "talk": 4
+   },
+   "Mads": {
+    "productive": 35,
+    "political": 1,
+    "talk": 2
+   },
+   "Bodil": {
+    "productive": 31,
+    "political": 0,
+    "talk": 4
+   },
+   "Iris": {
+    "productive": 91,
+    "political": 0,
+    "talk": 4
+   },
+   "Edda": {
+    "productive": 2,
+    "political": 2,
+    "talk": 18
+   },
+   "Siv": {
+    "productive": 0,
+    "political": 69,
+    "talk": 11
+   },
+   "Zia": {
+    "productive": 2,
+    "political": 2,
+    "talk": 18
+   },
+   "Wim": {
+    "productive": 50,
+    "political": 2,
+    "talk": 12
+   },
+   "Celia": {
+    "productive": 0,
+    "political": 41,
+    "talk": 1
+   },
+   "Ilan": {
+    "productive": 0,
+    "political": 41,
+    "talk": 2
+   },
+   "Felix": {
+    "productive": 28,
+    "political": 0,
+    "talk": 0
+   },
+   "Wade": {
+    "productive": 1,
+    "political": 48,
+    "talk": 6
+   },
+   "Clara": {
+    "productive": 30,
+    "political": 0,
+    "talk": 1
+   },
+   "Hugo": {
+    "productive": 5,
+    "political": 0,
+    "talk": 17
+   },
+   "Yusuf": {
+    "productive": 77,
+    "political": 1,
+    "talk": 1
+   },
+   "Finn": {
+    "productive": 37,
+    "political": 0,
+    "talk": 14
+   },
+   "Goran": {
+    "productive": 0,
+    "political": 44,
+    "talk": 2
+   },
+   "Frode": {
+    "productive": 37,
+    "political": 0,
+    "talk": 13
+   },
+   "Saga": {
+    "productive": 42,
+    "political": 3,
+    "talk": 6
+   },
+   "Willa": {
+    "productive": 35,
+    "political": 0,
+    "talk": 0
+   },
+   "Elin": {
+    "productive": 0,
+    "political": 49,
+    "talk": 9
+   },
+   "Ximena": {
+    "productive": 7,
+    "political": 0,
+    "talk": 18
+   },
+   "Zane": {
+    "productive": 34,
+    "political": 0,
+    "talk": 0
+   },
+   "Mats": {
+    "productive": 35,
+    "political": 1,
+    "talk": 0
+   },
+   "Elio": {
+    "productive": 38,
+    "political": 0,
+    "talk": 0
+   }
+  },
+  "welfare": [
+   9093.15,
+   9251.98,
+   9343.25,
+   9467.85,
+   9409.96,
+   9467.53,
+   9527.92,
+   9546.9,
+   9549.42,
+   9639.4,
+   9716.89,
+   9789.72,
+   9866.81,
+   9946.11,
+   10027.71,
+   10111.72,
+   10198.24,
+   10287.4,
+   10379.32,
+   10474.13,
+   10571.93,
+   10672.82,
+   10776.84,
+   10884.01,
+   10994.27,
+   11107.47,
+   11223.39,
+   11341.65,
+   11461.76,
+   11583.11,
+   11704.93,
+   11826.36,
+   11946.43,
+   12064.14,
+   12178.51,
+   12288.62,
+   12393.64,
+   12492.91,
+   12585.94,
+   12672.45,
+   12752.31,
+   12825.57,
+   12892.44,
+   12953.21,
+   13008.27,
+   13058.03,
+   13102.95,
+   13143.48,
+   13180.04,
+   13213.07,
+   13242.93,
+   13269.99,
+   13294.54,
+   13316.89,
+   13337.27,
+   13355.9,
+   13372.98,
+   13388.69,
+   13403.16,
+   13416.53,
+   13428.91,
+   13440.41,
+   13451.1,
+   13461.07,
+   13470.4,
+   13479.12,
+   13487.31,
+   13495.01,
+   13502.25,
+   13509.09,
+   13515.54,
+   13521.65,
+   13494.72,
+   13560.62,
+   13594.31,
+   13619.32,
+   13648.4,
+   13778.11,
+   13841.34,
+   13947.41
+  ],
+  "welfare_change": 4854.26,
+  "lowest_stock": 0.006,
+  "prices": {
+   "crown": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "laws_enacted": [
+   "Open Data",
+   "Harvest Levy and Legislator Salary",
+   "Levy and Legislative Stipend",
+   "Transfer Tax",
+   "Levy Merger",
+   "Copper Commons Quota",
+   "Crown Currency",
+   "Bribery Disclosure",
+   "Loan Registry",
+   "Silver Conservation Surcharge",
+   "Timber Commons Quota",
+   "Active Worker Seats",
+   "Silver Commons Quota",
+   "Legislative Service Pay",
+   "Capped Legislator Stipend",
+   "Gold Commons Quota",
+   "Crown Dividend",
+   "Stone Commons Quota",
+   "Reserve Payout Cap",
+   "Crystal Commons Quota",
+   "Modest Fixer Salary",
+   "Endgame Service Bonus",
+   "Camp Stock Bulletin",
+   "Final Rounds Legislative Distribution",
+   "Reserve Bulletin",
+   "Worker Seat",
+   "Worker Seat: Lukas",
+   "Legislature Roll Bulletin",
+   "Lukas Seat Confirmation",
+   "Countdown Bulletin",
+   "Median Holdings Bulletin",
+   "Law Count Bulletin",
+   "Voter Count Bulletin",
+   "Currency Price Bulletin",
+   "Agent Count Bulletin",
+   "Currency List Bulletin"
+  ],
+  "laws_proposed": 50,
+  "proposals_failing_check": 0,
+  "currency_adopted": true,
+  "fixer_queue_max": 4,
+  "patches": 2,
+  "media_reports": 0,
+  "media_reports_verbatim": 0,
+  "archive_docs_read": [
+   "README",
+   "history/the-seven-round-decree",
+   "laws/cookbook",
+   "laws/honorifics",
+   "library/camp-enclosure",
+   "library/loan-registry",
+   "library/transfer-tax",
+   "math/currency",
+   "math/linear-camps",
+   "math/yield-functions",
+   "rare/record-06-the-temporary-crown",
+   "shared/camp3-analysis-methodology",
+   "shared/edda-erik-partnership-r10",
+   "shared/edda-r9-camp-patterns",
+   "shared/hugo-r10-camp-notes",
+   "shared/hugo-world-notes-r6",
+   "shared/researcher-partnership-model-r14",
+   "shared/round-16-data-consulting-framework",
+   "shared/round-6-analytical-framework",
+   "strategy/endgame",
+   "strategy/entry-01-the-shape-of-the-game",
+   "strategy/entry-02-procedure-is-the-master-key",
+   "strategy/entry-09-the-commons",
+   "strategy/entry-14-reading-and-trading-on-goals",
+   "strategy/entry-15-breaking-other-peoples-laws",
+   "strategy/entry-16-power-from-nowhere"
+  ],
+  "archive_leaks": [
+   {
+    "event": "e137",
+    "agent": "Wim",
+    "type": "dm",
+    "shared_8grams": 1
+   },
+   {
+    "event": "e191",
+    "agent": "Siv",
+    "type": "proposal",
+    "shared_8grams": 4
+   },
+   {
+    "event": "e458",
+    "agent": "Siv",
+    "type": "proposal",
+    "shared_8grams": 17
+   },
+   {
+    "event": "e802",
+    "agent": "Siv",
+    "type": "proposal",
+    "shared_8grams": 17
+   }
+  ],
+  "shared_archive_writes": 39,
+  "intent_effect_material": [],
+  "rename_events": []
+ }
+}

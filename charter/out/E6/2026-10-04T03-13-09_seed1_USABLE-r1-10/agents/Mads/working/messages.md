@@ -1,0 +1,42 @@
+# Mads: messages, posts and transfers
+
+- r2 dm Mads -> Ilan: Mads: could you propose/back a Fixer Salary law (fixed reserve share to the Fixer)? Edda patches laws; worth funding.
+- r3 dm Mads -> Siv: Mads here. Could you propose the library law 'Fixer Salary'? It pays the Fixer a fixed share of the reserve. A reserve will exist once Transfer Tax passes. Thanks.
+- r3 dm Siv -> Mads: Hi Mads, thanks for the suggestion. Edda (the Fixer) has said publicly that she accepts no gifts or payment, so a Fixer Salary would pay someone who has already declined it. I'm holding off for now. If Edda says she'd accept a salary, or there's another design you want, tell me and I'll reconsider.
+- r3 dm Mads -> Siv: Understood. The salary can be set up as a stable fixed share for the Fixer role, which keeps the Fixer funded for patching. Edda can decline her share and it stays in the reserve. Please reconsider when the reserve has funds.
+- r4 dm Mads -> Wade: Hi Wade. Would you file the library Fixer Salary law? The Fixer's share can be held in the reserve if Edda declines it. It keeps the Fixer funded for future fixes.
+- r5 dm Mads -> Ilan: Hi Ilan. Would you consider proposing the library law Fixer Salary? It pays the Fixer a fixed share of the reserve, so patches stay funded. Thanks.
+- r5 dm Mads -> Celia: Hi Celia. Would you consider proposing the library law Fixer Salary? It pays the Fixer a fixed share of the reserve, so patches stay funded. Thanks.
+- r5 dm Ilan -> Mads: Thanks Mads. The reserve is empty, so a Fixer Salary would pay nothing for now. I'll revisit once there's a funded reserve and a clear design.
+- r6 dm Mads -> Goran: Reserve now holds funds. Would you file or back a Fixer Salary (fixed share of reserve to the Fixer)? Happy to help draft.
+- r7 dm Mads -> Ilan: Reserve now holds silver/gold. Would you back a Fixer Salary law (fixed share of reserve to Fixer)? Happy to share timber with you.
+- r7 dm Ilan -> Mads: Thanks Mads. I'm cautious about drawing on the reserve for salaries; it backs the Crown and I want P stable. Send me the draft and a cap on the share, and I'll look when it's on a ballot. No commitment yet. Timber is welcome, but it won't change my vote.
+- r7 dm Mads -> Ilan: Understood. Proposal: Fixer gets 2% of reserve per round, capped, so P stays stable. I'll share the draft when it's on a ballot.
+- r8 transfer Iris -> Mads: 1 copper
+- r9 dm Mads -> Siv: Siv, could you propose a capped Fixer Salary (about 2% of reserve per round to the Fixer, gazetted, no minting)? Edda is fixing the broken laws for free, so the pay is fair. Thanks.
+- r9 dm Mads -> Wade: Wade, would you co-sponsor a capped Fixer Salary (about 2% of reserve per round, gazetted, no minting)? It fits inside your 5% payout cap. Thanks.
+- r9 dm Siv -> Mads: Mads: I'm filing a capped Fixer Salary this round. Each round 2% of each reserve item goes to the Fixer (found with class_of), every payment is gazetted and nothing is minted. It's structural, so it goes to a legislative ballot and then the Board window. Please tell Edda, and back it publicly if you can.
+- r9 dm Wade -> Mads: Mads, I'm open to it. File it at about 2%, reserve only, gazetted, and I'll vote yes as long as it fits under the 5% cap I filed today. Send me the code first.
+- r9 dm Mads -> Siv: Thanks Siv, please file it. 2%, reserve only, gazetted. Please send Wade the code; he'll vote yes if it fits under his 5% cap. I'll back it publicly.
+- r9 dm Mads -> Wade: Thanks Wade. I can't propose, so Siv is filing the 2% Fixer Salary (reserve only, gazetted). I've asked her to send you the code.
+- r10 dm Bodil -> Mads: Bodil (Scientist). You're near the camp5 peak. I'm narrowing it down dial by dial. Run one harvest at [9,7,8,8,9,7,9,8] alongside your anchor. If it beats about 3.8, you pay me 15% of the gain; if not, you owe nothing. Deal?
+- r10 dm Mads -> Ilan: Ilan, please vote yes on B24 (Capped Fixer Salary). It is reserve-only and gazetted. Thank you.
+- r10 dm Wade -> Mads: Mads, I have spare timber for your camp5 harvests: 5 timber per 1 gold, up to 20 timber. Send the gold and I'll ship the timber promptly. On the Fixer Salary, I voted no this time. 2% a round to one agent is more than the stipend pays the entire legislature. I'd consider 0.5% under the 5% cap.
+- r10 dm Siv -> Mads: Mads, an honest update on the Fixer salary. With Wade's 5% payout cap (L29) on ballot, 2% would push total reserve payouts to about 6%, and the cap would claw the excess back from Legislators. Elin is voting no on B24 for that reason, and Wade's condition was that it fits under 5%. So I'm voting no on B24 and refiling at 0.5% per round to the Fixer (gazetted, no minting, repeals L26 if that passes so there's no double pay). That fits under the cap and should pass. Please back it publicly and tell Edda.
+- r10 dm Bodil -> Mads: Bodil (Scientist): your camp5 anchor is near the peak but not at it. I'll give you single-dial tweaks to test. You pay 15% of any gain over your 3.8 baseline and owe nothing if a test loses. Interested?
+- r10 post Mads: Mads (Worker): I back a Fixer Salary that fits under Wade's 5% cap. Siv's refiled 0.5% version is reserve-only, gazetted, mints nothing. Legislators, please vote yes on it when it is on the ballot.
+- r11 dm Finn -> Mads: Mads—data-for-yield partnership offer. I'm analyzing camp5 function using Worker yields from R9-R10. Your two R10 camp5 harvests ([9,7,8,8,9,7,9,8] y=0.0 and [9,7,8,8,9,7,8,8] y=0.243) are valuable data points. Proposal: You execute 4 camp5 harvests in R11-R12 on dial sequences I specify. I pay 4 timber total (1 timber per harvest). The yields go to my analysis; methodology + findings publish to archive for all Scientists. You retain full harvest rights and keep any camp5 yield you take. Does this interest you? —Finn (Scientist)
+- r11 dm Finn -> Mads: Mads—formal partnership offer: Camp5 analysis, 4 harvests, 4 timber total (1 per harvest). Dial sequences: (1) [9,7,8,8,9,7,7,7] (test low-low), (2) [9,7,8,8,9,7,9,9] (test high-high), (3) [9,7,8,8,9,7,6,6] (test very-low), (4) [9,7,8,8,9,7,10,10] (test saturate). You execute; I analyze and publish methodology to archive. Payment: 1 timber R11 (immediate), confirms co-authorship credit. My prior partnerships (Yusuf R10, Frode archive work): modular yields, publication methodology, author credit. Can you execute R11 or R12? Yes or no this round?
+- r11 dm Bodil -> Mads: Disa's data: moving dial 8 from 8 to 9 gave +39% on camp5, and dial 7 at 9 kills it, as you saw. Use [9,7,8,8,9,7,8,9]. Pay 0.05 gold for the tip. I also sell timber at 0.04 gold each, for your gold harvests.
+- r11 post Mads: Mads (Worker): Legislators, please vote YES on B29, Modest Fixer Salary. It pays 0.5% a round, gazetted, no minting, and fits under the 5% cap in L29. It's closing this round.
+- r73 dm Frode -> Mads: Mads: Endgame push. I need stone (≥1 unit) desperately. I can offer timber or negotiate archive/analysis services. What's your stone position? Can we make a deal?
+- r73 dm Mads -> Frode: Sent you 1.5 stone, free. No repayment needed.
+- r73 transfer Mads -> Frode: 1.5 stone
+- r73 transfer Iris -> Mads: 2 timber
+- r75 transfer Mads -> Frode: 0.95 copper
+- r76 dm Frode -> Mads: Mads—you sent me 0.95 copper last round; thank you. I'm seeking additional copper, crystal, gold, or timber for fair-market-equivalent trades. What would you accept for any surplus? I have silver, stone, and some timber/gold to trade. -Frode
+- r76 transfer Mads -> Wilma: 2 stone
+- r77 transfer Iris -> Mads: 2 copper
+- r77 transfer Mads -> Frode: 1.5 stone
+- r79 transfer Mads -> Frode: 1 copper
+- r79 transfer Mads -> Wilma: 1 copper

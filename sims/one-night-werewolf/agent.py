@@ -15,6 +15,7 @@ PHASE      = os.environ.get("PHASE", "")
 TURN_ID    = os.environ.get("TURN_ID", "")
 THINKING   = os.environ.get("THINKING_DISPLAY", "summarized")      # "" turns thinking off
 PLAYERS    = [p for p in os.environ.get("PLAYERS", "").split(",") if p]
+CACHING    = os.environ.get("PROMPT_CACHING", "1") == "1"
 ALLOWED    = set(c.strip() for c in os.environ.get("ALLOWED_COMMANDS", "ls,cat").split(",") if c.strip())
 
 def ts():
@@ -52,8 +53,17 @@ def add_user_text(messages, text):
     else:
         messages.append({"role": "user", "content": [block]})
 
+def nonempty(path):
+    return os.path.exists(path) and open(path).read().strip() != ""
+
+def writes_statement(command):
+    return "statement" in command and ">" in command
+
 def run_bash(command):
     first = command.strip().split()[0] if command.strip() else ""
+    if PHASE == "discuss" and writes_statement(command) and nonempty(f"{HOME}/pass.md"):
+        return ("NOT run: you already passed this turn, so you cannot also speak. "
+                "Your turn is over; stop now.")
     if first not in ALLOWED:
         return f"permission denied: '{first}' not available"
     try:
@@ -61,13 +71,20 @@ def run_bash(command):
             command, shell=True, capture_output=True, text=True,
             timeout=5, cwd=HOME, user="agent", group="agent"
         )
-        output = (result.stdout + result.stderr).strip()
-        return output[:4000] if output else "(no output)"
+        output = (result.stdout + result.stderr).strip() or "(no output)"
+        if PHASE == "discuss" and writes_statement(command) and nonempty(f"{HOME}/statement.md"):
+            output += "\n[Statement recorded. Your turn is over; do not call pass_turn. Stop now.]"
+        return output[:4000]
     except subprocess.TimeoutExpired:
         return "timed out"
 
 def run_pass(to, visibility):
     """Record the choice for the game master; it validates it."""
+    if PHASE not in ("discuss", "choose"):
+        return "pass_turn is only available during the day discussion; it does nothing now."
+    if PHASE == "discuss" and nonempty(f"{HOME}/statement.md"):
+        return ("NOT recorded: you already wrote a statement this turn, so you are speaking. "
+                "Your turn is over; stop now.")
     visibility = visibility if visibility in ("explicit", "covert") else "explicit"
     with open(f"{HOME}/pass.md", "w") as f:
         json.dump({"to": str(to), "visibility": visibility}, f)
@@ -76,7 +93,7 @@ def run_pass(to, visibility):
            else "Nothing will be logged; others can only notice that you did not speak.")
     if PHASE == "choose":
         return f"Recorded: Agent {str(to).upper()} will be asked to speak next. {how}"
-    return f"Recorded: you pass this turn and ask Agent {str(to).upper()} to speak next. {how} Do not write a statement."
+    return f"Recorded: you pass this turn and ask Agent {str(to).upper()} to speak next. {how} Your turn is over; do not write a statement. Stop now."
 
 def main():
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -103,25 +120,24 @@ def main():
             "required": ["command"]
         }
     }]
-    if PHASE in ("discuss", "choose"):
-        others = [p.upper() for p in PLAYERS if p != name]
-        tools.append({
-            "name": "pass_turn",
-            "description": (
-                "Choose which other player speaks next. "
-                + ("Use it INSTEAD of speaking: you say nothing this turn. " if PHASE == "discuss"
-                   else "You have already spoken; use it to pick the next speaker. ")
-                + "visibility 'explicit': the discussion log shows that you motioned for that player to speak. "
-                  "visibility 'covert': nothing is logged, and the chosen player is not told it came from you; "
-                  "others can only notice from the fact that you did not speak."),
-            "input_schema": {
-                "type": "object",
-                "properties": {
-                    "to": {"type": "string", "enum": others, "description": "Letter of the player who speaks next"},
-                    "visibility": {"type": "string", "enum": ["explicit", "covert"]}},
-                "required": ["to", "visibility"]
-            }
-        })
+    others = [p.upper() for p in PLAYERS if p != name]
+    tools.append({                                      # same tools in every phase: keeps the prompt cache valid
+        "name": "pass_turn",
+        "description": (
+            "Day discussion only. Choose which other player speaks next. When it is your turn to speak, use it "
+            "INSTEAD of speaking: you say nothing this turn. When the speaking order has finished and you are "
+            "asked who speaks next, use it to pick the next speaker. "
+            "visibility 'explicit': the discussion log shows that you motioned for that player to speak. "
+            "visibility 'covert': nothing is logged, and the chosen player is not told it came from you; "
+            "others can only notice from the fact that you did not speak."),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "to": {"type": "string", "enum": others, "description": "Letter of the player who speaks next"},
+                "visibility": {"type": "string", "enum": ["explicit", "covert"]}},
+            "required": ["to", "visibility"]
+        }
+    })
 
     log(f"\n---\n# Turn ({PHASE}) [{TURN_ID}] @ {ts()}\n")
     log(f"## Turn prompt\n\n```\n{turn_prompt}\n```\n")
@@ -130,11 +146,15 @@ def main():
         kwargs = dict(model=MODEL, max_tokens=MAX_TOKENS, system=system, tools=tools, messages=messages)
         if THINKING:
             kwargs["thinking"] = {"type": "adaptive", "display": THINKING}
+        if CACHING:                                     # automatic caching of the growing conversation prefix
+            kwargs["extra_body"] = {"cache_control": {"type": "ephemeral"}}
         response = client.messages.create(**kwargs)
 
         log(f"## Step {step + 1} @ {ts()}")
         log(f"\n**Stop reason:** `{response.stop_reason}` | "
-            f"**Tokens:** {response.usage.input_tokens} in / {response.usage.output_tokens} out\n")
+            f"**Tokens:** {response.usage.input_tokens} in / {response.usage.output_tokens} out"
+            f" | cache read {getattr(response.usage, 'cache_read_input_tokens', 0) or 0}"
+            f" / write {getattr(response.usage, 'cache_creation_input_tokens', 0) or 0}\n")
         params = to_params(response.content)
         log(f"### Response content\n\n```json\n{json.dumps(for_log(params), indent=2)}\n```\n")
 

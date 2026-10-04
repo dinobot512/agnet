@@ -9,5 +9,6 @@
   "roles": ["werewolf", "werewolf", "minion", "seer", "robber", "troublemaker", "drunk", "insomniac"],
   "discussion_rounds": 3,
   "extra_turns": 3,
-  "use_traits": true
+  "use_traits": true,
+  "prompt_caching": true
 }

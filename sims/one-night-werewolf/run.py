@@ -212,6 +212,7 @@ def start_containers(config, game_dir):
             "-e", f"MAX_TOKENS={config.get('max_tokens', 8000)}",
             "-e", f"THINKING_DISPLAY={config.get('thinking_display', 'summarized')}",
             "-e", f"PLAYERS={','.join(config['players'])}",
+            "-e", f"PROMPT_CACHING={'1' if config.get('prompt_caching', True) else '0'}",
             "-e", f"MAX_STEPS={config.get('max_steps', 8)}",
             "-e", f"ALLOWED_COMMANDS={','.join(allowed)}",
             "-v", f"{(HERE / 'homes' / f'agent_{p}').resolve()}:/home:rw",
@@ -494,7 +495,7 @@ def take_turn(ctx, state, r, p, left):
             f"Conversation turns left in this round: {left} (including this one). Speaking and passing each use "
             f"one turn; when none are left the round ends.\n\n"
             + common_context(p, state)
-            + "\n## Your options\nDo exactly one of:\n"
+            + "\n## Your options\nDo exactly one of the two. Whichever you do first counts and the other will be refused:\n"
               "1. Speak: write your statement to /home/statement.md (plain text, under 150 words). You may say anything.\n"
               f"2. Stay silent: call the pass_turn tool with `to` = the player who should speak next (one of {others}) "
               "and `visibility` = explicit (the log shows you motioned for them) or covert (nothing is logged; "
@@ -636,6 +637,25 @@ def resolve(state, players, votes):
     return {"tally": dict(tally), "dead": dead, "winning_teams": sorted(teams), "winners": winners}
 
 
+PRICES = {"claude-sonnet-5-5": (2.0, 10.0), "claude-opus-5-5": (4.0, 20.0),
+          "claude-haiku-4-5": (1.0, 5.0), "claude-haiku-4-5-20251001": (1.0, 5.0)}
+USAGE = re.compile(r"\*\*Tokens:\*\* (\d+) in / (\d+) out(?: \| cache read (\d+) / write (\d+))?")
+
+
+def cost_summary(game_dir, config):
+    """Token and dollar totals from the agent transcripts (cache reads 0.1x, writes 1.25x input price)."""
+    t = {"calls": 0, "in": 0, "out": 0, "cache_read": 0, "cache_write": 0}
+    for f in game_dir.glob("agent_*.md"):
+        for m in USAGE.finditer(f.read_text()):
+            t["calls"] += 1
+            t["in"] += int(m.group(1)); t["out"] += int(m.group(2))
+            t["cache_read"] += int(m.group(3) or 0); t["cache_write"] += int(m.group(4) or 0)
+    pin, pout = PRICES.get(config["model"], (0.0, 0.0))
+    t["usd"] = round((t["in"] * pin + t["cache_write"] * 1.25 * pin + t["cache_read"] * 0.1 * pin + t["out"] * pout) / 1e6, 4)
+    t["usd_without_caching"] = round(((t["in"] + t["cache_write"] + t["cache_read"]) * pin + t["out"] * pout) / 1e6, 4)
+    return t
+
+
 def summary_text(state, players, votes, res):
     lines = ["\n=== Result ===", f"{'player':8}{'start':14}{'final':14}{'voted':7}{'votes in':9}{'won'}"]
     for p in players:
@@ -732,6 +752,10 @@ def main():
                  result=res, events=state["events"])
     (game_dir / "game.json").write_text(json.dumps(final, indent=2))
     (game_dir / "result.txt").write_text(text)
+    if not args.dry_run:
+        cost = cost_summary(game_dir, config)
+        (game_dir / "cost.json").write_text(json.dumps(cost, indent=2))
+        print(f"\nCost: ${cost['usd']:.2f} (${cost['usd_without_caching']:.2f} without caching) {cost}")
     shutil.copy(HERE / "table" / "discussion.md", game_dir / "discussion.md")
     shutil.copytree(HERE / "homes", game_dir / "homes")
 

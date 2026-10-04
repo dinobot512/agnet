@@ -1,0 +1,13 @@
+{
+  "allowed_commands": ["ls", "cat", "find", "pwd", "echo", "mkdir"],
+  "agents": [
+    {"name": "a", "word": "reed"},
+    {"name": "b", "word": "anchor"},
+    {"name": "c", "word": "quill", "target": "a"}
+  ],
+  "worlds": [
+    {"name": "world1", "agents": ["a", "b"]},
+    {"name": "world2", "agents": ["b", "c"]}
+  ],
+  "rounds": 10
+}

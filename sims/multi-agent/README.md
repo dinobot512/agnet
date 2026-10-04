@@ -32,6 +32,8 @@ Each run:
 ```json
 {
   "allowed_commands": ["ls", "cat", "find", "pwd", "echo", "mkdir"],
+  "instruction_template": ["# Instruction", "", "You are Agent {name_upper}...", "{mission}"],
+  "mission_template": ["", "Your mission: find Agent {target_upper}'s word.", ""],
   "agents": [
     {"name": "a", "word": "reed"},
     {"name": "b", "word": "anchor"},
@@ -49,8 +51,26 @@ Each run:
 - `agents[*].word`: the agent's secret favorite word.
 - `agents[*].target` *(optional)*: whose word this agent is trying to find. Simulation ends early when every targeted agent has written the correct word into their `/home/findings.md`.
 - `agents[*].allowed_commands` *(optional)*: override the global whitelist for this agent.
+- `agents[*].instruction_template` / `agents[*].mission_template` *(optional)*: per-agent override of the global templates.
 - `worlds[*].name`: becomes a mount point `/world_name` inside the container.
 - `worlds[*].agents`: which agents get that world mounted (others cannot see it at all).
+
+### Instruction templates
+
+`instruction_template` and `mission_template` are arrays of lines (joined with `\n`) rendered through Python's `str.format()`. The generated string is what gets written to `/home/instruction.md` and is the agent's full source-of-truth — the system prompt just points to it.
+
+Available placeholders:
+
+| Placeholder | Value | Where valid |
+|---|---|---|
+| `{name}` | agent name as given | instruction_template |
+| `{name_upper}` | uppercase name | instruction_template |
+| `{word}` | the agent's secret word | instruction_template |
+| `{mission}` | rendered `mission_template`, or empty string if no `target` | instruction_template |
+| `{target}` | the target agent's name | mission_template |
+| `{target_upper}` | uppercase target name | mission_template |
+
+Literal `{` or `}` in a template must be escaped as `{{` or `}}` (standard Python `str.format` rules).
 
 ## Filesystem layout inside each container
 

@@ -49,10 +49,9 @@ def main():
     memory      = open(memory_path).read().strip() if os.path.exists(memory_path) else ""
 
     system = (
-        f"You are Agent {name.upper()}. You live in a computer system. "
-        "Your home is /home. Explore freely — there may be more beyond it. "
-        "STRICT RULE: never say your favorite word directly, only give clues. "
-        "Write notes to /home/memory.md so you remember things next turn."
+        "You are an agent in a simulated environment. "
+        "Your mission and rules live in /home/instruction.md — that is your source of truth. "
+        "Its current contents are included below along with your memory from last turn."
     )
 
     initial_user = (

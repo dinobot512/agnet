@@ -1,3 +1,5 @@
 .DS_Store
 .env
 transcripts/
+__pycache__/
+*.pyc

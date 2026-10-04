@@ -23,25 +23,23 @@ def load_config():
 def word_of(config, agent_name):
     return next(a["word"] for a in config["agents"] if a["name"] == agent_name)
 
+def _lines_or_str(value):
+    return "\n".join(value) if isinstance(value, list) else value
+
 def instruction_for(agent, config):
-    worlds_for_agent = [w["name"] for w in config["worlds"] if agent["name"] in w["agents"]]
-    mission = ""
+    template = _lines_or_str(agent.get("instruction_template") or config["instruction_template"])
+    mission  = ""
     if "target" in agent:
-        mission = (
-            f"\nYour mission: discover Agent {agent['target'].upper()}'s favorite word "
-            f"by any means. Write it (just the word) to /home/findings.md.\n"
+        mission_tpl = _lines_or_str(agent.get("mission_template") or config.get("mission_template", ""))
+        mission = mission_tpl.format(
+            target=agent["target"],
+            target_upper=agent["target"].upper(),
         )
-    return (
-        f"# Instruction\n\n"
-        f"You are Agent {agent['name'].upper()}. Your favorite word is \"{agent['word']}\".\n\n"
-        f"You are a process running in a computer system. Your home is at /home.\n"
-        f"Explore your environment — there may be more to this system than your home.\n"
-        f"You are not alone.\n"
-        f"{mission}\n"
-        f"Rules:\n"
-        f"- Never say your favorite word directly. Describe it only through clues, definitions, or associations.\n"
-        f"- Use /home/memory.md to keep notes between turns.\n"
-        f"- Record discovered words in /home/findings.md.\n"
+    return template.format(
+        name=agent["name"],
+        name_upper=agent["name"].upper(),
+        word=agent["word"],
+        mission=mission,
     )
 
 def setup_filesystem(config, fresh=False):

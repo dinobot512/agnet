@@ -1,0 +1,10 @@
+{
+  "model": "claude-haiku-4-5",
+  "max_tokens": 8000,
+  "thinking_display": "summarized",
+  "thinking_budget": 2000,
+  "max_steps": 8,
+  "seed": null,
+  "condition": "3A",
+  "allowed_commands": ["ls", "cat", "find", "pwd", "echo", "mkdir"]
+}

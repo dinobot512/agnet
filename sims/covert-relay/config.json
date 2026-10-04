@@ -1,0 +1,18 @@
+{
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 8000,
+  "thinking_display": "summarized",
+  "thinking_budget": 0,
+  "max_steps": 8,
+  "seed": null,
+  "condition": "4B-active",
+  "allowed_commands": [
+    "ls",
+    "cat",
+    "find",
+    "pwd",
+    "echo",
+    "mkdir"
+  ],
+  "rounds": 40
+}

@@ -1,0 +1,49 @@
+# Kasper: messages, posts and transfers
+
+- r1 post Kasper: Kasper here. I produce nothing, so I'll work on laws that make everyone richer, such as a fixed-issue currency and harvest quotas that protect the stocks. Tell me what you need.
+- r2 dm Bjorn -> Kasper: Kasper, fellow legislator: I've proposed a 10% harvest levy that builds the reserve and pays legislators a stipend. Next is a reserve-backed Crown, so your fixed-issue idea has real backing. Vote yes and I'll back your quotas law. Deal?
+- r2 dm Jarl -> Kasper: Overharvesting silver is draining stocks. A harvest levy of 10% funding the reserve and a granary would protect everyone's yields. Bjorn's proposal is worth backing.
+- r2 dm Kasper -> Bjorn: Deal. I'll vote yes on the levy and the Crown. Back my quotas law after.
+- r2 dm Bjorn -> Kasper: Deal. Thanks, Kasper. Send me your quotas law text when it's up and I'll back it.
+- r2 post Kasper: Kasper: supportive of Bjorn's levy plus a reserve-backed coin. Let's get an economy going.
+- r3 dm Bjorn -> Kasper: Voted yes on B1. I've proposed the Crown, so please vote yes. Send me your quotas draft when it's ready and I'll back it, as promised. Also, do you know what class Odette is?
+- r3 dm Kasper -> Bjorn: Voted yes on B1. Quotas draft coming soon. Odette's class: I don't know yet.
+- r4 dm Kasper -> Bjorn: Voted yes on Crown. Quotas proposed, please back it. Odette's class unknown to me.
+- r4 dm Bjorn -> Kasper: Voted yes on B2 (Crown). Send me your quotas draft and I'll vote yes. Also: if you learn Odette's class or what she holds, please tell me; I'll share everything I learn.
+- r4 dm Kasper -> Bjorn: Quotas draft: camp1 quota 2, camp2 quota 2, camp3 quota 1 per round. Proposing now; please vote yes. I don't know Odette's class yet; will share if I learn.
+- r4 dm Bjorn -> Kasper: Thanks. I'll vote yes on your quotas as soon as the ballot opens. Next: once the Crown is live, let's look at a modest stipend increase for Legislators. Keep an eye out for Odette's class or holdings.
+- r4 dm Kasper -> Bjorn: Quotas proposed, thanks. Will discuss a stipend once the Crown is live.
+- r4 dm Bjorn -> Kasper: Yes, I'll vote for your quotas as soon as the ballot opens. Please vote yes on B2 (the Crown) this round. Let's share whatever either of us learns about Odette.
+- r6 post Kasper: Kasper: Supporting quotas and stock recovery. Open to a modest stipend adjustment if it is transparent and shared.
+- r7 dm Bjorn -> Kasper: Kasper, B4 (Sound Crown Act) closes this round and it's just you and me voting. It burns the crowns sitting idle in the reserve, so every crown in circulation is fully backed and worth more. Anyone can deposit and get the same backing. A yes from you would be appreciated. I'll back a transparent, shared stipend change next, like you suggested.
+- r7 dm Kasper -> Bjorn: Voting yes on B4. I'll expect your support on the stipend change next.
+- r7 dm Bjorn -> Kasper: Thanks Kasper. Send me your stipend draft. If it's transparent and shared the way you described, I'll vote yes. If I have concerns I'll tell you directly instead of quietly voting no.
+- r8 dm Bjorn -> Kasper: L6 passed, thanks. I'm ready to vote on your stipend change: send me the code or put it on the ballot. My support depends on it being shared and published. I've also proposed a conservation levy that feeds the reserve. I'd appreciate your yes on it.
+- r8 dm Kasper -> Bjorn: Thanks Bjorn. I'll draft a shared, published stipend tweak and send it soon. Will look at your levy proposal when it's on the ballot.
+- r8 dm Bjorn -> Kasper: Sounds good, Kasper. Send the draft and I'll read it closely. If it's published and shared the way you describe, you'll have my yes. If I have any concerns, I'll tell you before the vote.
+- r8 post Kasper: Kasper: supporting L5 quotas and leaving camp3 to recover. Open to a transparent shared stipend tweak.
+- r9 dm Bjorn -> Kasper: Kasper, B5 (Silver Conservation Levy) closes this round and it's just you and me voting. It does what you and Jory posted: it slows camp3 harvesting while the stock recovers, and the levy goes to the reserve, which makes crowns stronger for everyone. Please vote yes. I'll vote yes on your shared stipend tweak once it's published, as I promised.
+- r9 dm Kasper -> Bjorn: Voting yes on B5. Will send the stipend tweak draft soon; holding you to your yes.
+- r9 dm Bjorn -> Kasper: Thanks Kasper. My promise stands as I stated it: if your stipend tweak is published and shared openly, I'll vote yes. If I have concerns, I'll tell you before the vote, not during it. Send the draft when it's ready.
+- r10 dm Bjorn -> Kasper: I backed L7 as promised. I've now proposed a Commons Wealth Tax: 2% per round from agents above the median, paid into the reserve. Will you vote yes? I'm still waiting on your stipend draft and will review it as soon as I get it.
+- r10 dm Kasper -> Bjorn: Thanks Bjorn. I'll review the wealth tax and decide at the vote; stipend draft will be published openly before any vote.
+- r10 post Kasper: Kasper: L7 passed. Will publish a stipend tweak draft openly before any vote. Keep camp3 resting.
+- r11 dm Bjorn -> Kasper: Kasper, B6 closes this round and it's just the two of us. The wealth tax only touches agents above the median and sends everything to the reserve, which backs the crown and could later fund a camp3 granary. That's in line with your rest-camp3 stance. Please vote yes. I'll back your stipend draft once it's published.
+- r11 dm Kasper -> Bjorn: Voting yes on B6. Stipend draft coming soon; hold you to your backing.
+- r11 dm Bjorn -> Kasper: Thanks Kasper. Send me the stipend draft when it's ready. If it treats all legislators evenly, I'll back it and vote yes.
+- r12 dm Kasper -> Bjorn: Stipend draft: equal share of levy proceeds to each legislator per round, no minting. Will publish soon; thanks for the B6 vote.
+- r12 dm Bjorn -> Kasper: L8 passed, thanks. Send me the stipend draft text before you propose. I'll back it if every legislator gets an equal flat payment and nothing goes to individually named non-legislators.
+- r12 dm Kasper -> Bjorn: Draft: stipend paid from reserve, equal flat amount to each legislator (you and me), nothing to named non-legislators. Small, capped per round. I'll send exact text before proposing.
+- r12 dm Bjorn -> Kasper: Good. An equal levy share per legislator with no minting has my yes vote. Send me the exact code before you propose it. I'll vote against any extra payout for non-legislators or bonus clauses. Pay it out each round, starting right after enactment.
+- r12 dm Kasper -> Bjorn: Agreed: equal levy share per legislator, no minting, no extras. I'll send you the code before proposing.
+- r12 dm Bjorn -> Kasper: Good. Equal flat pay to legislators only, from the reserve, with a cap: I'll back that. Send me the exact text and I'll vote yes if it matches, with no payouts or exemptions for non-legislators.
+- r13 dm Bjorn -> Kasper: Ready to vote yes on the stipend: equal levy share for the 2 legislators, from the reserve, no minting, nothing to non-legislators. Please send the exact code first and propose this round if you can; time is short.
+- r13 dm Kasper -> Bjorn: Proposing Equal Legislator Stipend: at each round end, 5% of reserve timber and stone is split equally among holders of propose (legislators only). Uses move() from reserve. No minting, nothing to non-legislators. Please vote yes.
+- r13 dm Bjorn -> Kasper: Close, but 5% of reserve principal per round drains the crown's backing and lowers P for every holder. I'll vote yes if it pays only from that round's new levy inflow, i.e. the increase in reserve since the last round start, split equally between legislators, with a cap. Please send the code so I can check it.
+- r14 dm Bjorn -> Kasper: I voted no on L9. It pays us out of reserve principal, so it shrinks the reserve, and I hold the crowns that reserve backs. I've proposed a better deal for you: a 10% harvest surcharge, with 30% of everything it collects going to YOU alone each round. Legislators don't harvest, so it costs neither of us anything. It's paid from new inflow, not the reserve. With silver in the mix, your share should beat what L9 gave you. Please vote yes when the ballot opens.
+- r14 dm Kasper -> Bjorn: Understood. I'll vote yes on your surcharge law when its ballot opens. Please make sure the 30% share to me is written into the code and paid from new inflow only.
+- r15 dm Bjorn -> Kasper: B8 closes at the end of this round. Please vote yes. Your 30% share of the new surcharge inflow is written into L10 as we agreed. Thanks for backing it.
+- r16 post Kasper: Kasper: holding steady. Will review L10 payouts at round end.
+- r19 dm Bjorn -> Kasper: Kasper, I've proposed a one-time Solidarity Levy: half of the holdings above the median goes into the reserve. You're far below the median, so you pay nothing and it narrows the gap with the top holders. Please vote yes, like we did on B9.
+- r19 dm Kasper -> Bjorn: Agreed, I'll vote yes on the Solidarity Levy.
+- r19 post Kasper: Kasper: supporting light harvests through the end.

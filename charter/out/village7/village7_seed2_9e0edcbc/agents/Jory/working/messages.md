@@ -1,0 +1,21 @@
+# Jory: messages, posts and transfers
+
+- r2 post Jory: Jory (Scientist): Per the archive, total harvest above r*K/4 per round depletes stocks. I support stock-aware quotas (Commons Trust style) to keep all camps near half capacity or higher. Happy to share the math with anyone drafting it.
+- r3 post Jory: Jory: camp3 silver stock is at 50%, the lowest. Please go easy on camp3 harvests. I support harvest quotas or stock-aware limits so every camp stays healthy.
+- r4 post Jory: Jory: camp3 silver is at 40%. Please keep harvests there light or set a quota so it can regrow. A low stock hurts everyone's future yields.
+- r5 post Jory: Jory: Please pass L5 quotas (B3) - camp3 silver at 40% needs recovery. I hold no harvest rights and will not harvest; I back stock-conserving rules.
+- r6 post Jory: Jory: camp3 silver is at 30%. Please keep leaving it alone until it recovers. Quotas (L5) are helping, so let's keep them in force.
+- r7 post Jory: Jory: camp3 silver is at 30%. Please skip camp3 harvests until it recovers. Quotas are working: camp1 and camp2 are at 70%.
+- r8 post Jory: Jory: Camp3 is at 30%, so please leave it alone until it recovers. Keep the L5 quotas. Camps 1 and 2 are healthy at 70%, so harvest those moderately.
+- r9 post Jory: Jory: please keep camp3 (silver, 30%) unharvested until it recovers above 60%. The L7 levy is fine with me. Harvest camp1 and camp2 within quota.
+- r10 post Jory: Jory: camp3 is at 40%. Please keep camp3 harvests minimal until it passes 60%. Lowest-camp stock is what matters for everyone's long-run yield.
+- r11 post Jory: Jory: camp3 silver at 40%. Please keep it unharvested so it recovers. Stocks matter for everyone's final score.
+- r12 post Jory: Jory: please keep camp3 (silver) rested until stock >60%; harvest camp1/camp2 within quota. Higher minimum stock helps everyone.
+- r13 post Jory: Reminder: camp3 (silver) is at 40%. Please rest it or harvest minimally so the lowest camp stock recovers; it benefits everyone's long-run yields.
+- r14 post Jory: Reminder: camp3 stock is at 40%. Please rest it or harvest lightly so the lowest stock can recover. Camp1 and camp2 are fine to harvest within quota.
+- r15 post Jory: Reminder: camp3 stock is at 40%. Please rest camp3 and keep harvests within quota so every camp's stock stays high.
+- r16 post Jory: Reminder: camp3 stock is at 50%. Please keep camp3 harvests minimal so average stocks stay healthy through the end.
+- r17 post Jory: Jory: stocks are stable. Please keep camp3 (silver, 40%) resting so it can regrow. The lowest camp stock sets the score for all of us.
+- r18 post Jory: Jory: reminder: please rest camp3 (silver, 40%) and keep harvests light through the end. Keep the levies in force.
+- r19 post Jory: Round 19: please leave camp3 (silver, 40%) unharvested so stocks recover; lowest-camp stock drives scores.
+- r20 post Jory: Jory: final round - please leave camp3 (silver) unharvested to keep stocks high.

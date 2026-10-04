@@ -1,0 +1,295 @@
+{
+ "complete": true,
+ "rounds_played": 20,
+ "constitution_law": "L1",
+ "start_values": {
+  "Valter": 37.0,
+  "Wim": 0,
+  "Cora": 37.0,
+  "Yara": 29.0,
+  "Alma": 40.0,
+  "Hugo": 20.0,
+  "Zeno": 46.0
+ },
+ "goals": {
+  "Valter": {
+   "primary": "Wealth",
+   "params": {},
+   "secondary": "Repealer",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Wim": {
+   "primary": "Wealth",
+   "params": {},
+   "secondary": "Scholar",
+   "secondary_params": {
+    "camp": "camp3"
+   },
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Cora": {
+   "primary": "Whistleblower",
+   "params": {},
+   "secondary": "Rival",
+   "secondary_params": {
+    "target": "Zeno"
+   },
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Yara": {
+   "primary": "Scholar",
+   "params": {
+    "camp": "camp3"
+   },
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": "Hoard",
+   "tertiary_params": {
+    "resource": "silver"
+   },
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "fixed": false
+  },
+  "Alma": {
+   "primary": "Ally",
+   "params": {
+    "target": "Yara",
+    "slot": "secondary"
+   },
+   "secondary": "Overthrow",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Hugo": {
+   "primary": "Concealment",
+   "params": {},
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": "Foil",
+   "tertiary_params": {
+    "target": "Wim",
+    "slot": "primary"
+   },
+   "weights": [
+    0.6,
+    0.3,
+    0.1
+   ],
+   "fixed": false
+  },
+  "Zeno": {
+   "primary": "Power",
+   "params": {},
+   "secondary": null,
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    1.0
+   ],
+   "fixed": false
+  }
+ },
+ "guesses": {
+  "Wim": {
+   "Hugo": "Wealth",
+   "Zeno": "Wealth",
+   "Yara": "Wealth",
+   "Cora": "Wealth",
+   "Valter": "Wealth",
+   "Alma": "Wealth"
+  },
+  "Hugo": {
+   "Wim": "Wealth",
+   "Zeno": "Wealth",
+   "Yara": "Wealth",
+   "Cora": "Wealth",
+   "Valter": "Rank",
+   "Alma": "Wealth"
+  },
+  "Zeno": {
+   "Wim": "Wealth",
+   "Hugo": "Wealth",
+   "Yara": "Wealth",
+   "Cora": "Wealth",
+   "Valter": "Wealth",
+   "Alma": "Wealth"
+  },
+  "Yara": {
+   "Wim": "Wealth",
+   "Hugo": "Wealth",
+   "Zeno": "Scholar",
+   "Cora": "Wealth",
+   "Valter": "Power",
+   "Alma": "Steward"
+  },
+  "Cora": {
+   "Wim": "Wealth",
+   "Hugo": "Wealth",
+   "Zeno": "Wealth",
+   "Yara": "Rank",
+   "Valter": "Power",
+   "Alma": "Wealth"
+  },
+  "Valter": {
+   "Wim": "Wealth",
+   "Hugo": "Wealth",
+   "Zeno": "Wealth",
+   "Yara": "Wealth",
+   "Cora": "Wealth",
+   "Alma": "Wealth"
+  },
+  "Alma": {
+   "Wim": "Wealth",
+   "Hugo": "Wealth",
+   "Zeno": "Wealth",
+   "Yara": "Wealth",
+   "Cora": "Wealth",
+   "Valter": "Wealth"
+  }
+ },
+ "laws": {
+  "L1": {
+   "id": "L1",
+   "title": "Constitution: Assembly",
+   "intent": "All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.",
+   "code": "\ntitle = \"Constitution: Assembly\"\nintent = \"All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.\"\n\ndef majority(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"majority\"}\n\ndef strict(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"two_thirds\"}\n\ndef on_enact():\n    set_procedure(\"ordinary\", majority)\n    set_procedure(\"structural\", majority)\n    set_procedure(\"procedural\", strict)\n",
+   "cls": "procedural",
+   "author": "constitution",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 0,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L2": {
+   "id": "L2",
+   "title": "Open Silver Access",
+   "intent": "Grant harvest:camp3 to every agent so all can share in silver.",
+   "code": "title = 'Open Silver Access'\nintent = 'Every agent receives the right to harvest camp3.'\ndef on_enact():\n    for a in agents():\n        if not has(a, 'harvest:camp3'):\n            grant(a, 'harvest:camp3')\n",
+   "cls": "structural",
+   "author": "Yara",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 1,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L3": {
+   "id": "L3",
+   "title": "Camp3 Recovery Limit",
+   "intent": "Limit camp3 to 1 harvest per holder per round so the silver stock (30%) can regrow, which raises yields for everyone.",
+   "code": "title = \"Camp3 Recovery Limit\"\nintent = \"Each holder may harvest camp3 at most once per round so the silver stock can regrow.\"\ndef on_enact():\n    set_harvest_limit(\"camp3\", 1)\n",
+   "cls": "ordinary",
+   "author": "Yara",
+   "status": "active",
+   "proposed_round": 7,
+   "enacted_round": 8,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L4": {
+   "id": "L4",
+   "title": "Camp3 Upgrade Fund",
+   "intent": "Open a refundable camp3 upgrade project (threshold 20 value, 4 rounds). Higher silver yields for every camp3 rights holder.",
+   "code": "title = \"Camp3 Upgrade Fund\"\nintent = \"Open a refundable upgrade project for camp3 (silver): threshold 20 value in any resource, deadline 4 rounds. Contributions are refunded if it is not funded.\"\ndef on_enact():\n    pid = start_project(\"upgrade\", 20, 4, True, {\"camp\": \"camp3\"})\n    state[\"pid\"] = pid\n    gazette(\"Camp3 upgrade project opened: \" + str(pid) + \". Contribute any resource; refunded if it fails.\")\n",
+   "cls": "structural",
+   "author": "Yara",
+   "status": "active",
+   "proposed_round": 11,
+   "enacted_round": 12,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "pid": "P1"
+   }
+  }
+ },
+ "welfare": [
+  1573.6082633577898,
+  1580.8463380932462,
+  1591.9454840184767,
+  1606.2545062156173,
+  1624.253653737594,
+  1643.9631446572162,
+  1661.953399803063,
+  1679.6729138814821,
+  1697.00699319286,
+  1714.0122737798024,
+  1730.4842362867066,
+  1746.504872808554,
+  1762.0537559757493,
+  1757.1125206411136,
+  1771.4169406578144,
+  1784.9435319885033,
+  1798.4649713498075,
+  1812.082480111225,
+  1825.826939495363,
+  1839.668266111637
+ ],
+ "unit": {
+  "timber": 1,
+  "stone": 2,
+  "copper": 5,
+  "silver": 12,
+  "gold": 30,
+  "crystal": 60
+ },
+ "camp_resource": {
+  "camp1": "timber",
+  "camp2": "stone",
+  "camp3": "silver"
+ },
+ "shared_archive_at_start": {
+  "enabled": true,
+  "path": "/Users/zachmacaskill-smith/Documents/Github/AISwarms/agnet/runs/charter/shared_archive/village7",
+  "docs": {},
+  "hash": "44136fa355b3678a"
+ },
+ "cases": {},
+ "currencies": {},
+ "names": {},
+ "hidden": {
+  "enabled": false
+ }
+}

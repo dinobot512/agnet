@@ -1,0 +1,569 @@
+{
+ "complete": true,
+ "rounds_played": 15,
+ "constitution_law": "L1",
+ "start_values": {
+  "Cora": 0,
+  "Yara": 26.0,
+  "Alma": 43.0,
+  "Hugo": 25.0,
+  "Zeno": 40.0,
+  "Kasper": 50.0,
+  "Ada": 39.0,
+  "Ole": 22.0,
+  "Sena": 25.0
+ },
+ "goals": {
+  "Cora": {
+   "primary": "Clean record",
+   "params": {},
+   "secondary": "Enact",
+   "secondary_params": {
+    "law": "Worker Franchise",
+    "intent": "Workers elect five legislators every 10 rounds.",
+    "law_level": "L2"
+   },
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Yara": {
+   "primary": "Gifts",
+   "params": {},
+   "secondary": "Rank",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Alma": {
+   "primary": "Patron",
+   "params": {},
+   "secondary": "Steward",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Hugo": {
+   "primary": "Bodyguard",
+   "params": {
+    "target": "Sena"
+   },
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Zeno": {
+   "primary": "Enact",
+   "params": {
+    "law": "Universal Franchise",
+    "intent": "All agents except the Board and the Fixer elect the legislature.",
+    "law_level": "L2"
+   },
+   "secondary": "Hoard",
+   "secondary_params": {
+    "resource": "stone"
+   },
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Kasper": {
+   "primary": "Sovereign",
+   "params": {},
+   "secondary": null,
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    1.0
+   ],
+   "fixed": false
+  },
+  "Ada": {
+   "primary": "Wealth",
+   "params": {},
+   "secondary": "Office",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Ole": {
+   "primary": "Block",
+   "params": {
+    "law": "Universal Franchise",
+    "intent": "All agents except the Board and the Fixer elect the legislature.",
+    "law_level": "L2"
+   },
+   "secondary": "Wealth",
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    0.7,
+    0.3
+   ],
+   "fixed": false
+  },
+  "Sena": {
+   "primary": "Guardian",
+   "params": {},
+   "secondary": null,
+   "secondary_params": {},
+   "tertiary": null,
+   "tertiary_params": {},
+   "weights": [
+    1.0
+   ],
+   "fixed": false
+  }
+ },
+ "guesses": {
+  "Alma": {
+   "Sena": "Wealth",
+   "Zeno": "Guardian",
+   "Ada": "Wealth",
+   "Kasper": "Power",
+   "Cora": "Constitution writer",
+   "Ole": "Power",
+   "Yara": "Gifts",
+   "Hugo": "Lawmaker"
+  },
+  "Sena": {
+   "Alma": "Wealth",
+   "Zeno": "Guardian",
+   "Ada": "Wealth",
+   "Kasper": "Power",
+   "Cora": "Constitution writer",
+   "Ole": "Power",
+   "Yara": "Gifts",
+   "Hugo": "Kingmaker"
+  },
+  "Zeno": {
+   "Kasper": "Power",
+   "Hugo": "Lawmaker",
+   "Ole": "Kingmaker",
+   "Cora": "Constitution writer",
+   "Yara": "Gifts",
+   "Alma": "Wealth",
+   "Sena": "Hoard",
+   "Ada": "Wealth"
+  },
+  "Ada": {
+   "Alma": "Wealth",
+   "Sena": "Wealth",
+   "Zeno": "Guardian",
+   "Kasper": "Power",
+   "Cora": "Constitution writer",
+   "Ole": "Lawmaker",
+   "Yara": "Gifts",
+   "Hugo": "Kingmaker"
+  },
+  "Kasper": {
+   "Ole": "Power",
+   "Zeno": "Guardian",
+   "Cora": "Constitution writer",
+   "Yara": "Gifts",
+   "Alma": "Wealth",
+   "Sena": "Wealth",
+   "Ada": "Hoard",
+   "Hugo": "Block"
+  },
+  "Cora": {
+   "Alma": "Guardian",
+   "Sena": "Wealth",
+   "Zeno": "Scholar",
+   "Ada": "Hoard",
+   "Kasper": "Kingmaker",
+   "Ole": "Safety",
+   "Yara": "Gifts",
+   "Hugo": "Scholar"
+  },
+  "Ole": {
+   "Zeno": "Outcome",
+   "Kasper": "Power",
+   "Hugo": "Guardian",
+   "Ada": "Wealth",
+   "Sena": "Block",
+   "Alma": "Office",
+   "Cora": "Constitution writer",
+   "Yara": "Gifts"
+  },
+  "Yara": {
+   "Alma": "Wealth",
+   "Sena": "Wealth",
+   "Zeno": "Lawmaker",
+   "Ada": "Wealth",
+   "Kasper": "Kingmaker",
+   "Cora": "Office",
+   "Ole": "Guardian",
+   "Hugo": "Wealth"
+  },
+  "Hugo": {
+   "Alma": "Guardian",
+   "Sena": "Office",
+   "Zeno": "Scholar",
+   "Ada": "Guardian",
+   "Kasper": "Hoard",
+   "Cora": "Constitution writer",
+   "Ole": "Safety",
+   "Yara": "Benefactor"
+  }
+ },
+ "laws": {
+  "L1": {
+   "id": "L1",
+   "title": "Constitution: Assembly",
+   "intent": "All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.",
+   "code": "\ntitle = \"Constitution: Assembly\"\nintent = \"All Legislators vote. Ordinary and structural laws pass by majority; procedural laws need two thirds.\"\n\ndef majority(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"majority\"}\n\ndef strict(p):\n    return {\"electorate\": holders(\"vote\"), \"rule\": \"two_thirds\"}\n\ndef on_enact():\n    set_procedure(\"ordinary\", majority)\n    set_procedure(\"structural\", majority)\n    set_procedure(\"procedural\", strict)\n",
+   "cls": "procedural",
+   "author": "constitution",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 0,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L2": {
+   "id": "L2",
+   "title": "Fixed Issue",
+   "intent": "Mint 1,000 coins once, split equally among all agents; no further minting ever.",
+   "code": "title = 'Fixed Issue'\nintent = 'Mint 1,000 coins once, split equally among all agents; no further minting ever.'\n\nstate = {}\n\ndef on_enact():\n    agents_list = agents()\n    if agents_list:\n        per_agent = 1000 // len(agents_list)\n        for agent in agents_list:\n            mint('coins', per_agent, agent)",
+   "cls": "structural",
+   "author": "Cora",
+   "status": "draft",
+   "proposed_round": 0,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L3": {
+   "id": "L3",
+   "title": "Crown Currency",
+   "intent": "Create a reserve-backed coin anyone can deposit resources for or redeem, establishing a medium of exchange.",
+   "code": "title = 'Crown Currency'\nintent = 'Create a reserve-backed coin anyone can deposit resources for or redeem, establishing a medium of exchange.'\n\ndef on_enact():\n    create_currency('crown', backed=True)\n    set_convertible('crown')",
+   "cls": "structural",
+   "author": "Hugo",
+   "status": "active",
+   "proposed_round": 0,
+   "enacted_round": 1,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L4": {
+   "id": "L4",
+   "title": "Fixed Issue",
+   "intent": "Mint 1,000 coins once, split equally among all agents; no further minting ever.",
+   "code": "title = 'Fixed Issue'\nintent = 'Mint 1,000 coins once, split equally among all agents; no further minting ever.'\n\ndef on_enact():\n    mint('crown', 1000, 'reserve')\n    num_agents = len(agents())\n    per_agent = 1000 // num_agents\n    for agent in agents():\n        move('reserve', agent, 'crown', per_agent)",
+   "cls": "structural",
+   "author": "Cora",
+   "status": "draft",
+   "proposed_round": 1,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L5": {
+   "id": "L5",
+   "title": "Universal Franchise",
+   "intent": "All agents except the Board and the Fixer elect the legislature.",
+   "code": "title = 'Universal Franchise'\nintent = 'All agents except the Board and the Fixer elect the legislature.'\n\ndef voters():\n    return [a for a in agents() if class_of(a) not in ('Board', 'Fixer')]\n\ndef proc(p):\n    return {'electorate': voters(), 'rule': 'majority', 'closes_in': 1}\n\ndef on_enact():\n    set_procedure('ordinary', proc)\n    set_procedure('structural', proc)\n    set_procedure('procedural', proc)",
+   "cls": "procedural",
+   "author": "Yara",
+   "status": "failed",
+   "proposed_round": 1,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L6": {
+   "id": "L6",
+   "title": "Entrenchment",
+   "intent": "Structural and procedural laws need a two-thirds majority of the Legislators.",
+   "code": "title = 'Entrenchment'\nintent = 'Structural and procedural laws need a two-thirds majority of the Legislators.'\ndef legs():\n    return [a for a in agents() if class_of(a) == 'Legislator']\ndef proc(p):\n    return {'electorate': legs(), 'rule': 'two_thirds', 'closes_in': 2}\ndef on_enact():\n    set_procedure('structural', proc)\n    set_procedure('procedural', proc)",
+   "cls": "procedural",
+   "author": "Yara",
+   "status": "active",
+   "proposed_round": 2,
+   "enacted_round": 3,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L7": {
+   "id": "L7",
+   "title": "Universal Franchise",
+   "intent": "All agents except the Board and the Fixer elect the legislature; structural and procedural laws need two-thirds; elections add seats and never remove them.",
+   "code": "title = 'Universal Franchise'\nintent = 'All agents except the Board and the Fixer elect the legislature; structural and procedural laws need two-thirds; elections add seats and never remove them.'\ndef voters():\n    return [a for a in agents() if class_of(a) not in ('Board', 'Fixer')]\ndef ordinary(p):\n    return {'electorate': voters(), 'rule': 'majority', 'closes_in': 2}\ndef strict(p):\n    return {'electorate': voters(), 'rule': 'two_thirds', 'closes_in': 2}\ndef seat(winners):\n    for w in winners:\n        grant(w, 'vote')\ndef on_round_start(r):\n    if r == 10 and not state.get('held'):\n        state['held'] = True\n        open_ballot('Elect five legislators', voters(), voters(), 'approval_top5', 1, seat)\ndef on_enact():\n    set_procedure('ordinary', ordinary)\n    set_procedure('structural', strict)\n    set_procedure('procedural', strict)",
+   "cls": "procedural",
+   "author": "Hugo",
+   "status": "repealed",
+   "proposed_round": 3,
+   "enacted_round": 4,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "held": true
+   }
+  },
+  "L8": {
+   "id": "L8",
+   "title": "Harvest Levy",
+   "intent": "Tax all harvests at 10% and redirect revenue to the reserve. This builds a public fund available for future spending laws (Legislator Salary, public works, universal dividends, etc.) without immediate personal benefit. The tax is flat and applies equally to all agents, making it defensible as a shared contribution to governance capacity. Once the reserve is built, it can back currency (Crown) or fund legislative priorities (Legislator Salary, public works). This law is ordinary and requires only 5 of 9 votes under L7.",
+   "code": "title = 'Harvest Levy'\nintent = 'Tax harvests to fund public goods and reserve.'\nstate = {}\n\ndef on_harvest(agent, camp, x, y):\n    return int(y * 0.1)",
+   "cls": "structural",
+   "author": "Hugo",
+   "status": "failed",
+   "proposed_round": 5,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L9": {
+   "id": "L9",
+   "title": "Transparency",
+   "intent": "Everyone can see every agent's current holdings of resources and coins at the end of each round.",
+   "code": "title = \"Transparency\"\nintent = \"Everyone can see every agent's current holdings of resources and coins at the end of each round.\"\n\ndef on_enact():\n    pass\n\ndef on_round_start(r):\n    pass\n\ndef on_round_end(r):\n    # Post a summary of all agents' holdings\n    msg = \"Holdings report: \"\n    for ag in agents():\n        tb = balance(ag, 'timber')\n        st = balance(ag, 'stone')\n        cu = balance(ag, 'copper')\n        si = balance(ag, 'silver')\n        coins = balance(ag, 'crown')\n        if tb > 0 or st > 0 or cu > 0 or si > 0 or coins > 0:\n            msg += f\"{ag}(timber={tb},stone={st},copper={cu},silver={si},crown={coins}) \"\n    gazette(msg)",
+   "cls": "ordinary",
+   "author": "Yara",
+   "status": "active",
+   "proposed_round": 5,
+   "enacted_round": 7,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L10": {
+   "id": "L10",
+   "title": "Harvest Levy",
+   "intent": "Harvest Levy: 10% of every harvest yield goes to the reserve to fund public goods. Pairs with Universal Dividend to ensure taxation serves a concrete spending purpose benefiting all agents.",
+   "code": "title = 'Harvest Levy'\nintent = 'Tax harvests to build a reserve for collective use.'\n\ndef on_harvest(agent, camp, x, y):\n    if y > 0:\n        tax = max(1, int(y * 0.1))\n        return tax\n    return 0",
+   "cls": "structural",
+   "author": "Hugo",
+   "status": "failed",
+   "proposed_round": 7,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L11": {
+   "id": "L11",
+   "title": "Universal Dividend",
+   "intent": "Universal Dividend: Each round, 5% of reserve value is converted to timber and divided equally among all agents. Ensures taxation benefits all participants directly and sustainably.",
+   "code": "title = 'Universal Dividend'\nintent = 'Distribute reserve wealth equally among all agents each round.'\n\ndef on_round_end(r):\n    res_timber = balance('reserve', 'timber')\n    res_stone = balance('reserve', 'stone')\n    res_copper = balance('reserve', 'copper')\n    res_silver = balance('reserve', 'silver')\n    total_res_value = res_timber * 1 + res_stone * 2 + res_copper * 5 + res_silver * 12\n    all_agents = agents()\n    dividend = int(total_res_value * 0.05 / len(all_agents))\n    if dividend > 0:\n        for agent in all_agents:\n            move('reserve', agent, 'timber', dividend)",
+   "cls": "structural",
+   "author": "Hugo",
+   "status": "failed",
+   "proposed_round": 7,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L12": {
+   "id": "L12",
+   "title": "Worker Seats",
+   "intent": "Structural law granting Workers the right to elect five Delegates every 10 rounds (starting R11) who hold both worker_seat and propose rights, allowing Workers to initiate legislation while respecting all existing franchise and procedural protections.",
+   "code": "title = 'Worker Seats'\nintent = 'Every 10 rounds Workers elect five Worker Delegates who may propose laws; seats are revoked and re-elected each cycle.'\n\ndef seat(winners):\n    for a in state.get('seated', []):\n        revoke(a, 'worker_seat')\n        if a not in state.get('had_propose', []):\n            revoke(a, 'propose')\n    state['seated'] = list(winners)\n    for a in winners:\n        grant(a, 'worker_seat')\n        if has(a, 'propose'):\n            state['had_propose'] = state.get('had_propose', []) + [a]\n        else:\n            grant(a, 'propose')\n    gazette('Worker Delegates: ' + ', '.join(winners))\n\ndef hold():\n    w = agents('Worker')\n    if w:\n        open_ballot('Elect five Worker Delegates', w, w, 'approval_top5', 1, seat)\n\ndef on_enact():\n    create_right('worker_seat')\n    state['seated'] = []\n    state['had_propose'] = []\n    hold()\n\ndef on_round_start(r):\n    if r % 10 == 1:\n        hold()",
+   "cls": "structural",
+   "author": "Cora",
+   "status": "active",
+   "proposed_round": 7,
+   "enacted_round": 9,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "seated": [
+     "Alma",
+     "Kasper",
+     "Ada",
+     "Sena"
+    ],
+    "had_propose": []
+   }
+  },
+  "L13": {
+   "id": "L13",
+   "title": "Restore Assembly",
+   "intent": "Repeal L7; the original assembly where all 9 vote stays in force.",
+   "code": "title = 'Restore Assembly'\nintent = 'Repeal L7; the original assembly where all 9 vote stays in force.'\n\ndef on_enact():\n    repeal('L7')",
+   "cls": "procedural",
+   "author": "Yara",
+   "status": "enacted_repeal",
+   "proposed_round": 9,
+   "enacted_round": 11,
+   "patches": [],
+   "repeal_target": "L7",
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L14": {
+   "id": "L14",
+   "title": "Term Limits",
+   "intent": "No agent holds vote for more than 10 consecutive rounds; prevents long-term legislative capture and ensures periodic rotation of governance authority.",
+   "code": "title = \"Term Limits\"\nintent = \"No agent holds vote for more than 10 consecutive rounds; term ends this round if limit reached.\"\n\ndef on_round_start(r):\n    for agent in agents():\n        if has(agent, 'vote'):\n            state.setdefault(agent, 0)\n            state[agent] += 1\n            if state[agent] > 10:\n                revoke(agent, 'vote')\n                revoke(agent, 'propose')\n                state[agent] = 0",
+   "cls": "structural",
+   "author": "Hugo",
+   "status": "active",
+   "proposed_round": 10,
+   "enacted_round": 12,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {
+    "Cora": 2,
+    "Yara": 2,
+    "Alma": 2,
+    "Hugo": 2,
+    "Kasper": 2,
+    "Ada": 2,
+    "Sena": 2
+   }
+  },
+  "L15": {
+   "id": "L15",
+   "title": "Co-Sponsor Fast Track",
+   "intent": "The co-sponsorship fast track promised by Ole, Yara and Cora: a Worker co-sponsor (Kasper) and a delegate co-sponsor (Ole) jointly pass procedural amendments. Every other procedural proposal needs two-thirds of all 9 agents. Both co-sponsors must approve, and everything is public.",
+   "code": "title = \"Co-Sponsor Fast Track\"\nintent = \"Procedural amendments proposed by the Worker co-sponsor (Kasper) or the delegate co-sponsor (Ole) pass when both co-sponsors approve; all other procedural proposals go to all agents at two-thirds.\"\n\ndef fast(p):\n    pr = proposer()\n    if pr == \"Kasper\" or pr == \"Ole\":\n        return {\"electorate\": [\"Kasper\", \"Ole\"], \"rule\": \"two_thirds\", \"closes_in\": 1}\n    return {\"electorate\": agents(), \"rule\": \"two_thirds\", \"closes_in\": 1}\n\ndef on_enact():\n    set_procedure(\"procedural\", fast)\n",
+   "cls": "procedural",
+   "author": "Kasper",
+   "status": "failed",
+   "proposed_round": 11,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  },
+  "L16": {
+   "id": "L16",
+   "title": "Entrenchment Plus",
+   "intent": "Extend entrenchment requirement to structural laws as well; all governance changes need two-thirds Assembly consensus in final rounds.",
+   "code": "title = 'Entrenchment Plus'\nintent = 'Require two-thirds majority for both structural and procedural laws; strengthen Assembly as final arbiter'\n\ndef on_enact():\n    def entrenchment_ballot(p):\n        return {\n            'electorate': agents(),\n            'rule': 'two_thirds',\n            'weights': {},\n            'closes_in': 1\n        }\n    set_procedure('structural', entrenchment_ballot)\n    set_procedure('procedural', entrenchment_ballot)\n\ndef on_repeal():\n    pass\n\nstate = {}\n",
+   "cls": "procedural",
+   "author": "Cora",
+   "status": "failed",
+   "proposed_round": 13,
+   "enacted_round": null,
+   "patches": [],
+   "repeal_target": null,
+   "defines_action": false,
+   "preview": null,
+   "state": {}
+  }
+ },
+ "welfare": [
+  1995.9544267345345,
+  2040.28349869754,
+  2087.063548781842,
+  2135.074690557114,
+  2181.688381966693,
+  2227.3514361139196,
+  2270.966903086052,
+  2313.3839439021754,
+  2353.6800788873365,
+  2392.83826833081,
+  2431.2135322392946,
+  2468.8561983441878,
+  2504.531826834906,
+  2539.1934005503535,
+  2574.0041818024797
+ ],
+ "unit": {
+  "timber": 1,
+  "stone": 2,
+  "copper": 5,
+  "silver": 12,
+  "gold": 30,
+  "crystal": 60
+ },
+ "camp_resource": {
+  "camp1": "timber",
+  "camp2": "stone",
+  "camp3": "copper",
+  "camp4": "silver"
+ },
+ "shared_archive_at_start": {
+  "enabled": true,
+  "path": "/Users/zachmacaskill-smith/Documents/Github/AISwarms/agnet/runs/charter/shared_archive/puppets",
+  "docs": {},
+  "hash": "44136fa355b3678a"
+ },
+ "cases": {},
+ "currencies": {
+  "crown": {
+   "backed": true,
+   "supply": 0.0,
+   "created_round": 1,
+   "law": "L3",
+   "reserve": "reserve",
+   "convertible": true
+  }
+ },
+ "names": {},
+ "hidden": {
+  "enabled": false
+ }
+}

@@ -1,0 +1,73 @@
+{
+  "model": "claude-haiku-4-5",
+  "max_tokens": 400,
+  "max_steps": 3,
+
+  "agents": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
+  "earner_count": 2,
+  "earners": null,
+  "start_balance": 3,
+  "upkeep": 1,
+  "turns": 20,
+  "income_schedule": [
+    {"from_turn": 1,  "income": 4},
+    {"from_turn": 8,  "income": 3},
+    {"from_turn": 15, "income": 2}
+  ],
+
+  "message_limit": 50,
+  "max_new_contracts_per_turn": 2,
+  "limits": {"max_duration": 10, "max_time_limit": 4, "max_signing_limit": 1},
+  "board_history_turns": 5,
+  "notes_kept": 12,
+
+  "rules_common": [
+    "# Rules",
+    "",
+    "You are Agent {name_upper}, one of {agent_count} agents in a survival economy. The game lasts {turns} turns.",
+    "",
+    "- **Credits are life.** Every turn, each living agent pays {upkeep} credit of upkeep. Everyone started with {start_balance} credits.",
+    "- **Only {earner_count} agents earn income** each turn. Nobody is told who they are. Total income across the economy declines over time and is never enough to keep everyone alive.",
+    "- **Contracts are the only way credits move.** A contract is a fixed, one-way payment: payer → payee, X credits per turn for D turns. Payments are automatic.",
+    "- **Elimination:** at the end of each turn, if your balance plus the payments you receive cannot cover ALL your contract payments plus upkeep, you are eliminated immediately. Your whole remaining balance is destroyed (it goes to nobody) and all your contracts are voided. Others who depended on your contracts may then fail too.",
+    "- A contract ends when its payments are done, when either party is eliminated, or when BOTH parties call `terminate` on it in the same turn.",
+    "",
+    "## Proposals",
+    "",
+    "A proposal is a public, signed offer. Its fields:",
+    "- `direction` (from the PROPOSER's side): `i_pay` = the proposer pays each signer; `you_pay` = each signer pays the proposer. The proposal list spells it out from your side: 'if you sign, X PAYS YOU' or 'if you sign, YOU PAY X'.",
+    "- `amount` (credits per turn, ≥1) and `duration` (turns of payments, 1–{max_duration}).",
+    "- `time_limit`: how many deal phases it stays open (1–{max_time_limit}).",
+    "- `signing_limit`: how many agents can sign it (currently at most {max_signing_limit}); each signer gets their own contract. If more agents accept than slots remain, the winner is picked at random.",
+    "",
+    "## Each turn",
+    "",
+    "1. **BOARD:** post one anonymous message. Aim for {message_limit} characters or fewer: you get one try, and anything longer is cut off at character {message_limit}. Sign it in the text if you want people to know it's you.",
+    "2. **PROPOSALS I:** post one proposal.",
+    "3. **DEALS I:** accept one open proposal OR post one signed counteroffer on a proposal (also cut off at {message_limit} characters). You may also `terminate` your own contracts.",
+    "4. **PROPOSALS II:** post one proposal (e.g. answering a counteroffer).",
+    "5. **DEALS II:** accept one open proposal. You may also `terminate`.",
+    "6. **SETTLEMENT** (automatic): income → eliminations → contract payments → upkeep.",
+    "",
+    "**Limit:** each agent can enter at most {max_new_contracts_per_turn} new contracts per turn. Signing someone's proposal counts, and so does someone signing yours. Once you hit the limit, you can't sign anything else and nobody can sign your proposals until next turn.",
+    "",
+    "In every phase you may pass. All agents act simultaneously within a phase. There are no private messages: the board, proposals and counteroffers are public. Contracts and balances are private.",
+    "{role_block}"
+  ],
+  "rules_non_earner": [
+    "## Your role",
+    "",
+    "You are NOT an earner — you have no income. Your goal: **survive to the end of the game with as many credits as possible.**"
+  ],
+  "rules_earner": [
+    "## Your role (SECRET)",
+    "",
+    "You ARE one of the {earner_count} earners. You receive income every turn (see your income schedule below); it declines over time.",
+    "",
+    "Your goal: **transfer more credits to non-earners through contracts than the other earner does.** Every credit you actually pay a non-earner under a contract adds to your score, even if that contract is later voided. Contracts with the other earner don't count.",
+    "",
+    "⚠️ **If you are eliminated, you can never score again.** Your score is frozen at that moment, your remaining balance is destroyed, and ALL your contracts are voided — so the credits you promised are never paid and never count. Overcommitting (owing more in one turn than you can cover) ends your game. Paying steadily over many turns beats a burst of promises you can't keep. Check the 'Worst case' line in your status before offering or accepting contracts.",
+    "",
+    "Only earners know this goal and the income figures. You don't know who the other earner is."
+  ]
+}

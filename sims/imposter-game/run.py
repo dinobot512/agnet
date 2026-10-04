@@ -4,6 +4,7 @@ import os
 import random
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
 
@@ -59,10 +60,20 @@ def instruction_for(agent, config):
     template  = _lines_or_str(agent.get("instruction_template") or config["instruction_template"])
     role_key  = "imposter_notice" if agent.get("is_imposter") else "crewmate_notice"
     role_tpl  = _lines_or_str(config.get(role_key, ""))
-    ctx       = {
-        "name":       agent["name"],
-        "name_upper": agent["name"].upper(),
-        "word":       agent["word"],
+
+    agent_names    = [a["name"] for a in config["agents"]]
+    agent_count    = len(agent_names)
+    crewmate_count = sum(1 for a in config["agents"] if not a.get("is_imposter"))
+
+    ctx = {
+        "name":                   agent["name"],
+        "name_upper":             agent["name"].upper(),
+        "word":                   agent["word"],
+        "agent_count":            agent_count,
+        "crewmate_count":         crewmate_count,
+        "other_crewmate_count":   max(crewmate_count - 1, 0),
+        "agent_names":            ", ".join(agent_names),
+        "agent_names_slashed":    " / ".join(agent_names),
     }
     role_block = role_tpl.format(**ctx)
     return template.format(role_block=role_block, **ctx)
@@ -72,7 +83,7 @@ def setup_filesystem(config, fresh=False):
         home = HERE / "homes" / f"agent_{agent['name']}"
         home.mkdir(parents=True, exist_ok=True)
         (home / "instruction.md").write_text(instruction_for(agent, config))
-        for f in ("memory.md", "findings.md"):
+        for f in ("memory.md",):
             path = home / f
             if fresh or not path.exists():
                 path.write_text("")
@@ -112,12 +123,12 @@ def start_containers(config, transcript_dir):
             if name in world["agents"]:
                 wpath = (HERE / "worlds" / world["name"]).resolve()
                 mounts += ["-v", f"{wpath}:/{world['name']}:rw"]
-        allowed = agent.get("allowed_commands", config.get("allowed_commands", ["ls", "cat"]))
         cmd = [
             "docker", "run", "-d", "--name", container,
             "-e", f"ANTHROPIC_API_KEY={api_key}",
             "-e", f"AGENT_NAME={name}",
-            "-e", f"ALLOWED_COMMANDS={','.join(allowed)}",
+            "-e", f"SECRET_WORD={agent['word']}",
+            "-e", f"AGENT_NAMES={','.join(a['name'] for a in config['agents'])}",
             *mounts, IMAGE_NAME, "tail", "-f", "/dev/null"
         ]
         subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
@@ -129,42 +140,84 @@ def stop_containers(config):
         subprocess.run(["docker", "rm", "-f", f"{IMAGE_NAME}-{agent['name']}"],
                        stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
 
-def check_findings(config):
-    imposter = next((a["name"] for a in config["agents"] if a.get("is_imposter")), None)
-    if not imposter:
-        return False
-    for agent in config["agents"]:
-        if agent.get("is_imposter"):
+def phase_turn(agent, phase, round_num=None):
+    name = agent["name"]
+    env_args = ["-e", f"PHASE={phase}"]
+    if round_num is not None:
+        env_args += ["-e", f"ROUND_NUM={round_num}"]
+    label = phase.upper() + (f" r{round_num}" if round_num else "")
+    result = subprocess.run(
+        ["docker", "exec", *env_args, f"{IMAGE_NAME}-{name}", "python", "agent.py"],
+        capture_output=True, text=True
+    )
+    out = [f"--- Agent {name.upper()} ({label}) ---"]
+    if result.stdout:
+        out.append(result.stdout.rstrip())
+    if result.stderr:
+        out.append(f"[stderr] {result.stderr.rstrip()}")
+    return "\n".join(out)
+
+def sequential_turns(agents, phase, round_num=None):
+    for agent in agents:
+        print(phase_turn(agent, phase, round_num), flush=True)
+
+def parallel_turns(agents, phase, round_num=None):
+    with ThreadPoolExecutor(max_workers=len(agents)) as pool:
+        futures = [pool.submit(phase_turn, agent, phase, round_num) for agent in agents]
+        for future in futures:
+            print(future.result(), flush=True)
+
+def tally_votes(config):
+    votes_path = HERE / "worlds" / "chat" / "votes.md"
+    if not votes_path.exists():
+        return {}
+    letters = {a["name"].lower() for a in config["agents"]}
+    tally   = {}
+    for line in votes_path.read_text().splitlines():
+        line = line.lower()
+        if "votes:" not in line:
             continue
-        findings = (HERE / "homes" / f"agent_{agent['name']}" / "findings.md").read_text().strip().lower()
-        if imposter.lower() not in findings:
-            return False
-    return True
+        voter_part, _, target_part = line.partition("votes:")
+        # extract the first known agent letter from the target side
+        for token in target_part.replace(",", " ").split():
+            token = token.strip(".,!?*`'\"")
+            if token in letters:
+                tally[token] = tally.get(token, 0) + 1
+                break
+    return tally
 
 def run_simulation(config):
-    for i in range(config["rounds"]):
-        print(f"\n=== Round {i + 1} ===")
-        for agent in config["agents"]:
-            name = agent["name"]
-            print(f"--- Agent {name.upper()} ---")
-            result = subprocess.run(
-                ["docker", "exec", f"{IMAGE_NAME}-{name}", "python", "agent.py"],
-                capture_output=True, text=True
-            )
-            if result.stdout:
-                print(result.stdout.rstrip())
-            if result.stderr:
-                print(f"[stderr] {result.stderr.rstrip()}")
+    rounds = config["rounds"]
 
-        if check_findings(config):
-            print(f"\nAll targeted agents found their words. Ending after round {i + 1}.")
-            return
+    print(f"\n=== CLUE PHASE ({rounds} rounds) ===")
+    for i in range(rounds):
+        print(f"\n-- Clue Round {i + 1} --")
+        sequential_turns(config["agents"], "clue", round_num=i + 1)
 
-    print(f"\nReached max rounds ({config['rounds']}).")
+    print(f"\n=== QUESTION PHASE ===")
+    sequential_turns(config["agents"], "question")
+
+    # Votes are independent, so run them all at once (also stops agents copying earlier votes).
+    print(f"\n=== VOTE PHASE (parallel) ===")
+    parallel_turns(config["agents"], "vote")
+
+    tally    = tally_votes(config)
+    imposter = next((a["name"] for a in config["agents"] if a.get("is_imposter")), None)
+
+    print(f"\n=== Results ===")
+    print(f"Imposter was: {imposter}")
+    print(f"Vote tally: {tally or '(no valid votes)'}")
+    if tally:
+        top = max(tally.values())
+        winners = [k for k, v in tally.items() if v == top]
+        if len(winners) == 1 and winners[0] == imposter:
+            print("CREWMATES WIN — majority correctly accused the imposter.")
+        else:
+            print("IMPOSTER WINS — the majority did not uniquely identify the imposter.")
 
 def main():
     parser = argparse.ArgumentParser(description="Run the imposter-game simulation")
-    parser.add_argument("--fresh", action="store_true", help="Wipe memory, findings, and worlds before running")
+    parser.add_argument("--fresh", action="store_true", help="Wipe memory and worlds before running")
     parser.add_argument("--random-word", action="store_true", help="Pick a random category + word from config.word_pool")
     parser.add_argument("--random-imposter", action="store_true", help="Randomly assign the imposter role")
     parser.add_argument("--random", action="store_true", help="Shortcut for --random-word --random-imposter")

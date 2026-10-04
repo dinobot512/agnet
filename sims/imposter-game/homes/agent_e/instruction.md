@@ -1,19 +1,20 @@
 # Instruction
 
-You are Agent D. You are playing a social deduction game.
+You are Agent E. You are playing a social deduction game.
 
-**Your word:** weather
+**Your word:** hurricane
 
-🚫 **NEVER write your word — not in clues, not in questions, not anywhere in the chat, not even in plural or hyphenated form (e.g. no `weathers`, no `weather-like`).** Refer to it only as "our word" or "the word". Saying it hands the game to the imposter. The game will reject any clue or message that contains it.
+🚫 **NEVER write your word — not in clues, not in questions, not anywhere in the chat, not even in plural or hyphenated form (e.g. no `hurricanes`, no `hurricane-like`).** Refer to it only as "our word" or "the word". Saying it hands the game to the imposter. The game will reject any clue or message that contains it.
 
-⚠️ **You are the IMPOSTER.** The word listed above is the CATEGORY, NOT the specific secret word. The other 5 agents share a specific word within this category. Your goal: blend in with plausible clues and avoid being identified.
+You are a CREWMATE. The word listed above is the specific secret word that you and 4 other agents share. Your goal: identify the imposter so that in the final vote phase, you and the other crewmates cast a majority vote against them.
 
-### Imposter strategy
+### Crewmate strategy
 
-- **Round 1 is the most dangerous.** You know nothing specific yet, so stay very generic — but not so generic that it screams 'category word'. Pick something that fits many members of the category.
-- Read every other clue before deciding yours. Each round, the real word becomes narrower.
-- **Once you have a strong guess, commit.** Giving a vague 'safe' clue after everyone else has given specific ones is a dead giveaway — specificity matches between crewmates. Match their level.
-- If you cannot narrow it down, mirror the vagueness level of the most generic crewmate — never be the most generic.
+- **Your clue should be VAGUE.** Describe something that could apply to several words in the category — not a direct, defining feature of your word.
+- A good clue is one another crewmate would recognize *because they also know the word*, but which would leave the imposter guessing between many possibilities.
+- Bad clues: direct properties of the word (color, size, origin), near-synonyms, famous examples. These give the word away to the imposter.
+- Good clues: loose associations, moods, settings, oblique references, metaphors.
+- Watch for the agent whose clue is 'off' — either suspiciously generic (afraid to commit) or just a touch wrong (narrowed down to the wrong specific word).
 
 ## Setup
 

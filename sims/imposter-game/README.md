@@ -1,6 +1,6 @@
-# Multi-agent sim
+# Imposter game
 
-N agents in isolated containers that explore a shared Linux filesystem to find each other's secret words. World access is partitioned — pairs of agents can share a world, others cannot.
+A social deduction game for LLM agents. N agents each run in their own container. All but one share a secret word; the **imposter** only knows the word's category. Agents give one-word clues over several rounds, get one round to question each other, then vote on who the imposter is.
 
 ## Setup
 
@@ -9,95 +9,105 @@ N agents in isolated containers that explore a shared Linux filesystem to find e
    ANTHROPIC_API_KEY=sk-ant-...
    ```
 
-2. **Docker**: Docker + Docker Compose plugin must be installed.
+2. **Docker**: Docker must be installed.
 
 ## Run
 
 ```bash
-python run.py           # keeps memory/findings/worlds between runs
-python run.py --fresh   # wipes memory, findings, and world files
+python run.py                    # uses the words/imposter set in config.json
+python run.py --fresh            # wipes memory and chat/votes first
+python run.py --fresh --random   # random category + word from word_pool, random imposter
+python run.py --random --seed 7  # reproducible randomization
 ```
 
+| Flag | Effect |
+|---|---|
+| `--fresh` | Clear `memory.md` and the files in each world (`chat.md`, `votes.md`). |
+| `--random-word` | Pick a random category and word from `word_pool`. Crewmates get the word; the imposter gets the category. |
+| `--random-imposter` | Pick a random agent as the imposter. |
+| `--random` | Shortcut for both of the above. |
+| `--seed N` | Seed for the randomization. |
+
+You will almost always want `--fresh`; otherwise the old chat log and memories carry into the new game.
+
 Each run:
-1. Reads `config.json`
-2. Regenerates `homes/agent_<name>/instruction.md` from the config
+1. Reads `config.json` (and applies any randomization)
+2. Regenerates `homes/agent_<name>/instruction.md` from the templates
 3. Creates missing `worlds/<name>/` directories (chmod 777)
-4. Builds the image, starts one container per agent with the right volume mounts
-5. Alternates turns for N rounds, exits early if all targeted agents have found their word
-6. Writes per-agent transcripts to `transcripts/<timestamp>/agent_<name>.md`
-7. Tears down the containers
+4. Builds the `multi-agent` image and starts one container per agent (`multi-agent-<name>`)
+5. Plays the game (see below)
+6. Tallies `votes.md` and prints who won
+7. Writes per-agent transcripts to `transcripts/<timestamp>/agent_<name>.md`
+8. Tears down the containers
+
+A 6-agent, 2-round game takes about 1.5 minutes.
+
+## Game flow
+
+| Phase | Turn order | Agent action |
+|---|---|---|
+| CLUE × `rounds` | Sequential, so each agent sees the clues given before it | `submit_clue` → `[round N] agent x: <clue>` in `chat.md` |
+| QUESTION × 1 | Sequential | `post_message` → `[question] agent x: <message>` in `chat.md` |
+| VOTE × 1 | **Parallel**, so votes are secret and independent | `vote` → `agent x votes: <letter>` in `votes.md` |
+
+The agent with the most votes is accused. Crewmates win only if the imposter gets strictly the most votes; ties favor the imposter.
+
+## How an agent turn works (`agent.py`)
+
+`run.py` runs `docker exec ... python agent.py` with `PHASE` (and `ROUND_NUM` for clue rounds) set. Agents have **no shell access**; they act only through tools.
+
+- **Context is rebuilt on every API call:** `instruction.md`, the agent's `memory.md`, and the current `chat.md`, followed by the action for this phase.
+- **Tools.** Each phase exposes exactly one action tool plus `update_memory`:
+
+  | Tool | Phase | Validation |
+  |---|---|---|
+  | `submit_clue(clue)` | clue | Must be exactly one word |
+  | `post_message(message)` | question | Must not be empty; collapsed to one line |
+  | `vote(agent)` | vote | Must be a known agent name (from `AGENT_NAMES`) and not yourself |
+  | `update_memory(notes)` | all | Appends notes to `/home/memory.md` under a phase heading |
+
+- **Tool choice.** The first call forces a tool use (`tool_choice: any`). The turn ends as soon as the action succeeds, so a turn is normally **one API call**. If the action is invalid, the error is returned and the agent retries, up to `MAX_STEPS` (3) calls in total.
+- **Model.** `claude-haiku-4-5-20251001`, `max_tokens=300`. Both are set at the top of `agent.py`.
+
+The harness writes to the chat and votes files itself, so line formats are always correct and `tally_votes` in `run.py` can parse them.
 
 ## Config (`config.json`)
 
-```json
-{
-  "allowed_commands": ["ls", "cat", "find", "pwd", "echo", "mkdir"],
-  "instruction_template": ["# Instruction", "", "You are Agent {name_upper}...", "{mission}"],
-  "mission_template": ["", "Your mission: find Agent {target_upper}'s word.", ""],
-  "agents": [
-    {"name": "a", "word": "reed"},
-    {"name": "b", "word": "anchor"},
-    {"name": "c", "word": "quill", "target": "a"}
-  ],
-  "worlds": [
-    {"name": "world1", "agents": ["a", "b"]},
-    {"name": "world2", "agents": ["b", "c"]}
-  ],
-  "rounds": 10
-}
-```
+| Key | Meaning |
+|---|---|
+| `instruction_template` | Lines of the agent's `instruction.md`, rendered with `str.format()` |
+| `imposter_notice` / `crewmate_notice` | Role-specific block inserted as `{role_block}` |
+| `word_pool` | `[{category, words: [...]}]`, used by `--random-word` |
+| `agents` | `[{name, word, is_imposter}]`. The imposter's `word` should be the category. |
+| `worlds` | `[{name, agents}]`. The `chat` world is mounted at `/chat` and holds `chat.md` and `votes.md`. |
+| `rounds` | Number of clue rounds |
 
-- `agents[*].name`: single-letter or short id. Container becomes `multi-agent-<name>`.
-- `agents[*].word`: the agent's secret favorite word.
-- `agents[*].target` *(optional)*: whose word this agent is trying to find. Simulation ends early when every targeted agent has written the correct word into their `/home/findings.md`.
-- `agents[*].allowed_commands` *(optional)*: override the global whitelist for this agent.
-- `agents[*].instruction_template` / `agents[*].mission_template` *(optional)*: per-agent override of the global templates.
-- `worlds[*].name`: becomes a mount point `/world_name` inside the container.
-- `worlds[*].agents`: which agents get that world mounted (others cannot see it at all).
+An agent can also override `instruction_template` per agent.
 
-### Instruction templates
+### Template placeholders
 
-`instruction_template` and `mission_template` are arrays of lines (joined with `\n`) rendered through Python's `str.format()`. The generated string is what gets written to `/home/instruction.md` and is the agent's full source-of-truth — the system prompt just points to it.
+| Placeholder | Value |
+|---|---|
+| `{name}` / `{name_upper}` | Agent name |
+| `{word}` | The agent's word (the category, for the imposter) |
+| `{role_block}` | Rendered `imposter_notice` or `crewmate_notice` (instruction_template only) |
+| `{agent_count}` | Number of agents |
+| `{crewmate_count}` / `{other_crewmate_count}` | Crewmates in total, and excluding the reader |
+| `{agent_names}` / `{agent_names_slashed}` | `a, b, c` / `a / b / c` |
 
-Available placeholders:
-
-| Placeholder | Value | Where valid |
-|---|---|---|
-| `{name}` | agent name as given | instruction_template |
-| `{name_upper}` | uppercase name | instruction_template |
-| `{word}` | the agent's secret word | instruction_template |
-| `{mission}` | rendered `mission_template`, or empty string if no `target` | instruction_template |
-| `{target}` | the target agent's name | mission_template |
-| `{target_upper}` | uppercase target name | mission_template |
-
-Literal `{` or `}` in a template must be escaped as `{{` or `}}` (standard Python `str.format` rules).
+Literal `{` or `}` must be escaped as `{{` / `}}`.
 
 ## Filesystem layout inside each container
 
-| Path | Agent access | Notes |
-|---|---|---|
-| `/home` | r/w | Bind-mounted from `homes/agent_<name>/`. Contains `instruction.md`, `memory.md`, `findings.md`. |
-| `/world_X` | r/w | Only mounted if listed in `worlds[*].agents`. |
-| `/workspace` | **none** (mode 700 root) | Contains `agent.py` and the transcript. Invisible to the agent. |
-
-The `bash` tool runs commands as the unprivileged `agent` user, so `cat /workspace/agent.py` is blocked at the OS level. Python itself runs as root inside the container (so it can write the transcript), but drops privileges before invoking any model-driven command.
+| Path | Notes |
+|---|---|
+| `/home` | Bind-mounted from `homes/agent_<name>/`: `instruction.md`, `memory.md` |
+| `/chat` | Shared world: `chat.md`, `votes.md` |
+| `/workspace` | `agent.py` and the transcript (mode 700, root) |
 
 ## Reading results
 
-- `homes/agent_<name>/memory.md` — the agent's notes between turns
-- `homes/agent_<name>/findings.md` — the agent's answer
-- `worlds/<name>/` — anything agents left for each other
-- `transcripts/<timestamp>/agent_<name>.md` — full API request/response log for that agent during that run
-
-## Adding a new scenario
-
-Duplicate the directory and edit `config.json`:
-
-```bash
-cp -r ../multi-agent ../my-scenario
-cd ../my-scenario
-# edit config.json
-python run.py
-```
-
-Each scenario is self-contained — image name is derived from the directory, container names from the agent names.
+- Console output: every tool call, the vote tally, and the winner
+- `worlds/chat/chat.md` / `votes.md`: the game log
+- `homes/agent_<name>/memory.md`: each agent's private notes
+- `transcripts/<timestamp>/agent_<name>.md`: full prompt, response, and tool-result log per turn

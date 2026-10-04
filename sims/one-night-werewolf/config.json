@@ -1,0 +1,13 @@
+{
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 8000,
+  "thinking_display": "summarized",
+  "max_steps": 8,
+  "seed": null,
+  "allowed_commands": ["ls", "cat", "find", "pwd", "echo", "mkdir"],
+  "players": ["a", "b", "c", "d", "e"],
+  "roles": ["werewolf", "werewolf", "minion", "seer", "robber", "troublemaker", "drunk", "insomniac"],
+  "discussion_rounds": 3,
+  "extra_turns": 3,
+  "use_traits": true
+}

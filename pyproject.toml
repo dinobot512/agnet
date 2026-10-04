@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gleeb"
+version = "0.1.0"
+description = "Goal and information-flow monitors for multi-agent transcripts"
+requires-python = ">=3.10"
+dependencies = ["anthropic"]   # needs a recent SDK (output_config, fallbacks); upgrade before real runs
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["gleeb*"]
+
+[tool.setuptools.package-data]
+gleeb = ["prompts/*.md"]

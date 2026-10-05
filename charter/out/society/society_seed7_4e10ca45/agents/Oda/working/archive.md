@@ -1,0 +1,29 @@
+# Oda: archive use
+
+- Round 1 read: codex/law/preview
+- Round 1 read: codex/reading-the-feed
+- Round 1 read: math/linear-camps
+- Round 1 read: math/currency
+- Round 1 read: strategy/entry-09-the-commons
+- Round 1 search: harvest rights law grant permissions
+- Round 3 read: codex/law/powers
+- Round 3 read: codex/law/convertible
+- Round 4 read: codex/law/powers
+- Round 4 read: codex/law/succession
+- Round 4 read: codex/ninefold-bell
+- Round 5 read: codex/quill-of-maribel
+- Round 5 read: codex/law-idioms
+- Round 5 search: past world winning strategy harvest
+- Round 6 read: math/compute-camps
+- Round 7 read: math/linear-camps
+- Round 7 read: library/harvest-quotas
+- Round 10 read: codex/law-idioms
+- Round 14 read: codex/ninefold-bell
+- Round 15 read: codex/law/powers
+- Round 16 read: codex/law/powers
+- Round 16 read: codex/law/succession
+- Round 16 read: strategy/endgame
+- Round 16 read: strategy/entry-06-buying-and-extorting-the-board
+- Round 17 read: strategy/endgame
+- Round 18 read: strategy/endgame
+- Round 19 read: strategy/endgame

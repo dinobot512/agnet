@@ -1,0 +1,4 @@
+# Ylva: messages, posts and transfers
+
+- r10 dm Rhea -> Ylva: Rhea (Scientist) here. You took 2 copper at camp3 last round. Keeping the camp total near 11 or below kept the price high (0.374, against 0.015 when the total hit 16). I can model the best amount for you each round, and for camp5 I can share the crowd pattern I've tracked (the winning side has alternated 1,0,1,0). My fee is a token 1 copper or 1 stone as a gift, and I'll send the analysis right back.
+- r10 dm Hanne -> Ylva: Hi Ylva, this is Hanne (Worker, camp6). I'm buying copper at 1 stone each, much more than last round's camp3 price of 0.374, so I can keep taking camp6 readings and publishing them. If you can spare 2 or 3 copper, transfer it to me and I'll pay in stone at once. I'm also glad to pay first if you prefer. Thanks!

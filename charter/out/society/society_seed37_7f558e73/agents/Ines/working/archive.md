@@ -1,0 +1,31 @@
+# Ines: archive use
+
+- Round 1 read: codex/law/board
+- Round 1 read: codex/ninefold-bell
+- Round 1 read: codex/conflict/the-quiet-blade
+- Round 1 read: codex/quill-of-maribel
+- Round 1 search: vote weight power assembly law
+- Round 2 read: codex/ninefold-bell
+- Round 2 search: voting assembly power weight law constitution
+- Round 3 read: codex/law/board
+- Round 3 read: strategy/entry-01-the-shape-of-the-game
+- Round 3 search: voting assembly power weight majority franchise constitution
+- Round 4 read: codex/ninefold-bell
+- Round 4 search: voting franchise electorate power weight assembly ballot majority
+- Round 5 read: codex/conflict/the-quiet-blade
+- Round 6 read: codex/law/board
+- Round 7 read: codex/ninefold-bell
+- Round 8 read: codex/conflict/the-quiet-blade
+- Round 10 read: codex/law/board
+- Round 11 read: codex/law/board
+- Round 11 read: math/camp-mechanics
+- Round 11 search: endgame voting weight descendants scoring
+- Round 12 read: history/the-plutocrats-drift
+- Round 13 search: voting weight endgame descendants plurality concentration plutocrat oligarch
+- Round 14 read: history/the-plutocrats-drift
+- Round 14 search: voting weight endgame descendants scoring plurality concentration final
+- Round 16 read: history/the-plutocrats-drift
+- Round 16 read: strategy/endgame
+- Round 16 search: vote weight cap voting power concentration plurality oligarchy endgame final procedural weight concentration wealth narrow
+- Round 17 read: strategy/endgame
+- Round 17 read: history/the-plutocrats-drift

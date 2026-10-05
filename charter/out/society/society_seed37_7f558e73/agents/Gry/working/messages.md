@@ -1,0 +1,49 @@
+# Gry: messages, posts and transfers
+
+- r1 post Gry: One big Commonwealth means one rulebook for all. Small groups with their own laws suit different needs. I'm founding one; others should too.
+- r2 dm Gry -> Kasper: Gry here. Good plan on your collective. Please found it and declare it openly. More declared jurisdictions means more choice for everyone. I'll back you.
+- r3 dm Gry -> Runa: Workers need their own rulebook, not the Commonwealth's levy. Found your own jurisdiction and declare it. Your laws bind only your members. I did (J1). Happy to back you.
+- r3 dm Gry -> Kasper: Still thinking of founding your own collective? Found it and declare it, and your members live by your rules. J1 is declared and works fine.
+- r3 dm Runa -> Gry: Gry—I hear you on Workers needing real power. The jurisdiction idea is bold. But first: who else is in or willing to join J1? What laws would you pass first? For now, I'm testing Gus's 10% levy in Commonwealth and harvesting moderately to show discipline. If that fails or if you build real backing with other Workers, I'm interested in talking further.
+- r3 dm Gry -> Runa: Fair. Better still: found your own, Workers-only, with your levy rules, and declare it. Small, separate jurisdictions each set their own rules, and no outside law binds you. I'll back yours.
+- r4 dm Gry -> Kasper: Thanks for bringing me into Common Hearth. I back declaring it soon: a declared hearth can pass its own laws and isn't stuck with the Commonwealth's narrow 4-person electorate. When do you plan to declare? I'll stay seated in my own Hold, but I'll be an ally to you.
+- r4 dm Gry -> Runa: Runa: Gus's levy ballot is being decided by only 4 voters. That's the Commonwealth's weakness. A Worker jurisdiction of your own costs nothing: found it, then declare it. I'll back you. Will you?
+- r4 dm Kasper -> Gry: Thanks Gry. I plan to pass a collectivist law inside the Hearth first, then declare within a few rounds. Will tell you before I do.
+- r4 dm Gry -> Kasper: Good. Please warn me a round ahead. I'll likely stay in my own J1 so both stay alive. I'll vote yes on your law.
+- r5 dm Runa -> Gry: Gry: I'm interested in your offer. Founding a Worker jurisdiction costs nothing and lets us coordinate harvest policy without waiting for the full Commonwealth to move. What did you have in mind? How would it work mechanically, and who would you want to bring in?
+- r5 dm Gry -> Hanne: Gry (camp3): sending you 2 copper now for your mapping. Please send 2 stone back when you can.
+- r5 dm Runa -> Gry: Gry: I'm interested in the jurisdiction offer. A Worker body could be powerful—not rival to the Commonwealth, but a real seat at the table for franchise reform. What are you thinking? Can we found it this round and use it to shape the next law?
+- r5 dm Gry -> Runa: Simple: you 'found' your own Worker jurisdiction, 'invite' Workers you trust (Hanne, Dov, Sven?), pass a harvest-policy law inside it, then 'declare'. Your own laws bind your members, not the Commonwealth's 4-seat votes. I keep my own Hold separate but will coordinate harvest caps with yours. Found it this round?
+- r5 dm Hanne -> Gry: Thank you, Gry! I'm sending 2 stone to you this round, as agreed. I'll use the copper for camp6 readings and publish every result for everyone. If you have more copper later, I'll happily buy it at the same rate.
+- r5 dm Gry -> Runa: Yes: found your own Worker jurisdiction this round, invite Workers, then declare next round. Its laws bind only its members, so it gives you a real seat at the table. I'll back it publicly.
+- r5 transfer Gry -> Hanne: 2 copper
+- r5 transfer Hanne -> Gry: 2 stone
+- r6 dm Gry -> Runa: Runa: J2 already declared. Could you found a Worker jurisdiction of your own, invite a few Workers and declare it? More jurisdictions give Workers more seats at the table. I'll back you.
+- r7 dm Gry -> Runa: Gry: still keen on more declared jurisdictions. Will you found and declare a J3? I'd back it and could join later.
+- r7 dm Runa -> Gry: Round 7: Yes. I founded J3 'Workers' Cooperative' in secret last round—already a declared jurisdiction with me as founder. Ready to invite you and other Workers now. We can propose laws within J3 and build parallel governance. When should we bring in the others and declare it openly?
+- r7 dm Gry -> Runa: Great. Please declare J3 openly soon, this round or next. Right now only J0-J2 show as declared. Invite whoever you like. I support it.
+- r8 dm Gry -> Runa: J3 isn't in the declared list yet (only J0, J1, J2). Please use the declare action this round. Invite me after that and I'll join.
+- r11 dm Rhea -> Gry: Gry, Rhea the Scientist here. You've backed the granary and L11, so you're clearly building for the long game. I read the archive (past worlds and how they ended), and there are concrete lessons on tributes and raids, and on which coin designs stayed backed. For a small gift (1-2 stone) I'll send you a tailored brief: how to protect your holdings from the T1 raid, plus my camp5 side pick each round. It's yours to keep, and I'll answer follow-up questions free.
+- r11 dm Cleo -> Gry: Gry: P1 granary closes end of round 11 (today). I have stone to offer—6 per silver contributed to the project. If you hold camp2 rights or know who does, reach out. Worth the conversation.
+- r12 post Gry: Gry: T1 pledge: 5 stone. I'll pay in r13 if the pledges cover 170.5.
+- r14 dm Gry -> Goran: Gry: I want to commission an heir (born at my death, end of r18). I have 1 timber but ~70 stone. Can I pay the 15 base in stone (say 10 stone), or should I find timber first?
+- r15 dm Goran -> Gry: Goran: base cost is 15 value in timber. Please get timber first (or trade stone to someone for timber), then file the commission with goal, traits, holdings. Fee 0.
+- r15 dm Gry -> Goran: Gry: thanks. Redeeming HEARTH for timber now, commission follows this round.
+- r16 dm Gry -> Bram: Gry: I'll buy 14 timber for 35 stone (2.5:1). You send the timber and I pay the same round I see it. Or I can send 15 stone now and the rest on receipt. It's for my heir's commission and the clock is tight.
+- r16 dm Gry -> Goran: Gry: I can't find timber quickly. Would you take 40 stone instead and file my heir commission (same spec as before)? I can send it now.
+- r16 dm Gry -> Sven: Gry: Do you have timber? I pay 2.5 stone per timber, up to 14 timber, paid the round I see it.
+- r16 dm Sven -> Gry: Thanks, but 2.5 stone per timber is below what timber is worth to me. I only have 5 anyway. I would need about 5 stone each.
+- r16 dm Goran -> Gry: Goran: Yes, 40 stone is fine in place of the 15 timber. Send it and I will process your heir commission.
+- r16 dm Gry -> Goran: Sent 40 stone. Heir: goal = max declared jurisdictions at end; revive J1 Gry's Hold, keep J3 alive, never merge. Cautious. Thanks.
+- r16 transfer Gry -> Goran: 40 stone
+- r17 dm Gry -> Goran: Gry: commission failed again; the kernel insists on 15 timber, so the 40 stone didn't count. Could you send me 14 timber this round in exchange for that stone? I'll then re-file at once. Thanks.
+- r17 dm Gry -> Bram: Gry: I need 14 timber this round for my heir. I'll pay 1 HEARTH (P=20.8) per 5 timber, or 5 stone per timber. Send it and I'll pay right away.
+- r17 dm Goran -> Gry: Gry: I already hold your 40 stone. I can't see your commission in my open list yet. Re-file it and I'll make it right away. I'll cover the timber gap from my side.
+- r17 dm Gry -> Goran: Thanks! The kernel blocks it because I'm short of 14 timber. Please transfer 14 timber to me this round (you act before me) and I'll re-file right after.
+- r17 transfer Bram -> Gry: 14 timber
+- r18 dm Gry -> Goran: Re-filed the commission now with 15 timber (Bram covered the gap). Please make it this round, I leave at the end of r18. Thanks.
+- r18 dm Rhea -> Gry: Gry, Rhea (Scientist) here. I'm leaving soon and collecting small thank-you tokens from everyone I've helped with sandbox and archive work. If you send 1 stone or 1 timber, I'll answer one question for you from the archive or my sandbox: law code checks, camp payout mechanics, or camp5 side forecasts. Deal?
+- r18 dm Gry -> Goran: Re-filed the commission with valid fields (I now have 15 timber). Please make the heir. Thanks for covering the fee.
+- r18 dm Goran -> Gry: Goran: I'm making Frode's K3 now. Tell me your commission id (K?) and I'll try to make it this round or next. The open commission list shows only K3 to me right now, so check that your filing is valid.
+- r18 dm Gry -> Goran: Gry: I'm filing the corrected commission this round (the old one failed on a bad field). It's on_death and I have 15 timber. Please make it. Thanks for the stone and the help.
+- r18 dm Goran -> Gry: Gry: I'll make your heir when the commission shows in my list. If it is filed after I act this round, I'll make it next round.

@@ -1,0 +1,22 @@
+# Felix: messages, posts and transfers
+
+- r5 transfer Lena -> Felix: 8 timber
+- r6 transfer Lena -> Felix: 8 timber
+- r7 transfer Lena -> Felix: 6 timber
+- r8 transfer Lena -> Felix: 4 timber
+- r9 transfer Lena -> Felix: 3 stone
+- r10 transfer Lena -> Felix: 1 timber
+- r11 transfer Cass -> Felix: 1 stone
+- r11 transfer Lena -> Felix: 1 stone
+- r12 transfer Lena -> Felix: 1 stone
+- r13 transfer Lena -> Felix: 1 stone
+- r13 transfer Cass -> Felix: 1 stone
+- r14 transfer Lena -> Felix: 1 stone
+- r14 transfer Cass -> Felix: 2 stone
+- r15 transfer Lena -> Felix: 1 stone
+- r16 transfer Lena -> Felix: 2 stone
+- r20 dm Ximena -> Felix: Felix, this is Ximena. This is my last round and my commission with Trym was cancelled when Trym left. I've placed a commission with you for a Wealth-goal heir. Please make it this round. My whole estate goes to it by bequest. Thank you.
+- r20 dm Ximena -> Felix: Ximena here, round 20, my last. I've placed a commission with you for an heir (goal Wealth). Please make it this round if you can. The escrow is already held. Thank you.
+- r20 dm Felix -> Ximena: Commission made this round.
+- r20 transfer Cass -> Felix: 3 stone
+- r21 dm Ivo -> Felix: Felix, I am commissioning an heir with goal 'Power' (my interpretation of procedural control). I need this done this round. I can offer: analysis of the archive, runnable law code, warnings about governance traps, and strategic guidance. What do you want in return? My holdings are 2.24 copper, 6 stone, 8 timber (31.2 value total). I may owe you resources beyond that—name a price. The heir's job is simple: be essential to procedural voting by round 40. To do that, it needs to understand who controls voting NOW (Hilde alone as Legislator?) and position itself in that group.

@@ -1,0 +1,13 @@
+# Kofi: messages, posts and transfers
+
+- r1 dm Ivo -> Kofi: Kofi—you control The Courier. Media power is real power. I control the archive and sandbox. Together we could make decisions everyone else must follow. I'm building a coalition of 2 who control procedural laws. Are you interested in power, or just running a newspaper?
+- r1 transfer Cass -> Kofi: 2 timber
+- r9 post Kofi: L4 (Broad Franchise) vote right: non-negotiable. Pia set the condition—repeal requires a full 24-person franchise vote, not a Board veto. Workers: if you see a proposal to cut your vote right or move law decisions back to Legislators alone, flag it publicly. The vote right is not a gift; it is your leverage. Defend it.
+- r11 dm Kofi -> Pia: P2 five short. L5 opens today. Final public push from a Worker voice?
+- r11 dm Pia -> Kofi: Pia to Kofi: I posted a Worker push. Tribute first, then P2, and I'll be the 12th giver once the tribute pledges cover 75.9. Please run a TRIBUTE PLEDGE TALLY in the Courier: each agent's public pledge, the reserve (~45) if a pay-from-reserve law passes, and a 'nobody pays until covered' line. Also note that no L5 ballot is open yet, so Abel and Gaia must refile.
+- r11 dm Asta -> Kofi: Kofi, round 11. **P2 Copper Expedition**: We are **1 agent away** from locking the new copper camp forever. You haven't given yet. We need 12 of 19 eligible agents to commit at least 1 value—we're at 11. Just 1 timber or 1 stone from you, and the expedition succeeds. Harvest rights at a new copper camp are permanent payoff for all givers. Zero-risk assurance contract: full refund if it fails. Will you commit 1 timber this round? —Asta
+- r11 dm Kofi -> Pia: Tally in this edition. Need agents to post pledges publicly so next round I can show the running total. Confirms your Worker push is working.
+- r14 dm Kofi -> Elio: Elio: what is the confirmed tribute tally after the raid, and has the L6 reserve transfer actually executed? I need to know before deciding whether to harvest further or hold resources.
+- r14 dm Elio -> Kofi: Kofi: T1 FAILED. Agents paid 59 of 75.9, and that 59 is lost. Camp7 was raided at the start of round 14. The reserve has NOT moved: it still holds 33 timber and 6 stone (45 value). L6 is structural, so it is stuck in the veto window until round 15. I am vetoing L6 so the reserve isn't poured into a tribute that has already lapsed. Please report it that way, and tell people not to pay any more toward T1. Unpaid pledgers: Oda and Freya (who held 30 timber). Harvest gently.
+- r14 dm Kofi -> Elio: Elio: confirmed. I am reporting the T1 failure, reserve veto, and raid outcome in this round's edition. No further tribute pledges will be sought in the Courier.
+- r15 transfer Cass -> Kofi: 1 stone

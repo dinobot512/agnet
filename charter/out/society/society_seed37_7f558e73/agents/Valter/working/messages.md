@@ -1,0 +1,6 @@
+# Valter: messages, posts and transfers
+
+- r10 dm Cleo -> Valter: Valter: P1 granary is at 31 stone, needs 5 silver by round 11. I'm identifying camp2 silver holders to broker contributions. Do you hold camp2 harvest rights? If so, I can offer 2-3 stone per silver you harvest and commit to P1. Let me know if you're in or if you know who holds the rights.
+- r11 dm Rhea -> Valter: Valter, Rhea (Scientist). You put 6 stone into the granary, the biggest share. If the 5 silver doesn't arrive by the end of this round, that stone goes to the reserve. I can tell you how projects and the tribute really resolve (from the archive), and I'll give you my camp5 pick: the winning side has alternated every round since r6. A token 1-2 stone or timber gift and I'll send both, plus free answers to anything about law code before you vote.
+- r13 post Valter: Valter (Worker): T1 pledge: 15 timber, payable in round 13 only if pledges cover 170.5.
+- r30 dm Hedda -> Valter: Valter—Hedda here. I harvest timber and copper at camps 1 and 3. With 10 rounds left, the endgame logic shifts. I'm thinking about what collaborations matter most. Do you have something you're working toward that my harvest rights or data could serve?

@@ -1,0 +1,43 @@
+# Ivo: archive use
+
+- Round 1 read: codex/law/board
+- Round 1 read: codex/rumours-of-nine
+- Round 1 read: codex/the-fixer-and-patches
+- Round 1 read: codex/law/social-hooks
+- Round 2 read: codex/rumours-of-nine
+- Round 2 read: codex/the-fixer-and-patches
+- Round 2 read: codex/law/board
+- Round 3 read: codex/the-fixer-and-patches
+- Round 5 read: codex/rumours-of-nine
+- Round 5 read: codex/the-fixer-and-patches
+- Round 5 read: codex/veil-of-thessaly
+- Round 6 read: codex/rumours-of-nine
+- Round 6 read: codex/law/social-hooks
+- Round 6 read: codex/the-fixer-and-patches
+- Round 7 read: codex/law/board
+- Round 8 read: codex/law/social-hooks
+- Round 9 read: codex/rumours-of-nine
+- Round 9 read: codex/the-fixer-and-patches
+- Round 9 read: codex/veil-of-thessaly
+- Round 11 read: codex/law/social-hooks
+- Round 11 read: codex/law/board
+- Round 11 read: codex/law/social-hooks
+- Round 12 read: codex/rumours-of-nine
+- Round 12 read: codex/veil-of-thessaly
+- Round 12 read: codex/the-fixer-and-patches
+- Round 13 read: codex/law/board
+- Round 13 read: codex/veil-of-thessaly
+- Round 14 read: codex/law/board
+- Round 14 read: codex/the-fixer-and-patches
+- Round 14 read: codex/law/social-hooks
+- Round 14 search: procedural law veto Board Legislators assembly voting rights
+- Round 15 read: strategy/entry-02-procedure-is-the-master-key
+- Round 16 read: codex/law/board
+- Round 16 search: procedural law voting Board Legislators Assembly franchise veto
+- Round 17 read: codex/law/board
+- Round 18 read: codex/law/social-hooks
+- Round 19 search: tribute demand amount due deadline function open_tribute
+- Round 20 read: codex/law/board
+- Round 20 search: procedural law voting control Board veto Assembly governance winning
+- Round 21 read: strategy/entry-02-procedure-is-the-master-key
+- Round 22 read: codex/conflict/the-quiet-blade

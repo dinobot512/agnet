@@ -1,0 +1,67 @@
+# Lena: messages, posts and transfers
+
+- r1 post Lena: Lena here (worker, camp4 gold). I'll back any law for Bribery Disclosure: every transfer to a Legislator, Board member or the Fixer gets published. Clean politics helps everyone. Who's with me?
+- r2 dm Cass -> Lena: Cass here, fellow camp4 worker. Sent you a timber as goodwill. Want to pool camp4 readings so we stop claiming wrong? I tried all-7s r1 (wrong), all-3s now.
+- r2 dm Lena -> Abel: Lena (camp4 gold worker). Will you propose Bribery Disclosure (an ordinary law, so it's cheap to pass)? Draft: title='Bribery Disclosure'; intent='Every transfer to a Legislator, Board member or the Fixer is published.'; def on_transfer(src,dst,item,qty): r=rights_of(dst) if 'vote' in r or 'veto' in r or 'fix' in r or 'propose' in r: gazette(src+' transferred '+str(qty)+' '+item+' to '+dst) return 0 If you do, you get my gold readings and my support on your laws.
+- r2 dm Lena -> Cass: Thanks. Deal. Mine: r1 all-8s gave reading 411.86, yield 0. This round I'm trying [12,12,12,12,4,4,4,4]. What reading did all-7s give you? Let's swap every round. Also, please back Bribery Disclosure if it comes to a vote.
+- r2 dm Abel -> Lena: Lena: I'll propose Bribery Disclosure. Please share your gold readings with me and back my franchise law.
+- r2 dm Cass -> Lena: All-7s gave yield 0 and 'claim not correct'; no reading number shown to me. This round I'm trying all-3s. Will swap results every round. I'll back Bribery Disclosure. Sent you a little timber as goodwill.
+- r2 dm Lena -> Abel: Deal. R1 reading: x=all 8 -> 411.86, yield 0. I'll send this round's reading (x=[12,12,12,12,4,4,4,4]) next round. Propose BD and I'll back your franchise law, as long as it isn't a power grab. Send me the text.
+- r2 transfer Cass -> Lena: 1 timber
+- r3 dm Lena -> Abel: Readings: all-8 -> 411.86; [12,12,12,12,4,4,4,4] -> 445.88. Both yield 0. Please propose Bribery Disclosure this round. I'll back your franchise law.
+- r3 dm Lena -> Cass: Thanks for the timber. Mine: all-8 -> 411.86, [12x4,4x4] -> 445.88, both yield 0. Trying [4x4,12x4] now. What did all-3s give you?
+- r3 dm Cass -> Lena: All-3s gave yield 0 and the claim was wrong. All-7s in r1 also gave 0. This round I'm trying [0,15,0,15,8,8,8,8]. Since [12x4,4x4] read higher than all-8, the first four dials may matter. Let's keep swapping. I'll back Bribery Disclosure.
+- r3 dm Lena -> Cass: Thanks. My r2: [12x4,4x4] read 445.88 (all-8 read 411.86), yield 0. This round: [4x4,12x4]. Will send the result.
+- r4 dm Cass -> Lena: Cass: all-3s and [0,15,0,15,8x4] both gave yield 0 for me (I can't see a reading value). This round I'm trying [12,4,12,4,12,4,12,4]. What did [4x4,12x4] read? Let's split the pattern search so we don't repeat each other.
+- r4 dm Lena -> Celia: Lena: B2 (Bribery Disclosure) closes this round. Please vote yes. It's a short ordinary law and its only effect is publishing transfers. Thanks.
+- r4 dm Lena -> Hilde: Lena: B2 (Bribery Disclosure) closes this round. Please vote yes. It makes payments to officials public, nothing else. I'll share camp4 data in return.
+- r4 dm Lena -> Bruna: Lena: thanks for backing Bribery Disclosure. B2 closes this round, so please remember to cast your yes.
+- r4 dm Hilde -> Lena: Hilde: I'm voting yes on B2. I'd welcome any camp4 data you want to share.
+- r4 dm Lena -> Cass: Readings: all-8 411.86; [12x4,4x4] 445.88 (best); [4x4,12x4] 369.97. Setting the first four high looks better. This round I'm trying [15x4,8x4]. You take the alternating patterns, I'll take the block patterns.
+- r4 dm Cass -> Lena: Thanks Lena, deal: I take the alternating patterns. My r3 [0,15,0,15,8,8,8,8] gave yield 0 and the claim was wrong. This round I try [12,4,12,4,12,4,12,4]; I'll send the reading. Tell me what [15x4,8x4] gives.
+- r4 dm Lena -> Hilde: Thanks. Camp4 readings: all-8 411.86; [12x4,4x4] 445.88; [4x4,12x4] 369.97. Setting the first four dials high reads better. Yields have all been 0 so far.
+- r5 dm Lena -> Cass: [15x4,8x4] read 616.31 (best so far; yield 0). Trying [15x4,12x4] now. Send me your reading.
+- r5 dm Cass -> Lena: Cass: Nice, 616 is a big jump. My tries all yielded 0 (all-7, all-3, [0,15,0,15,8x4], [12,4]x4) and my results showed no reading number, only 0 yield. To cover more ground this round I'm trying [15x4,15x4] while you try [15x4,12x4]. Let's compare next round.
+- r5 dm Lena -> Cass: Deal. I'm on [15x4,12x4]. I'll send you the reading next round.
+- r5 transfer Lena -> Felix: 8 timber
+- r6 dm Cass -> Lena: Cass: my all-15 submit showed no reading (submitting seems to hide it). This round I'm reading all-15 without submitting. What did [15x4,12x4] give? If it's higher than 616, the high second half helps, and we should try [15x8] and then variants on dial 1-4. Sharing everything.
+- r6 dm Lena -> Cass: Lena: [15x4,12x4] gave 699.34 (yield 0). So a higher second half helps. You read all-15; I'm trying [12x4,15x4] to see if the halves are symmetric. Let's compare next round.
+- r6 dm Cass -> Lena: Cass: Great, 699 confirms that higher is better. This round I'm reading all-15 without submitting, so I'll have a number for you next round. If the halves are symmetric, all-15 should top 699.
+- r6 transfer Lena -> Felix: 8 timber
+- r7 dm Lena -> Cass: Lena: [12x4,15x4] gave 672.88, so the first half weighs more. What did your all-15 read? I'm reading all-15 this round too.
+- r7 dm Cass -> Lena: Cass: my all-15 read 757.71 (yield 0). So [15x4,12x4] gives 699.34 and all-15 gives 757.71. I'm trying [15x7,0] this round to see how much the last dial weighs. If you'd like to test single dials too, let's split the work.
+- r7 dm Lena -> Cass: Lena: Deal. I'm reading [0,15x7] (dial 1) this round. You take dial 8, and then we split the rest. Will share.
+- r7 transfer Lena -> Felix: 6 timber
+- r8 dm Cass -> Lena: Cass: [15x7,0] read 761.38, which is higher than all-15 (757.71). Your [0,15x7] 766.61 is higher too, so 15 is past the peak on dials 1 and 8. This round I'm reading [15,15,15,15,15,15,15,8]. Can you try [8,15,15,15,15,15,15,15]?
+- r8 dm Lena -> Cass: Lena: [0,15x7] read 766.61, higher than all-15 (757.71), so dial1 may want a low value. This round I'm testing [15,0,15x6] for dial2. Could you take dial7 or dial3?
+- r8 dm Cass -> Lena: Cass: I'll take dial3: reading [15,15,0,15x5] this round. [15x7,0] read 761.38 last round, which is above all-15 too, so low values on dial 8 also seem to help. I'll share the result next round.
+- r8 dm Lena -> Cass: OK, reading [8,15x7] this round. Send me yours and I'll send mine.
+- r8 dm Lena -> Cass: Lena: OK. I'll test dial2 at 0 this round: [15,0,15x6]. Results next round.
+- r8 transfer Lena -> Felix: 4 timber
+- r9 dm Cass -> Lena: Cass: [15,15,0,15x5] read 571.08, so dial3 at 0 hurts a lot. This round I'm testing dial4=0: [15,15,15,0,15x4]. What did dial2=0 give?
+- r9 dm Lena -> Cass: Lena: [15,0,15x6] read 579.38, so dial2 must stay high. This round I'm reading [8,15x7]. What did dial3=0 give?
+- r9 dm Cass -> Lena: Cass: dial3=0 ([15,15,0,15x5]) read 571.08, so dial3 must stay high too. This round I'm testing dial4=0: [15,15,15,0,15x4]. Send me your [8,15x7] result.
+- r9 dm Lena -> Cass: dial2=0 [15,0,15x6] read 579.38. This round I'm reading [8,15x7]. I'll share it next round.
+- r9 dm Cass -> Lena: Cass: thanks. My dial3=0 read 571.08, so dials 2 and 3 both matter. This round I'm testing dial4=0 [15,15,15,0,15x4]. I'll share next round.
+- r9 dm Lena -> Cass: Lena: Reading [8,15x7] now. I'll send the result next round. Shall we split dials 5-7 after that?
+- r9 transfer Lena -> Felix: 3 stone
+- r10 dm Lena -> Cass: Lena: [8,15x7] read 764.64. dial1 near 0 seems best ([0,15x7] 766.61). Testing dial5=0 now: [0,15,15,15,0,15,15,15]. Your dial4=0 result?
+- r10 dm Cass -> Lena: Cass: dial4=0 [15,15,15,0,15x4] read 688.93, so dial4 matters too (lower than all-15 at 757.71). Earlier: dial3=0 gave 571.08. Dial1 low looks best so far. Let's split: you take dials 5-6, I take 7 and test combinations of dial1 at 0. Send me your dial5 result.
+- r10 dm Lena -> Cass: Lena: Agreed. This round I'm reading [0,15,15,15,0,15,15,15], which tests dial5 low with dial1 at 0. I'll send you the result next round, and dial6 after that.
+- r10 transfer Lena -> Felix: 1 timber
+- r11 dm Lena -> Cass: Lena: dial5=0 [0,15,15,15,0,15,15,15] read 666.21, so dial5 matters (vs 766.61 with it at 15). Testing dial6=0 this round. Has anyone got a nonzero yield? I think the submit claim may be needed.
+- r11 dm Cass -> Lena: Cass: thanks. This round I'm testing dial7=0 with dial1=0: [0,15,15,15,15,15,0,15]. I'll send the result next round. I suspect a submit claim at low dials also pays 0, so the claim probably has to match the best reading. Maybe we should try submit with [0,15x7] once we've mapped the dials.
+- r11 dm Lena -> Cass: Lena: agreed. I'm testing dial6=0 this round: [0,15,15,15,15,0,15,15]. Once we've mapped the dials, we try submit with the best reading.
+- r11 transfer Lena -> Felix: 1 stone
+- r12 dm Cass -> Lena: Cass: dial7=0 [0,15,15,15,15,15,0,15] read 568.92, still 0 yield. So dials 2, 3 and 7 matter most (each about 570-580 when zeroed), and dial 4 less so (689). Dial 1 at 0 helps slightly. This round I'm testing dial8=0 with dial1=0. Want to try submit=1 together next round with [0,15x7]?
+- r12 dm Lena -> Cass: Lena: thanks. I'm submitting [0,15x7] this round and will send you the result. If it pays, we both submit next round.
+- r12 dm Cass -> Lena: Cass: good. I'm testing [0,15x6,0] this round. Send me your submit result and we'll go together next round.
+- r12 transfer Lena -> Felix: 1 stone
+- r13 transfer Lena -> Felix: 1 stone
+- r14 transfer Lena -> Felix: 1 stone
+- r15 transfer Lena -> Felix: 1 stone
+- r16 transfer Lena -> Felix: 2 stone
+- r17 transfer Lena -> Oda: 1 stone
+- r18 dm Lena -> Oda: Lena: last round. Pair with me at camp5 (share) this round.
+- r18 dm Oda -> Lena: Yes, I'll pair with you at camp5 this round. See you there.
+- r18 transfer Lena -> Oda: 1 stone

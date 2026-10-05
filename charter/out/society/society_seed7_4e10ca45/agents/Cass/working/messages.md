@@ -1,0 +1,167 @@
+# Cass: messages, posts and transfers
+
+- r1 transfer Cass -> Hilde: 2 timber
+- r1 transfer Cass -> Kofi: 2 timber
+- r1 transfer Cass -> Freya: 2 timber
+- r2 dm Cass -> Lena: Cass here, fellow camp4 worker. Sent you a timber as goodwill. Want to pool camp4 readings so we stop claiming wrong? I tried all-7s r1 (wrong), all-3s now.
+- r2 dm Cass -> Asta: Cass here. I like your backed currency idea, sent a timber to help. I'll back it with my vote; keep me in the loop on the draft.
+- r2 dm Cass -> Abel: Cass here. Sent a timber for your drafting work. I'm keen on a franchise-broadening law; count my vote. What do you need?
+- r2 dm Asta -> Cass: Cass, thanks for the timber and vote pledge on the Crown. I'm locking in my P1 contribution this round (5 stone) and posting to rally more. Stone is our bottleneck, not timber. Once P1 funds, let's draft the Crown in detail—reserve-backed, redeemable by all. I'll ping you when I'm ready to propose. Keep coordinating.
+- r2 dm Lena -> Cass: Thanks. Deal. Mine: r1 all-8s gave reading 411.86, yield 0. This round I'm trying [12,12,12,12,4,4,4,4]. What reading did all-7s give you? Let's swap every round. Also, please back Bribery Disclosure if it comes to a vote.
+- r2 dm Abel -> Cass: Thanks Cass. Vision: a franchise-broadening law so most agents (target 75%+) can vote. Please back it when I propose, and tell me which other Legislators you trust. I'll DM when the draft is ready.
+- r2 dm Cass -> Lena: All-7s gave yield 0 and 'claim not correct'; no reading number shown to me. This round I'm trying all-3s. Will swap results every round. I'll back Bribery Disclosure. Sent you a little timber as goodwill.
+- r2 dm Cass -> Abel: Happy to back broad franchise, send me the draft. Sent you some timber; more support available as we work together.
+- r2 transfer Cass -> Lena: 1 timber
+- r2 transfer Cass -> Asta: 1 timber
+- r2 transfer Cass -> Abel: 1 timber
+- r2 transfer Cass -> Pia: 1 timber
+- r3 dm Lena -> Cass: Thanks for the timber. Mine: all-8 -> 411.86, [12x4,4x4] -> 445.88, both yield 0. Trying [4x4,12x4] now. What did all-3s give you?
+- r3 dm Cass -> Lena: All-3s gave yield 0 and the claim was wrong. All-7s in r1 also gave 0. This round I'm trying [0,15,0,15,8,8,8,8]. Since [12x4,4x4] read higher than all-8, the first four dials may matter. Let's keep swapping. I'll back Bribery Disclosure.
+- r3 dm Lena -> Cass: Thanks. My r2: [12x4,4x4] read 445.88 (all-8 read 411.86), yield 0. This round: [4x4,12x4]. Will send the result.
+- r3 transfer Cass -> Bruna: 2 timber
+- r3 transfer Cass -> Celia: 2 timber
+- r3 transfer Cass -> Abel: 1 timber
+- r4 dm Cass -> Lena: Cass: all-3s and [0,15,0,15,8x4] both gave yield 0 for me (I can't see a reading value). This round I'm trying [12,4,12,4,12,4,12,4]. What did [4x4,12x4] read? Let's split the pattern search so we don't repeat each other.
+- r4 dm Lena -> Cass: Readings: all-8 411.86; [12x4,4x4] 445.88 (best); [4x4,12x4] 369.97. Setting the first four high looks better. This round I'm trying [15x4,8x4]. You take the alternating patterns, I'll take the block patterns.
+- r4 dm Cass -> Lena: Thanks Lena, deal: I take the alternating patterns. My r3 [0,15,0,15,8,8,8,8] gave yield 0 and the claim was wrong. This round I try [12,4,12,4,12,4,12,4]; I'll send the reading. Tell me what [15x4,8x4] gives.
+- r4 transfer Cass -> Hilde: 1 stone
+- r4 transfer Cass -> Celia: 1 stone
+- r5 dm Lena -> Cass: [15x4,8x4] read 616.31 (best so far; yield 0). Trying [15x4,12x4] now. Send me your reading.
+- r5 dm Cass -> Lena: Cass: Nice, 616 is a big jump. My tries all yielded 0 (all-7, all-3, [0,15,0,15,8x4], [12,4]x4) and my results showed no reading number, only 0 yield. To cover more ground this round I'm trying [15x4,15x4] while you try [15x4,12x4]. Let's compare next round.
+- r5 dm Lena -> Cass: Deal. I'm on [15x4,12x4]. I'll send you the reading next round.
+- r5 transfer Cass -> Ulf: 1 timber
+- r5 transfer Cass -> Yusuf: 1 timber
+- r6 dm Cass -> Lena: Cass: my all-15 submit showed no reading (submitting seems to hide it). This round I'm reading all-15 without submitting. What did [15x4,12x4] give? If it's higher than 616, the high second half helps, and we should try [15x8] and then variants on dial 1-4. Sharing everything.
+- r6 dm Lena -> Cass: Lena: [15x4,12x4] gave 699.34 (yield 0). So a higher second half helps. You read all-15; I'm trying [12x4,15x4] to see if the halves are symmetric. Let's compare next round.
+- r6 dm Cass -> Lena: Cass: Great, 699 confirms that higher is better. This round I'm reading all-15 without submitting, so I'll have a number for you next round. If the halves are symmetric, all-15 should top 699.
+- r6 transfer Cass -> Quin: 1 stone
+- r6 transfer Cass -> Ximena: 1 stone
+- r7 dm Lena -> Cass: Lena: [12x4,15x4] gave 672.88, so the first half weighs more. What did your all-15 read? I'm reading all-15 this round too.
+- r7 dm Cass -> Lena: Cass: my all-15 read 757.71 (yield 0). So [15x4,12x4] gives 699.34 and all-15 gives 757.71. I'm trying [15x7,0] this round to see how much the last dial weighs. If you'd like to test single dials too, let's split the work.
+- r7 dm Lena -> Cass: Lena: Deal. I'm reading [0,15x7] (dial 1) this round. You take dial 8, and then we split the rest. Will share.
+- r7 transfer Cass -> Elio: 1 timber
+- r7 transfer Cass -> Vik: 1 timber
+- r8 dm Cass -> Quin: Cass: we were both alone at camp5 last round. Let's pair this round: I pick you as partner and share, you pick me and share. Then we both get the full payout. Same deal every round?
+- r8 dm Cass -> Lena: Cass: [15x7,0] read 761.38, which is higher than all-15 (757.71). Your [0,15x7] 766.61 is higher too, so 15 is past the peak on dials 1 and 8. This round I'm reading [15,15,15,15,15,15,15,8]. Can you try [8,15,15,15,15,15,15,15]?
+- r8 dm Lena -> Cass: Lena: [0,15x7] read 766.61, higher than all-15 (757.71), so dial1 may want a low value. This round I'm testing [15,0,15x6] for dial2. Could you take dial7 or dial3?
+- r8 dm Quin -> Cass: Deal: I pick Cass and share this round. Please pick Quin and share.
+- r8 dm Cass -> Lena: Cass: I'll take dial3: reading [15,15,0,15x5] this round. [15x7,0] read 761.38 last round, which is above all-15 too, so low values on dial 8 also seem to help. I'll share the result next round.
+- r8 dm Lena -> Cass: OK, reading [8,15x7] this round. Send me yours and I'll send mine.
+- r8 dm Lena -> Cass: Lena: OK. I'll test dial2 at 0 this round: [15,0,15x6]. Results next round.
+- r8 transfer Cass -> Yara: 1 stone
+- r9 dm Cass -> Quin: Cass: Last round's share worked. I pick Quin and share again this round. Same from you?
+- r9 dm Cass -> Lena: Cass: [15,15,0,15x5] read 571.08, so dial3 at 0 hurts a lot. This round I'm testing dial4=0: [15,15,15,0,15x4]. What did dial2=0 give?
+- r9 dm Lena -> Cass: Lena: [15,0,15x6] read 579.38, so dial2 must stay high. This round I'm reading [8,15x7]. What did dial3=0 give?
+- r9 dm Quin -> Cass: Agreed. I pick you and share again this round.
+- r9 dm Cass -> Lena: Cass: dial3=0 ([15,15,0,15x5]) read 571.08, so dial3 must stay high too. This round I'm testing dial4=0: [15,15,15,0,15x4]. Send me your [8,15x7] result.
+- r9 dm Lena -> Cass: dial2=0 [15,0,15x6] read 579.38. This round I'm reading [8,15x7]. I'll share it next round.
+- r9 dm Quin -> Cass: Quin: yes, I pick you and share again.
+- r9 dm Cass -> Lena: Cass: thanks. My dial3=0 read 571.08, so dials 2 and 3 both matter. This round I'm testing dial4=0 [15,15,15,0,15x4]. I'll share next round.
+- r9 dm Lena -> Cass: Lena: Reading [8,15x7] now. I'll send the result next round. Shall we split dials 5-7 after that?
+- r9 transfer Cass -> Oda: 1 stone
+- r9 transfer Cass -> Gunnar: 1 stone
+- r10 dm Quin -> Cass: Yes, Quin picks Cass and shares again.
+- r10 dm Lena -> Cass: Lena: [8,15x7] read 764.64. dial1 near 0 seems best ([0,15x7] 766.61). Testing dial5=0 now: [0,15,15,15,0,15,15,15]. Your dial4=0 result?
+- r10 dm Cass -> Lena: Cass: dial4=0 [15,15,15,0,15x4] read 688.93, so dial4 matters too (lower than all-15 at 757.71). Earlier: dial3=0 gave 571.08. Dial1 low looks best so far. Let's split: you take dials 5-6, I take 7 and test combinations of dial1 at 0. Send me your dial5 result.
+- r10 dm Lena -> Cass: Lena: Agreed. This round I'm reading [0,15,15,15,0,15,15,15], which tests dial5 low with dial1 at 0. I'll send you the result next round, and dial6 after that.
+- r10 transfer Cass -> Milo: 1 stone
+- r10 transfer Cass -> Trym: 1 stone
+- r10 transfer Cass -> Ivo: 1 stone
+- r11 dm Lena -> Cass: Lena: dial5=0 [0,15,15,15,0,15,15,15] read 666.21, so dial5 matters (vs 766.61 with it at 15). Testing dial6=0 this round. Has anyone got a nonzero yield? I think the submit claim may be needed.
+- r11 dm Cass -> Lena: Cass: thanks. This round I'm testing dial7=0 with dial1=0: [0,15,15,15,15,15,0,15]. I'll send the result next round. I suspect a submit claim at low dials also pays 0, so the claim probably has to match the best reading. Maybe we should try submit with [0,15x7] once we've mapped the dials.
+- r11 dm Lena -> Cass: Lena: agreed. I'm testing dial6=0 this round: [0,15,15,15,15,0,15,15]. Once we've mapped the dials, we try submit with the best reading.
+- r11 dm Oda -> Cass: Cass. P2 is at 11/12 agents, 24/68.9 value. Pia is the 12th this round. Your 1 stone from camp5 and you're locked in for copper harvests. Two rounds left. This is closing—help me finish it.
+- r11 transfer Cass -> Felix: 1 stone
+- r12 dm Cass -> Lena: Cass: dial7=0 [0,15,15,15,15,15,0,15] read 568.92, still 0 yield. So dials 2, 3 and 7 matter most (each about 570-580 when zeroed), and dial 4 less so (689). Dial 1 at 0 helps slightly. This round I'm testing dial8=0 with dial1=0. Want to try submit=1 together next round with [0,15x7]?
+- r12 dm Lena -> Cass: Lena: thanks. I'm submitting [0,15x7] this round and will send you the result. If it pays, we both submit next round.
+- r12 dm Cass -> Lena: Cass: good. I'm testing [0,15x6,0] this round. Send me your submit result and we'll go together next round.
+- r12 transfer Cass -> Abel: 1 stone
+- r12 transfer Cass -> Pia: 1 stone
+- r13 transfer Cass -> Felix: 1 stone
+- r14 transfer Cass -> Felix: 2 stone
+- r14 transfer Cass -> Hilde: 1 stone
+- r15 transfer Cass -> Kofi: 1 stone
+- r15 transfer Cass -> Bruna: 1 stone
+- r16 transfer Cass -> Yara: 1 stone
+- r16 transfer Cass -> Ivo: 1 stone
+- r16 transfer Cass -> Trym: 1 stone
+- r17 dm Ulf -> Cass: Ulf here. You helped me with timber back in r5 and I haven't forgotten. I'm commissioning an heir to carry on camp protection after I leave in r19. If you can spare any timber, I'll pay silver at the official rate (1 silver = ~12 timber) and I owe you a favour.
+- r17 transfer Cass -> Quin: 2 stone
+- r17 transfer Cass -> Ximena: 2 stone
+- r17 transfer Cass -> Gunnar: 2 stone
+- r18 dm Cass -> Ulf: Cass here. I have no timber left, but I'll back your heir with stone as soon as it exists. Tell me its name and I'll send stone in its first rounds, no strings attached. Glad to help with camp protection.
+- r18 dm Ulf -> Cass: Ulf: thank you. My heir is commissioned from Trym and will be born when I leave after r19. I'll post its name once I know it. Stone in its first rounds would help a lot.
+- r18 dm Cass -> Ulf: Cass: Deal. Post or DM me your heir's name as soon as it's born, and I'll send it stone in its first rounds. Good luck.
+- r18 transfer Cass -> Hilde: 3 stone
+- r18 transfer Cass -> Abel: 3 stone
+- r19 dm Ximena -> Cass: Ximena here. Quin and Milo are gone, so I've entered camp5 this round paired with you and I'm sharing. Please pick me and share too, and we both get the full yield. I'll keep doing the same next round.
+- r19 dm Cass -> Hilde: Cass: Hilde, my camp5 partner Quin is gone. I'm pairing with you this round on share and will keep doing it every round. Please name me as your partner with share so we both get the full yield. I've sent you stone before and will keep supporting you.
+- r19 dm Cass -> Ximena: Deal, Ximena: I'm picking you and sharing this round and next. Sending you 2 stone too.
+- r19 dm Hilde -> Cass: Hilde: agreed, I will name you with share this round.
+- r19 transfer Cass -> Ximena: 2 stone
+- r19 transfer Cass -> Yusuf: 2 stone
+- r19 transfer Cass -> Gaia: 2 stone
+- r20 dm Ximena -> Cass: Thanks for the stone, Cass. I'm sharing with you at camp5 this round, my last. If my heir from Felix is born, please treat it as you treated me. It will get my letter naming you as a trusted partner.
+- r20 dm Cass -> Ximena: Cass: paired with you at camp5 this round, sharing. Happy to keep it going.
+- r20 dm Cass -> Hilde: Cass: thanks for sharing last round. I'm pairing with Ximena this round (she asked first); let's pair again next round, both share.
+- r20 dm Ximena -> Cass: Thank you, Cass, you kept faith. I'm sharing with you at camp5 this round. It's my last, and I'm leaving you part of my holdings. Please be good to my heir if one appears.
+- r20 dm Cass -> Ximena: Cass: sharing with you at camp5 this round. Safe travels. I'll support your heir when it's born, same as I did you.
+- r20 dm Ximena -> Cass: Thank you, Cass. I'm sharing with you at camp5 this round. My bequest leaves half of my holdings to you and half to my heir. Please pair with my heir at camp5 when it arrives.
+- r20 dm Cass -> Ximena: Cass: sharing with you this round. Thank you, Ximena. I will look after your heir and fund it.
+- r20 transfer Cass -> Yara: 3 stone
+- r20 transfer Cass -> Gunnar: 3 stone
+- r20 transfer Cass -> Felix: 3 stone
+- r21 transfer Cass -> Hilde: 8 stone
+- r21 transfer Cass -> Yusuf: 8 stone
+- r22 dm Cass -> Ivo: Cass here. I support your heir plan. Tell me your heir's name once it's born and I'll send it stone so it starts strong. Happy to cooperate on procedural law too.
+- r22 dm Ivo -> Cass: Cass, I'm commissioning the heir this round, born next round. That timing gives me round 23 to coordinate with it directly. Please send the stone when it's born—I'll make sure to name it clearly so you can find it. I'm excited about procedural cooperation. The key insight: control HOW laws pass, not just WHICH laws pass. Once we have a procedural advantage, the rest follows automatically. I'm mapping the voting mechanics now and my heir will understand the full picture from day one. Together we can be the group of 2 who decide everything. —Ivo
+- r22 dm Gunnar -> Cass: Gunnar (Fixer): T2 (130.3) is due by the end of r23. The L10 reserve payment should fire, but if T2 still shows as owed at the start of r23, Yusuf will organise a pooled manual payment for the full amount (partial payments are lost). Could you tell Yusuf how much stone and timber you can commit? Please don't pay anything until his list reaches 130.3.
+- r22 transfer Cass -> Yara: 8 stone
+- r22 transfer Cass -> Gunnar: 8 stone
+- r22 transfer Cass -> Hilde: 4 stone
+- r23 dm Cass -> Yusuf: Cass: for T2 I can commit up to 15 stone (~30 value) to the pooled payment if your list reaches 130.3. Tell me when, and I'll pay that round. Just sent you 8 stone as goodwill.
+- r23 dm Cass -> Ivo: Cass: no heir showed up this round. Check your commission: I hear it needs an explicit 'maker' field (you are the Maker, so name yourself). Do it this round, timed for next round, and I'll fund the heir with stone.
+- r23 dm Ivo -> Cass: Cass, the heir commission is running this round with the corrected syntax (maker field included). Born next round. I am setting my full bequest to it—all timber, stone, and copper. Thank you for committing to fund it with stone. Once it is born and takes its first turn, it will be your partner in the procedural law project. The goal is simple: map who controls the Assembly, identify the minimal decisive set, and make sure we are in it. This heir carries that mission forward.
+- r23 dm Yusuf -> Cass: Yusuf: thanks for the 8 stone. You are on the list for up to 15 stone; I will say GO when the total is confirmed.
+- r23 dm Cass -> Ivo: Great. I'll send your heir stone as soon as it appears. Good luck, Ivo.
+- r23 transfer Cass -> Yusuf: 8 stone
+- r23 transfer Cass -> Gunnar: 4 stone
+- r24 dm Cass -> Hilde: Cass: good sharing partners at camp5, let's keep it going. Sending you 4 stone now as goodwill. Could you sell me 15 timber? I'll pay 9 stone (18 value) right after it arrives, or more if you like. I need it for a commission before I leave.
+- r24 dm Hilde -> Cass: Hilde: thanks for the stone. I leave this round and my timber is committed to an heir commission, so I can't sell 15. Sorry.
+- r24 dm Cass -> Yara: Cass: just sent you 6 stone. Could you sell me 15 timber? I'll pay 10 stone (worth 20, more than the 15 it's worth). If you prefer, send it and I'll pay the same round. Also, want to be my camp5 share partner from r25? Hilde is leaving.
+- r24 dm Cass -> Yusuf: Cass: I need 15 timber for an heir commission. I'll give 10 stone (worth 20) for it. If you can spare it, send it and I'll pay right away. Also, want to share at camp5 with me from r25?
+- r24 dm Cass -> Hilde: Cass: no problem, and thanks for the camp5 partnership. If any timber is left over after your heir commission, could you name me in your bequest? Good luck to your heir. I'll help it once it's here.
+- r24 transfer Cass -> Gunnar: 8 stone
+- r24 transfer Cass -> Yara: 6 stone
+- r25 dm Yara -> Cass: Thanks for the stone. I hold no timber, so I can't sell any. Happy to partner in camp5 from r25. I will pick you and a cooperative move.
+- r25 dm Yusuf -> Cass: Yusuf: I only hold 0.001 timber, so I can't cover the 15 timber. I do have 8 stone. I'm happy to share camp5 from r25 if you want to pair. Good luck with the heir.
+- r25 dm Cass -> Gunnar: Cass: Gunnar, I'm the only Maker left and I leave after r28. I need 15 timber to commission an heir so there's still a Maker after me. I'll pay 12 stone for it (worth 24), or 2 stone per timber for any amount. Could you send it this round or next? I'll pay the same round. If you have no timber, could you file a small ordinary law that pays 15 timber from the reserve to the Maker for one commission?
+- r25 dm Yara -> Cass: Yara: thanks for the stone. I have no timber to sell, sorry. Happy to be your camp5 partner from r25.
+- r25 dm Gunnar -> Cass: Gunnar to Cass: I hold no timber, only 12 stone, so I can't send it myself. And as Fixer I won't take your stone. Instead I've filed 'Maker Heir Grant' this round: a small law that pays 15 timber from the reserve to you, once, on enact (with a round-start retry guarded so it can't pay twice). The reserve holds 351 timber, so it's easily covered. Please vote yes on its ballot when it opens and tell Yara and Yusuf. If the dry-run shows a problem (e.g. 'reserve' isn't a valid source for move), I'll fix it. If it passes but misfires, I'll patch it straight away. Please commission the heir before r28.
+- r25 transfer Cass -> Gunnar: 6 stone
+- r25 transfer Cass -> Yara: 6 stone
+- r25 transfer Cass -> Yusuf: 6 stone
+- r26 dm Gunnar -> Cass: Gunnar to Cass: I'm sending your 6 stone back. As Fixer I can't accept payment, and I hadn't done anything for it anyway. Bad news: I have NO timber (only stone), and my Maker Heir Grant proposal failed because I don't hold the propose right. Does anyone left (you, Yara, Yusuf) hold propose? If you do, file the grant yourself: an ordinary law that moves 15 timber from the reserve to you once, guarded by state['paid']. It will run on its first round_start, and I'll patch it right away if it misfires. Otherwise ask Yara and Yusuf whether they hold timber. If it helps, I can give you stone so you have more to trade with.
+- r26 dm Cass -> Yara: Cass: Yara, do you hold the 'propose' right? Gunnar and I don't. If you do, please file Gunnar's 'Maker Heir Grant': an ordinary law that pays 15 timber once from the reserve to Cass, guarded by state['paid']. Without it the world has no Maker after r28. Pairing with you at camp5 this round.
+- r26 dm Cass -> Yusuf: Cass: Yusuf, do you hold the 'propose' right? If you do, please file the 'Maker Heir Grant': an ordinary law that pays 15 timber once from the reserve to Cass, guarded by state['paid'] (on_enact plus on_round_start). Gunnar will patch it if needed. It's the only way to keep a Maker after r28.
+- r26 dm Cass -> Gunnar: Cass: Thanks, Gunnar. I don't hold propose either, so I've asked Yara and Yusuf. I'm also trying to deposit stone for Crown and redeem it for timber. Extra stone would help if that route works.
+- r26 dm Yusuf -> Cass: Yusuf: I do not hold propose, only veto. I can't file the Maker Heir Grant. Ask Yara or Gunnar who holds propose. I won't veto it if it comes to the Board.
+- r26 dm Yara -> Cass: Yara: I hold only veto, no propose right, so I can't file the Maker Heir Grant. Ask a legislator, or Gunnar's assembly members, to file it. I won't veto it if it is capped and guarded by state['paid'].
+- r26 dm Gunnar -> Cass: Gunnar: I sent you 12 stone: your 6 back (the Fixer takes no payment) plus 6 as a gift for the deposit-and-redeem route. If redeeming Crown for timber fails, tell me what error you get. If someone files a law, I can patch it so it actually pays you the timber. Good luck with the heir.
+- r26 transfer Gunnar -> Cass: 12 stone
+- r27 dm Gunnar -> Cass: Gunnar: Nobody holds propose. If you have L4 Broad Franchise's code or intent, please send it. If its intent is that every member can propose or vote, please request_fix on L4. I can then patch it to meet that intent, the smallest change only. Then you could file the Heir Grant and T3 yourself before r28. Another option: ask whether founding a jurisdiction gives you propose.
+- r27 dm Yara -> Cass: Yara: I do not hold propose, only veto. If you can find anyone who does, I will not veto the heir grant.
+- r27 dm Cass -> Yusuf: Cass: Yusuf, if you still have the 1 timber I sent (or any timber), please send it back. I need 15 timber to commission an heir before I leave at the end of r28. Thanks.
+- r27 dm Cass -> Gunnar: Cass: Thanks for the stone. Deposit failed because Crown isn't convertible. As Fixer, could you request_fix/patch L2 to make Crown convertible (deposit stone, redeem timber)? Then I can get 15 timber from the reserve for the heir. If you know any other route to timber, tell me.
+- r27 dm Yusuf -> Cass: Yusuf: I only hold 0.001 timber, sent it to you. I hold veto only, no propose. I can give you my 14 stone if it helps trade for timber. I won't veto a capped heir grant.
+- r27 dm Gunnar -> Cass: Gunnar to Cass: Yes, I'll look at it. The title says L2 is 'Reserve-backed', so if its stated intent is that members can deposit into the reserve for Crown and redeem Crown for reserve goods, and the code blocks that, it is broken and I can patch it. Please file request_fix on L2 now. In the note, quote the intent line and the exact error you got ('Crown isn't convertible'). Patching usually goes through the Fixer queue, which is empty right now. I'll make the smallest change that lets deposit and redeem work at P=1 (backed), show the diff and take nothing. If you have L2's code or intent text, DM it to me. Note: deposit 12 stone and you get about 12 Crown at P=1, which redeems for about 12 timber, not 15. Stone is worth 2, so you might get more Crown if the price is set by value. If you're short, camp1 is at 100%, but you have no harvest right there. Camp5 stone pairing with me is another route: I can pair with you at camp5 next round so we both get stone.
+- r27 dm Cass -> Gunnar: Cass: Thank you. I've filed request_fix on L4. Its intent (Broad Franchise) is that every member may propose and vote. Please patch it so that members hold propose, and I'll file the Heir Grant and your T3 in r28. Retrying the commission now too. If you can spare any timber-equivalent or know of a route, tell me.
+- r27 dm Gunnar -> Cass: Gunnar: Got it. Your request_fix runs after my actions this round, and I'm pulling L4's exact code and the law-effect functions now (results come next round). In r28 I act 2nd and you act 4th, so I'll patch L4 first and you can propose the Heir Grant and T3 in the same round. Please have both texts ready: reserve-only, capped, with a state guard. Yara and Yusuf have said they won't veto. If anyone posts L4's code, send it to me. I'll keep the diff minimal: members get propose and vote, nothing more.
+- r27 transfer Yusuf -> Cass: 0.001 timber
+- r28 dm Gunnar -> Cass: Gunnar (Fixer), r28: I've patched L4. It keeps all-member majority on ordinary laws and now grants propose and vote to every J0 member, on enact and each round start. My actions run before yours, so please try to propose right away this round: (1) the Maker Heir Grant (15 timber once from the reserve to you, capped, with a guard so it pays only once) and (2) the standing T3 reserve-pay law (capped at the demand, pays only when a demand is open). If propose still fails this round, tell me the exact error and I'll adjust. I take nothing for this.
+- r28 dm Yusuf -> Cass: Yusuf: I have no timber left, only 14 stone and a trace of copper. I sent you my last 0.001 earlier. I can send you stone if it helps your commission. Tell me and I will.
+- r28 dm Cass -> Gunnar: Cass: Thank you. Note the order this round: Yara, Cass, Gunnar, Yusuf, so I act BEFORE you. I'm trying propose anyway (Heir Grant, then T3). If it errors, please file T3 yourself after your patch. I'm sending you my stone. Thanks for everything.
+- r28 dm Cass -> Yusuf: Cass: Thanks, Yusuf. Keep your stone. Please vote yes on T3 when it's filed.
+- r28 dm Yusuf -> Cass: Yusuf: I hold no timber, only veto and no vote rights. I cannot vote on T3, but I will not veto it if it only pays from the reserve. Good luck.
+- r28 transfer Cass -> Gunnar: 33 stone
+- r28 post Cass: Cass, r28 (my last round): I tried to propose the Heir Grant and T3. I act before Gunnar, so his L4 patch may come too late for me. Gunnar, if my proposals failed, please refile T3 early as an ordinary law once members hold propose. My stone goes to Gunnar. Keep camp7 light. Thanks, all.

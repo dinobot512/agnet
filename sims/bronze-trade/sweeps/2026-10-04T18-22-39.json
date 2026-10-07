@@ -1,0 +1,2594 @@
+[
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 74.2,
+      "p10": -59.1,
+      "p90": 825.8,
+      "lost": 0.55,
+      "stranded": 0.4
+    },
+    "informed": {
+      "median": 981.6,
+      "p10": -0.5,
+      "p90": 1436.5,
+      "lost": 0.15,
+      "stranded": 0.15
+    },
+    "gap": 13.23,
+    "wins": 1.0,
+    "rank": 8.813
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 182.8,
+      "p10": -59.1,
+      "p90": 929.0,
+      "lost": 0.467,
+      "stranded": 0.35
+    },
+    "informed": {
+      "median": 1064.4,
+      "p10": 0.0,
+      "p90": 1650.5,
+      "lost": 0.133,
+      "stranded": 0.133
+    },
+    "gap": 5.82,
+    "wins": 1.0,
+    "rank": 8.626
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 37.5,
+      "p10": -77.1,
+      "p90": 1005.7,
+      "lost": 0.583,
+      "stranded": 0.45
+    },
+    "informed": {
+      "median": 925.5,
+      "p10": -2.3,
+      "p90": 1503.0,
+      "lost": 0.217,
+      "stranded": 0.217
+    },
+    "gap": 24.68,
+    "wins": 1.0,
+    "rank": 8.278
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 187.5,
+      "p10": -24.1,
+      "p90": 875.0,
+      "lost": 0.4,
+      "stranded": 0.283
+    },
+    "informed": {
+      "median": 1023.3,
+      "p10": 608.0,
+      "p90": 1535.9,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 5.46,
+    "wins": 1.0,
+    "rank": 8.155
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 274.1,
+      "p10": -16.1,
+      "p90": 1468.1,
+      "lost": 0.317,
+      "stranded": 0.2
+    },
+    "informed": {
+      "median": 1112.1,
+      "p10": 564.1,
+      "p90": 2255.3,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 4.06,
+    "wins": 1.0,
+    "rank": 7.987
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 227.9,
+      "p10": -20.1,
+      "p90": 1203.5,
+      "lost": 0.367,
+      "stranded": 0.233
+    },
+    "informed": {
+      "median": 1047.1,
+      "p10": 578.3,
+      "p90": 1897.5,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 4.59,
+    "wins": 1.0,
+    "rank": 7.892
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 179.8,
+      "p10": -24.1,
+      "p90": 1356.4,
+      "lost": 0.417,
+      "stranded": 0.317
+    },
+    "informed": {
+      "median": 960.2,
+      "p10": 563.5,
+      "p90": 1766.0,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 5.34,
+    "wins": 1.0,
+    "rank": 7.622
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 162.2,
+      "p10": -61.6,
+      "p90": 933.7,
+      "lost": 0.433,
+      "stranded": 0.383
+    },
+    "informed": {
+      "median": 922.1,
+      "p10": 473.3,
+      "p90": 1625.6,
+      "lost": 0.067,
+      "stranded": 0.067
+    },
+    "gap": 5.68,
+    "wins": 1.0,
+    "rank": 7.469
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 178.3,
+      "p10": -75.1,
+      "p90": 1169.4,
+      "lost": 0.483,
+      "stranded": 0.383
+    },
+    "informed": {
+      "median": 936.8,
+      "p10": 458.1,
+      "p90": 1496.8,
+      "lost": 0.083,
+      "stranded": 0.083
+    },
+    "gap": 5.25,
+    "wins": 1.0,
+    "rank": 7.407
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 70.0,
+      "p10": -74.3,
+      "p90": 706.5,
+      "lost": 0.5,
+      "stranded": 0.45
+    },
+    "informed": {
+      "median": 789.1,
+      "p10": -2.0,
+      "p90": 1342.1,
+      "lost": 0.217,
+      "stranded": 0.217
+    },
+    "gap": 11.27,
+    "wins": 1.0,
+    "rank": 6.901
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 63.8,
+      "p10": -58.2,
+      "p90": 590.6,
+      "lost": 0.533,
+      "stranded": 0.4
+    },
+    "informed": {
+      "median": 784.5,
+      "p10": 163.2,
+      "p90": 1191.0,
+      "lost": 0.1,
+      "stranded": 0.1
+    },
+    "gap": 12.3,
+    "wins": 1.0,
+    "rank": 6.871
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 36.7,
+      "p10": -60.2,
+      "p90": 820.5,
+      "lost": 0.567,
+      "stranded": 0.433
+    },
+    "informed": {
+      "median": 771.6,
+      "p10": 357.3,
+      "p90": 1375.1,
+      "lost": 0.05,
+      "stranded": 0.05
+    },
+    "gap": 21.02,
+    "wins": 1.0,
+    "rank": 6.736
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 381.1,
+      "p10": -3.7,
+      "p90": 1160.9,
+      "lost": 0.217,
+      "stranded": 0.117
+    },
+    "informed": {
+      "median": 1069.1,
+      "p10": 617.6,
+      "p90": 1645.3,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 2.81,
+    "wins": 1.0,
+    "rank": 6.323
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 219.1,
+      "p10": -13.6,
+      "p90": 896.5,
+      "lost": 0.317,
+      "stranded": 0.167
+    },
+    "informed": {
+      "median": 877.9,
+      "p10": 556.2,
+      "p90": 1520.9,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 4.01,
+    "wins": 1.0,
+    "rank": 6.307
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": 270.1,
+      "p10": -12.3,
+      "p90": 824.8,
+      "lost": 0.383,
+      "stranded": 0.2
+    },
+    "informed": {
+      "median": 936.6,
+      "p10": 520.8,
+      "p90": 1448.0,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 3.47,
+    "wins": 1.0,
+    "rank": 6.28
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 69.1,
+      "p10": -51.2,
+      "p90": 949.7,
+      "lost": 0.533,
+      "stranded": 0.4
+    },
+    "informed": {
+      "median": 716.9,
+      "p10": 308.5,
+      "p90": 1295.7,
+      "lost": 0.083,
+      "stranded": 0.083
+    },
+    "gap": 10.37,
+    "wins": 1.0,
+    "rank": 6.182
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 266.8,
+      "p10": -12.0,
+      "p90": 1049.5,
+      "lost": 0.367,
+      "stranded": 0.217
+    },
+    "informed": {
+      "median": 912.1,
+      "p10": 553.3,
+      "p90": 1570.6,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 3.42,
+    "wins": 1.0,
+    "rank": 6.074
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 119.2,
+      "p10": -57.8,
+      "p90": 593.8,
+      "lost": 0.483,
+      "stranded": 0.4
+    },
+    "informed": {
+      "median": 717.3,
+      "p10": 387.9,
+      "p90": 1284.6,
+      "lost": 0.05,
+      "stranded": 0.05
+    },
+    "gap": 6.02,
+    "wins": 1.0,
+    "rank": 5.957
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 417.6,
+      "p10": -8.3,
+      "p90": 1097.7,
+      "lost": 0.283,
+      "stranded": 0.15
+    },
+    "informed": {
+      "median": 1030.5,
+      "p10": 511.1,
+      "p90": 1738.3,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 2.47,
+    "wins": 1.0,
+    "rank": 5.526
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": 251.0,
+      "p10": -19.2,
+      "p90": 905.2,
+      "lost": 0.417,
+      "stranded": 0.283
+    },
+    "informed": {
+      "median": 821.2,
+      "p10": 405.9,
+      "p90": 1195.1,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 3.27,
+    "wins": 1.0,
+    "rank": 5.353
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 373.4,
+      "p10": -7.2,
+      "p90": 1045.8,
+      "lost": 0.25,
+      "stranded": 0.117
+    },
+    "informed": {
+      "median": 919.2,
+      "p10": 475.4,
+      "p90": 1408.3,
+      "lost": 0.033,
+      "stranded": 0.0
+    },
+    "gap": 2.46,
+    "wins": 1.0,
+    "rank": 4.911
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": 45.1,
+      "p10": -16.7,
+      "p90": 686.2,
+      "lost": 0.533,
+      "stranded": 0.383
+    },
+    "informed": {
+      "median": 585.1,
+      "p10": 318.7,
+      "p90": 956.3,
+      "lost": 0.033,
+      "stranded": 0.033
+    },
+    "gap": 12.97,
+    "wins": 1.0,
+    "rank": 4.89
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 77.0,
+      "p10": -12.3,
+      "p90": 790.9,
+      "lost": 0.533,
+      "stranded": 0.267
+    },
+    "informed": {
+      "median": 578.1,
+      "p10": 271.9,
+      "p90": 889.1,
+      "lost": 0.05,
+      "stranded": 0.033
+    },
+    "gap": 7.51,
+    "wins": 1.0,
+    "rank": 4.769
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 136.7,
+      "p10": -6.8,
+      "p90": 754.0,
+      "lost": 0.4,
+      "stranded": 0.167
+    },
+    "informed": {
+      "median": 603.4,
+      "p10": 334.9,
+      "p90": 973.6,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 4.41,
+    "wins": 1.0,
+    "rank": 4.622
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 48.6,
+      "p10": -9.3,
+      "p90": 556.7,
+      "lost": 0.6,
+      "stranded": 0.267
+    },
+    "informed": {
+      "median": 550.7,
+      "p10": 297.3,
+      "p90": 801.6,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 11.33,
+    "wins": 1.0,
+    "rank": 4.549
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -1.3,
+      "p10": -68.2,
+      "p90": 760.7,
+      "lost": 0.6,
+      "stranded": 0.417
+    },
+    "informed": {
+      "median": 683.6,
+      "p10": -3.0,
+      "p90": 1207.0,
+      "lost": 0.183,
+      "stranded": 0.183
+    },
+    "gap": 683.6,
+    "wins": 1.0,
+    "rank": 4.435
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 186.9,
+      "p10": -5.9,
+      "p90": 544.5,
+      "lost": 0.417,
+      "stranded": 0.217
+    },
+    "informed": {
+      "median": 644.3,
+      "p10": 401.1,
+      "p90": 1035.8,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 3.45,
+    "wins": 1.0,
+    "rank": 4.373
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 69.4,
+      "p10": -11.9,
+      "p90": 492.8,
+      "lost": 0.533,
+      "stranded": 0.217
+    },
+    "informed": {
+      "median": 523.8,
+      "p10": 257.7,
+      "p90": 913.7,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 7.55,
+    "wins": 1.0,
+    "rank": 4.25
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 118.7,
+      "p10": -20.5,
+      "p90": 538.9,
+      "lost": 0.45,
+      "stranded": 0.333
+    },
+    "informed": {
+      "median": 535.0,
+      "p10": 226.8,
+      "p90": 914.1,
+      "lost": 0.017,
+      "stranded": 0.017
+    },
+    "gap": 4.51,
+    "wins": 1.0,
+    "rank": 4.137
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": 17.5,
+      "p10": -23.2,
+      "p90": 431.8,
+      "lost": 0.717,
+      "stranded": 0.35
+    },
+    "informed": {
+      "median": 526.3,
+      "p10": 283.6,
+      "p90": 791.9,
+      "lost": 0.033,
+      "stranded": 0.033
+    },
+    "gap": 30.07,
+    "wins": 1.0,
+    "rank": 4.105
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": 145.1,
+      "p10": -23.0,
+      "p90": 549.3,
+      "lost": 0.433,
+      "stranded": 0.267
+    },
+    "informed": {
+      "median": 556.2,
+      "p10": 276.5,
+      "p90": 893.0,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 3.83,
+    "wins": 1.0,
+    "rank": 4.036
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -2.8,
+      "p10": -65.9,
+      "p90": 563.0,
+      "lost": 0.633,
+      "stranded": 0.483
+    },
+    "informed": {
+      "median": 640.5,
+      "p10": -0.8,
+      "p90": 1066.3,
+      "lost": 0.133,
+      "stranded": 0.133
+    },
+    "gap": 640.5,
+    "wins": 1.0,
+    "rank": 4.019
+  },
+  {
+    "setting": {
+      "market.flow_scale": 1.0,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=1.0 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 408.7,
+      "p10": -3.6,
+      "p90": 1144.3,
+      "lost": 0.317,
+      "stranded": 0.167
+    },
+    "informed": {
+      "median": 862.3,
+      "p10": 551.9,
+      "p90": 1248.9,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 2.11,
+    "wins": 1.0,
+    "rank": 3.944
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": 10.4,
+      "p10": -18.5,
+      "p90": 550.3,
+      "lost": 0.7,
+      "stranded": 0.367
+    },
+    "informed": {
+      "median": 522.3,
+      "p10": 282.9,
+      "p90": 777.2,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 50.22,
+    "wins": 1.0,
+    "rank": 3.876
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 167.2,
+      "p10": -19.0,
+      "p90": 668.2,
+      "lost": 0.433,
+      "stranded": 0.217
+    },
+    "informed": {
+      "median": 560.2,
+      "p10": 259.2,
+      "p90": 923.5,
+      "lost": 0.05,
+      "stranded": 0.033
+    },
+    "gap": 3.35,
+    "wins": 1.0,
+    "rank": 3.785
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 54.4,
+      "p10": -21.1,
+      "p90": 474.6,
+      "lost": 0.55,
+      "stranded": 0.367
+    },
+    "informed": {
+      "median": 472.4,
+      "p10": 137.1,
+      "p90": 719.8,
+      "lost": 0.033,
+      "stranded": 0.0
+    },
+    "gap": 8.68,
+    "wins": 1.0,
+    "rank": 3.764
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 143.5,
+      "p10": -13.5,
+      "p90": 574.6,
+      "lost": 0.467,
+      "stranded": 0.267
+    },
+    "informed": {
+      "median": 516.3,
+      "p10": 241.7,
+      "p90": 897.6,
+      "lost": 0.033,
+      "stranded": 0.0
+    },
+    "gap": 3.6,
+    "wins": 1.0,
+    "rank": 3.659
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 49.5,
+      "p10": -19.3,
+      "p90": 444.0,
+      "lost": 0.6,
+      "stranded": 0.383
+    },
+    "informed": {
+      "median": 421.8,
+      "p10": 90.9,
+      "p90": 763.0,
+      "lost": 0.117,
+      "stranded": 0.05
+    },
+    "gap": 8.52,
+    "wins": 1.0,
+    "rank": 3.26
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": 47.9,
+      "p10": -13.8,
+      "p90": 372.4,
+      "lost": 0.65,
+      "stranded": 0.267
+    },
+    "informed": {
+      "median": 412.9,
+      "p10": 185.2,
+      "p90": 702.3,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 8.62,
+    "wins": 1.0,
+    "rank": 3.17
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": 16.6,
+      "p10": -18.8,
+      "p90": 302.0,
+      "lost": 0.633,
+      "stranded": 0.367
+    },
+    "informed": {
+      "median": 419.1,
+      "p10": 199.6,
+      "p90": 746.9,
+      "lost": 0.033,
+      "stranded": 0.0
+    },
+    "gap": 25.25,
+    "wins": 1.0,
+    "rank": 3.016
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": 32.4,
+      "p10": -15.6,
+      "p90": 488.7,
+      "lost": 0.7,
+      "stranded": 0.383
+    },
+    "informed": {
+      "median": 399.8,
+      "p10": 220.4,
+      "p90": 645.1,
+      "lost": 0.0,
+      "stranded": 0.0
+    },
+    "gap": 12.34,
+    "wins": 1.0,
+    "rank": 2.999
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -4.2,
+      "p10": -52.3,
+      "p90": 283.1,
+      "lost": 0.717,
+      "stranded": 0.6
+    },
+    "informed": {
+      "median": 500.1,
+      "p10": -2.0,
+      "p90": 744.2,
+      "lost": 0.25,
+      "stranded": 0.25
+    },
+    "gap": 500.1,
+    "wins": 1.0,
+    "rank": 2.629
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -5.5,
+      "p10": -68.2,
+      "p90": 389.6,
+      "lost": 0.7,
+      "stranded": 0.6
+    },
+    "informed": {
+      "median": 482.1,
+      "p10": -2.9,
+      "p90": 969.2,
+      "lost": 0.417,
+      "stranded": 0.417
+    },
+    "gap": 482.1,
+    "wins": 1.0,
+    "rank": 2.462
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -3.5,
+      "p10": -56.0,
+      "p90": 411.9,
+      "lost": 0.683,
+      "stranded": 0.517
+    },
+    "informed": {
+      "median": 480.8,
+      "p10": -3.2,
+      "p90": 952.5,
+      "lost": 0.333,
+      "stranded": 0.333
+    },
+    "gap": 480.8,
+    "wins": 1.0,
+    "rank": 2.429
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -4.9,
+      "p10": -60.4,
+      "p90": 369.7,
+      "lost": 0.8,
+      "stranded": 0.517
+    },
+    "informed": {
+      "median": 462.5,
+      "p10": -2.7,
+      "p90": 900.1,
+      "lost": 0.333,
+      "stranded": 0.333
+    },
+    "gap": 462.5,
+    "wins": 1.0,
+    "rank": 2.26
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -2.0,
+      "p10": -41.1,
+      "p90": 376.4,
+      "lost": 0.617,
+      "stranded": 0.467
+    },
+    "informed": {
+      "median": 452.5,
+      "p10": 138.3,
+      "p90": 806.7,
+      "lost": 0.083,
+      "stranded": 0.083
+    },
+    "gap": 452.5,
+    "wins": 1.0,
+    "rank": 2.131
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -3.7,
+      "p10": -81.8,
+      "p90": 308.0,
+      "lost": 0.767,
+      "stranded": 0.6
+    },
+    "informed": {
+      "median": 442.9,
+      "p10": -2.0,
+      "p90": 853.9,
+      "lost": 0.367,
+      "stranded": 0.367
+    },
+    "gap": 442.9,
+    "wins": 1.0,
+    "rank": 2.052
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -5.5,
+      "p10": -47.0,
+      "p90": 440.6,
+      "lost": 0.75,
+      "stranded": 0.55
+    },
+    "informed": {
+      "median": 434.4,
+      "p10": -2.0,
+      "p90": 842.5,
+      "lost": 0.317,
+      "stranded": 0.317
+    },
+    "gap": 434.4,
+    "wins": 1.0,
+    "rank": 1.985
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -0.9,
+      "p10": -36.1,
+      "p90": 476.3,
+      "lost": 0.783,
+      "stranded": 0.4
+    },
+    "informed": {
+      "median": 395.7,
+      "p10": 136.2,
+      "p90": 652.0,
+      "lost": 0.067,
+      "stranded": 0.033
+    },
+    "gap": 395.7,
+    "wins": 1.0,
+    "rank": 1.552
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -1.2,
+      "p10": -19.6,
+      "p90": 505.6,
+      "lost": 0.717,
+      "stranded": 0.467
+    },
+    "informed": {
+      "median": 394.1,
+      "p10": 147.8,
+      "p90": 631.9,
+      "lost": 0.067,
+      "stranded": 0.0
+    },
+    "gap": 394.1,
+    "wins": 1.0,
+    "rank": 1.539
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -4.1,
+      "p10": -36.2,
+      "p90": 176.3,
+      "lost": 0.783,
+      "stranded": 0.433
+    },
+    "informed": {
+      "median": 388.6,
+      "p10": 141.5,
+      "p90": 657.7,
+      "lost": 0.033,
+      "stranded": 0.033
+    },
+    "gap": 388.6,
+    "wins": 1.0,
+    "rank": 1.513
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -4.9,
+      "p10": -41.7,
+      "p90": 213.2,
+      "lost": 0.833,
+      "stranded": 0.617
+    },
+    "informed": {
+      "median": 387.3,
+      "p10": 86.1,
+      "p90": 662.1,
+      "lost": 0.133,
+      "stranded": 0.033
+    },
+    "gap": 387.3,
+    "wins": 1.0,
+    "rank": 1.508
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -4.8,
+      "p10": -62.1,
+      "p90": 513.3,
+      "lost": 0.767,
+      "stranded": 0.567
+    },
+    "informed": {
+      "median": 354.8,
+      "p10": -2.0,
+      "p90": 825.1,
+      "lost": 0.4,
+      "stranded": 0.4
+    },
+    "gap": 354.8,
+    "wins": 1.0,
+    "rank": 1.182
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -7.3,
+      "p10": -59.4,
+      "p90": 314.7,
+      "lost": 0.833,
+      "stranded": 0.7
+    },
+    "informed": {
+      "median": 347.0,
+      "p10": -2.4,
+      "p90": 817.8,
+      "lost": 0.367,
+      "stranded": 0.35
+    },
+    "gap": 347.0,
+    "wins": 1.0,
+    "rank": 1.129
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -5.1,
+      "p10": -31.7,
+      "p90": 239.4,
+      "lost": 0.85,
+      "stranded": 0.633
+    },
+    "informed": {
+      "median": 346.3,
+      "p10": 146.0,
+      "p90": 550.2,
+      "lost": 0.033,
+      "stranded": 0.017
+    },
+    "gap": 346.3,
+    "wins": 1.0,
+    "rank": 1.1
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -2.9,
+      "p10": -27.3,
+      "p90": 249.3,
+      "lost": 0.85,
+      "stranded": 0.617
+    },
+    "informed": {
+      "median": 336.3,
+      "p10": 174.4,
+      "p90": 672.7,
+      "lost": 0.017,
+      "stranded": 0.0
+    },
+    "gap": 336.3,
+    "wins": 1.0,
+    "rank": 0.978
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -13.2,
+      "p10": -64.9,
+      "p90": 178.2,
+      "lost": 0.85,
+      "stranded": 0.7
+    },
+    "informed": {
+      "median": 297.2,
+      "p10": -3.0,
+      "p90": 768.8,
+      "lost": 0.35,
+      "stranded": 0.317
+    },
+    "gap": 297.2,
+    "wins": 1.0,
+    "rank": 0.69
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -12.1,
+      "p10": -61.0,
+      "p90": 66.7,
+      "lost": 0.917,
+      "stranded": 0.717
+    },
+    "informed": {
+      "median": 294.7,
+      "p10": -3.0,
+      "p90": 643.7,
+      "lost": 0.35,
+      "stranded": 0.317
+    },
+    "gap": 294.7,
+    "wins": 1.0,
+    "rank": 0.654
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -5.4,
+      "p10": -43.7,
+      "p90": 73.0,
+      "lost": 0.933,
+      "stranded": 0.683
+    },
+    "informed": {
+      "median": 274.4,
+      "p10": -0.5,
+      "p90": 493.2,
+      "lost": 0.267,
+      "stranded": 0.25
+    },
+    "gap": 274.4,
+    "wins": 1.0,
+    "rank": 0.384
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -6.6,
+      "p10": -35.4,
+      "p90": 134.6,
+      "lost": 0.9,
+      "stranded": 0.617
+    },
+    "informed": {
+      "median": 269.0,
+      "p10": 71.9,
+      "p90": 469.5,
+      "lost": 0.217,
+      "stranded": 0.05
+    },
+    "gap": 269.0,
+    "wins": 1.0,
+    "rank": 0.342
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -1.4,
+      "p10": -32.5,
+      "p90": 174.3,
+      "lost": 0.85,
+      "stranded": 0.517
+    },
+    "informed": {
+      "median": 265.9,
+      "p10": 12.2,
+      "p90": 490.5,
+      "lost": 0.267,
+      "stranded": 0.1
+    },
+    "gap": 265.9,
+    "wins": 1.0,
+    "rank": 0.259
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -13.5,
+      "p10": -64.6,
+      "p90": -0.4,
+      "lost": 1.0,
+      "stranded": 0.867
+    },
+    "informed": {
+      "median": 246.7,
+      "p10": -3.0,
+      "p90": 639.2,
+      "lost": 0.417,
+      "stranded": 0.4
+    },
+    "gap": 246.7,
+    "wins": 1.0,
+    "rank": 0.188
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -15.2,
+      "p10": -72.9,
+      "p90": 162.0,
+      "lost": 0.9,
+      "stranded": 0.75
+    },
+    "informed": {
+      "median": 239.5,
+      "p10": -3.0,
+      "p90": 729.5,
+      "lost": 0.433,
+      "stranded": 0.433
+    },
+    "gap": 239.5,
+    "wins": 1.0,
+    "rank": 0.133
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -3.4,
+      "p10": -29.4,
+      "p90": 170.8,
+      "lost": 0.85,
+      "stranded": 0.633
+    },
+    "informed": {
+      "median": 247.5,
+      "p10": -1.0,
+      "p90": 509.4,
+      "lost": 0.35,
+      "stranded": 0.267
+    },
+    "gap": 247.5,
+    "wins": 1.0,
+    "rank": 0.095
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -0.6,
+      "p10": -24.4,
+      "p90": 263.0,
+      "lost": 0.717,
+      "stranded": 0.483
+    },
+    "informed": {
+      "median": 248.1,
+      "p10": 34.1,
+      "p90": 555.4,
+      "lost": 0.217,
+      "stranded": 0.1
+    },
+    "gap": 248.1,
+    "wins": 1.0,
+    "rank": 0.073
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -3.4,
+      "p10": -31.9,
+      "p90": 167.8,
+      "lost": 0.883,
+      "stranded": 0.667
+    },
+    "informed": {
+      "median": 231.1,
+      "p10": 93.8,
+      "p90": 445.3,
+      "lost": 0.133,
+      "stranded": 0.0
+    },
+    "gap": 231.1,
+    "wins": 1.0,
+    "rank": -0.069
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -2.4,
+      "p10": -25.1,
+      "p90": 220.3,
+      "lost": 0.783,
+      "stranded": 0.55
+    },
+    "informed": {
+      "median": 224.8,
+      "p10": 109.7,
+      "p90": 449.0,
+      "lost": 0.083,
+      "stranded": 0.0
+    },
+    "gap": 224.8,
+    "wins": 1.0,
+    "rank": -0.142
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -0.6,
+      "p10": -19.9,
+      "p90": 135.5,
+      "lost": 0.867,
+      "stranded": 0.45
+    },
+    "informed": {
+      "median": 219.7,
+      "p10": 80.6,
+      "p90": 502.0,
+      "lost": 0.133,
+      "stranded": 0.0
+    },
+    "gap": 219.7,
+    "wins": 1.0,
+    "rank": -0.211
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -3.3,
+      "p10": -32.5,
+      "p90": 81.8,
+      "lost": 0.917,
+      "stranded": 0.6
+    },
+    "informed": {
+      "median": 212.7,
+      "p10": 61.2,
+      "p90": 454.8,
+      "lost": 0.167,
+      "stranded": 0.067
+    },
+    "gap": 212.7,
+    "wins": 1.0,
+    "rank": -0.254
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -5.9,
+      "p10": -30.7,
+      "p90": 117.9,
+      "lost": 0.9,
+      "stranded": 0.683
+    },
+    "informed": {
+      "median": 194.9,
+      "p10": -1.0,
+      "p90": 453.6,
+      "lost": 0.417,
+      "stranded": 0.383
+    },
+    "gap": 194.9,
+    "wins": 1.0,
+    "rank": -0.406
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -8.4,
+      "p10": -61.6,
+      "p90": 69.0,
+      "lost": 0.95,
+      "stranded": 0.667
+    },
+    "informed": {
+      "median": 192.0,
+      "p10": -0.8,
+      "p90": 537.3,
+      "lost": 0.35,
+      "stranded": 0.3
+    },
+    "gap": 192.0,
+    "wins": 1.0,
+    "rank": -0.41
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 1.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=1.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -5.6,
+      "p10": -31.4,
+      "p90": 127.0,
+      "lost": 0.85,
+      "stranded": 0.6
+    },
+    "informed": {
+      "median": 193.6,
+      "p10": 60.5,
+      "p90": 472.3,
+      "lost": 0.217,
+      "stranded": 0.0
+    },
+    "gap": 193.6,
+    "wins": 1.0,
+    "rank": -0.422
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -21.8,
+      "p10": -58.5,
+      "p90": -3.6,
+      "lost": 1.0,
+      "stranded": 0.95
+    },
+    "informed": {
+      "median": -0.2,
+      "p10": -2.5,
+      "p90": 532.7,
+      "lost": 0.8,
+      "stranded": 0.8
+    },
+    "gap": -0.2,
+    "wins": 1.0,
+    "rank": -3.198
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -21.9,
+      "p10": -65.2,
+      "p90": -1.1,
+      "lost": 1.0,
+      "stranded": 0.933
+    },
+    "informed": {
+      "median": -1.4,
+      "p10": -3.1,
+      "p90": 422.4,
+      "lost": 0.7,
+      "stranded": 0.7
+    },
+    "gap": -1.4,
+    "wins": 1.0,
+    "rank": -3.209
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -18.9,
+      "p10": -68.7,
+      "p90": -2.6,
+      "lost": 0.983,
+      "stranded": 0.967
+    },
+    "informed": {
+      "median": -0.2,
+      "p10": -2.0,
+      "p90": 525.3,
+      "lost": 0.8,
+      "stranded": 0.8
+    },
+    "gap": -0.2,
+    "wins": 1.0,
+    "rank": -3.227
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -18.7,
+      "p10": -86.4,
+      "p90": -0.4,
+      "lost": 0.983,
+      "stranded": 0.867
+    },
+    "informed": {
+      "median": -2.0,
+      "p10": -3.0,
+      "p90": 564.2,
+      "lost": 0.767,
+      "stranded": 0.767
+    },
+    "gap": -2.0,
+    "wins": 1.0,
+    "rank": -3.247
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=1 target_days=7",
+    "random": {
+      "median": -17.7,
+      "p10": -59.6,
+      "p90": -1.3,
+      "lost": 1.0,
+      "stranded": 0.95
+    },
+    "informed": {
+      "median": -1.9,
+      "p10": -3.0,
+      "p90": 528.7,
+      "lost": 0.783,
+      "stranded": 0.783
+    },
+    "gap": -1.9,
+    "wins": 1.0,
+    "rank": -3.256
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -16.5,
+      "p10": -69.7,
+      "p90": 142.4,
+      "lost": 0.867,
+      "stranded": 0.767
+    },
+    "informed": {
+      "median": -1.0,
+      "p10": -3.0,
+      "p90": 792.3,
+      "lost": 0.75,
+      "stranded": 0.75
+    },
+    "gap": -1.0,
+    "wins": 1.0,
+    "rank": -3.259
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -15.7,
+      "p10": -68.9,
+      "p90": -2.0,
+      "lost": 1.0,
+      "stranded": 0.95
+    },
+    "informed": {
+      "median": -0.3,
+      "p10": -2.0,
+      "p90": 542.2,
+      "lost": 0.8,
+      "stranded": 0.8
+    },
+    "gap": -0.3,
+    "wins": 1.0,
+    "rank": -3.26
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -15.3,
+      "p10": -68.2,
+      "p90": 122.7,
+      "lost": 0.833,
+      "stranded": 0.683
+    },
+    "informed": {
+      "median": 0.0,
+      "p10": -3.4,
+      "p90": 811.0,
+      "lost": 0.583,
+      "stranded": 0.583
+    },
+    "gap": 0.0,
+    "wins": 1.0,
+    "rank": -3.261
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -17.1,
+      "p10": -63.8,
+      "p90": -2.2,
+      "lost": 1.0,
+      "stranded": 0.983
+    },
+    "informed": {
+      "median": -2.0,
+      "p10": -3.0,
+      "p90": 496.9,
+      "lost": 0.817,
+      "stranded": 0.817
+    },
+    "gap": -2.0,
+    "wins": 1.0,
+    "rank": -3.263
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -17.1,
+      "p10": -70.9,
+      "p90": -2.3,
+      "lost": 1.0,
+      "stranded": 1.0
+    },
+    "informed": {
+      "median": -2.0,
+      "p10": -3.0,
+      "p90": 405.9,
+      "lost": 0.85,
+      "stranded": 0.85
+    },
+    "gap": -2.0,
+    "wins": 1.0,
+    "rank": -3.263
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -16.1,
+      "p10": -72.6,
+      "p90": 74.0,
+      "lost": 0.917,
+      "stranded": 0.8
+    },
+    "informed": {
+      "median": -1.0,
+      "p10": -3.0,
+      "p90": 725.1,
+      "lost": 0.75,
+      "stranded": 0.75
+    },
+    "gap": -1.0,
+    "wins": 1.0,
+    "rank": -3.263
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -16.4,
+      "p10": -72.9,
+      "p90": -2.6,
+      "lost": 0.983,
+      "stranded": 0.95
+    },
+    "informed": {
+      "median": -2.0,
+      "p10": -3.0,
+      "p90": 495.9,
+      "lost": 0.833,
+      "stranded": 0.833
+    },
+    "gap": -2.0,
+    "wins": 1.0,
+    "rank": -3.27
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -15.1,
+      "p10": -52.2,
+      "p90": -2.5,
+      "lost": 0.967,
+      "stranded": 0.867
+    },
+    "informed": {
+      "median": -1.1,
+      "p10": -3.0,
+      "p90": 756.0,
+      "lost": 0.733,
+      "stranded": 0.733
+    },
+    "gap": -1.1,
+    "wins": 1.0,
+    "rank": -3.274
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -13.8,
+      "p10": -70.2,
+      "p90": -1.4,
+      "lost": 0.967,
+      "stranded": 0.933
+    },
+    "informed": {
+      "median": 0.0,
+      "p10": -2.5,
+      "p90": 491.2,
+      "lost": 0.8,
+      "stranded": 0.8
+    },
+    "gap": 0.0,
+    "wins": 1.0,
+    "rank": -3.276
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 1,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=1 target_days=10",
+    "random": {
+      "median": -13.4,
+      "p10": -65.0,
+      "p90": 111.9,
+      "lost": 0.9,
+      "stranded": 0.85
+    },
+    "informed": {
+      "median": -0.9,
+      "p10": -2.9,
+      "p90": 484.5,
+      "lost": 0.7,
+      "stranded": 0.7
+    },
+    "gap": -0.9,
+    "wins": 1.0,
+    "rank": -3.289
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -13.0,
+      "p10": -70.8,
+      "p90": 133.7,
+      "lost": 0.883,
+      "stranded": 0.767
+    },
+    "informed": {
+      "median": -1.0,
+      "p10": -3.0,
+      "p90": 650.1,
+      "lost": 0.733,
+      "stranded": 0.733
+    },
+    "gap": -1.0,
+    "wins": 1.0,
+    "rank": -3.294
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=20 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -11.8,
+      "p10": -106.6,
+      "p90": 235.0,
+      "lost": 0.883,
+      "stranded": 0.783
+    },
+    "informed": {
+      "median": 0.0,
+      "p10": -3.0,
+      "p90": 696.8,
+      "lost": 0.583,
+      "stranded": 0.583
+    },
+    "gap": 0.0,
+    "wins": 1.0,
+    "rank": -3.296
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=10",
+    "random": {
+      "median": -11.9,
+      "p10": -65.0,
+      "p90": 85.5,
+      "lost": 0.917,
+      "stranded": 0.75
+    },
+    "informed": {
+      "median": -0.1,
+      "p10": -3.4,
+      "p90": 818.1,
+      "lost": 0.567,
+      "stranded": 0.567
+    },
+    "gap": -0.1,
+    "wins": 1.0,
+    "rank": -3.296
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.25,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 2,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.25 capacity=40 provisions_per_day=2.0 harbor_dues=2 target_days=7",
+    "random": {
+      "median": -12.4,
+      "p10": -68.6,
+      "p90": 36.4,
+      "lost": 0.95,
+      "stranded": 0.85
+    },
+    "informed": {
+      "median": -0.7,
+      "p10": -3.2,
+      "p90": 756.5,
+      "lost": 0.633,
+      "stranded": 0.633
+    },
+    "gap": -0.7,
+    "wins": 1.0,
+    "rank": -3.297
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.15,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.15 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -13.3,
+      "p10": -68.5,
+      "p90": -1.9,
+      "lost": 0.983,
+      "stranded": 0.967
+    },
+    "informed": {
+      "median": -2.0,
+      "p10": -3.0,
+      "p90": 363.8,
+      "lost": 0.85,
+      "stranded": 0.85
+    },
+    "gap": -2.0,
+    "wins": 1.0,
+    "rank": -3.301
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -10.4,
+      "p10": -56.8,
+      "p90": 311.2,
+      "lost": 0.817,
+      "stranded": 0.683
+    },
+    "informed": {
+      "median": 0.0,
+      "p10": -3.0,
+      "p90": 763.3,
+      "lost": 0.567,
+      "stranded": 0.567
+    },
+    "gap": 0.0,
+    "wins": 1.0,
+    "rank": -3.31
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -10.1,
+      "p10": -68.8,
+      "p90": 362.4,
+      "lost": 0.733,
+      "stranded": 0.667
+    },
+    "informed": {
+      "median": -1.0,
+      "p10": -3.0,
+      "p90": 880.8,
+      "lost": 0.533,
+      "stranded": 0.533
+    },
+    "gap": -1.0,
+    "wins": 0.83,
+    "rank": -3.323
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 40,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 7
+    },
+    "label": "flow_scale=0.4 capacity=40 provisions_per_day=2.0 harbor_dues=3 target_days=7",
+    "random": {
+      "median": -10.8,
+      "p10": -65.1,
+      "p90": 148.3,
+      "lost": 0.867,
+      "stranded": 0.767
+    },
+    "informed": {
+      "median": -1.7,
+      "p10": -3.0,
+      "p90": 884.7,
+      "lost": 0.533,
+      "stranded": 0.533
+    },
+    "gap": -1.7,
+    "wins": 1.0,
+    "rank": -3.323
+  },
+  {
+    "setting": {
+      "market.flow_scale": 0.4,
+      "ship.capacity": 20,
+      "ship.provisions_per_day": 2.0,
+      "ship.harbor_dues": 3,
+      "market.target_days": 10
+    },
+    "label": "flow_scale=0.4 capacity=20 provisions_per_day=2.0 harbor_dues=3 target_days=10",
+    "random": {
+      "median": -7.0,
+      "p10": -55.0,
+      "p90": 399.6,
+      "lost": 0.767,
+      "stranded": 0.667
+    },
+    "informed": {
+      "median": 0.0,
+      "p10": -3.0,
+      "p90": 765.6,
+      "lost": 0.567,
+      "stranded": 0.567
+    },
+    "gap": 0.0,
+    "wins": 0.83,
+    "rank": -3.344
+  }
+]

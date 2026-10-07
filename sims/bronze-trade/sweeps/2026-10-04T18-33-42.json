@@ -1,0 +1,398 @@
+[
+  {
+    "setting": {
+      "ship.harbor_dues": 3,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=3 provisions_per_day=1.0 spread=0.1",
+    "random": {
+      "median": 366.2,
+      "p10": -18.3,
+      "p90": 1345.4,
+      "lost": 0.275,
+      "stranded": 0.175,
+      "empty": 0.012,
+      "full": 0.512,
+      "sardinia": 0.105,
+      "trip_days": 6.938
+    },
+    "informed": {
+      "median": 1015.1,
+      "p10": -43.2,
+      "p90": 1910.1,
+      "lost": 0.138,
+      "stranded": 0.0,
+      "empty": 0.103,
+      "full": 0.696,
+      "sardinia": 0.059,
+      "trip_days": 3.812
+    },
+    "gap": 2.77,
+    "wins": 1.0,
+    "rank": 5.952
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 2,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=2 provisions_per_day=1.0 spread=0.1",
+    "random": {
+      "median": 506.4,
+      "p10": -4.7,
+      "p90": 1346.6,
+      "lost": 0.25,
+      "stranded": 0.125,
+      "empty": 0.013,
+      "full": 0.501,
+      "sardinia": 0.108,
+      "trip_days": 7.125
+    },
+    "informed": {
+      "median": 1068.4,
+      "p10": -37.5,
+      "p90": 1758.6,
+      "lost": 0.15,
+      "stranded": 0.025,
+      "empty": 0.103,
+      "full": 0.702,
+      "sardinia": 0.059,
+      "trip_days": 3.75
+    },
+    "gap": 2.11,
+    "wins": 1.0,
+    "rank": 4.92
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 4,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=4 provisions_per_day=0.5 spread=0.1",
+    "random": {
+      "median": 512.6,
+      "p10": 45.1,
+      "p90": 1373.5,
+      "lost": 0.125,
+      "stranded": 0.075,
+      "empty": 0.01,
+      "full": 0.524,
+      "sardinia": 0.102,
+      "trip_days": 7.125
+    },
+    "informed": {
+      "median": 1074.2,
+      "p10": 0.5,
+      "p90": 1900.8,
+      "lost": 0.163,
+      "stranded": 0.025,
+      "empty": 0.111,
+      "full": 0.693,
+      "sardinia": 0.065,
+      "trip_days": 4.0
+    },
+    "gap": 2.1,
+    "wins": 1.0,
+    "rank": 4.91
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 2,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=2 provisions_per_day=0.5 spread=0.1",
+    "random": {
+      "median": 589.1,
+      "p10": 61.8,
+      "p90": 1308.0,
+      "lost": 0.15,
+      "stranded": 0.05,
+      "empty": 0.005,
+      "full": 0.537,
+      "sardinia": 0.108,
+      "trip_days": 6.875
+    },
+    "informed": {
+      "median": 1151.8,
+      "p10": 318.6,
+      "p90": 1894.2,
+      "lost": 0.062,
+      "stranded": 0.0,
+      "empty": 0.091,
+      "full": 0.716,
+      "sardinia": 0.051,
+      "trip_days": 3.625
+    },
+    "gap": 1.96,
+    "wins": 1.0,
+    "rank": 4.852
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 4,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=4 provisions_per_day=1.0 spread=0.15",
+    "random": {
+      "median": 209.3,
+      "p10": -23.2,
+      "p90": 1032.9,
+      "lost": 0.4,
+      "stranded": 0.312,
+      "empty": 0.024,
+      "full": 0.385,
+      "sardinia": 0.103,
+      "trip_days": 6.875
+    },
+    "informed": {
+      "median": 703.1,
+      "p10": -52.3,
+      "p90": 1427.1,
+      "lost": 0.275,
+      "stranded": 0.025,
+      "empty": 0.133,
+      "full": 0.617,
+      "sardinia": 0.062,
+      "trip_days": 3.625
+    },
+    "gap": 3.36,
+    "wins": 0.75,
+    "rank": 4.68
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 3,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=3 provisions_per_day=1.0 spread=0.15",
+    "random": {
+      "median": 256.5,
+      "p10": -27.0,
+      "p90": 1011.5,
+      "lost": 0.35,
+      "stranded": 0.213,
+      "empty": 0.016,
+      "full": 0.406,
+      "sardinia": 0.108,
+      "trip_days": 7.125
+    },
+    "informed": {
+      "median": 756.8,
+      "p10": -39.7,
+      "p90": 1486.1,
+      "lost": 0.188,
+      "stranded": 0.025,
+      "empty": 0.118,
+      "full": 0.645,
+      "sardinia": 0.066,
+      "trip_days": 3.75
+    },
+    "gap": 2.95,
+    "wins": 1.0,
+    "rank": 4.644
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 2,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=2 provisions_per_day=1.0 spread=0.15",
+    "random": {
+      "median": 343.2,
+      "p10": -16.6,
+      "p90": 1133.8,
+      "lost": 0.312,
+      "stranded": 0.175,
+      "empty": 0.011,
+      "full": 0.462,
+      "sardinia": 0.108,
+      "trip_days": 7.25
+    },
+    "informed": {
+      "median": 848.5,
+      "p10": 313.2,
+      "p90": 1468.6,
+      "lost": 0.05,
+      "stranded": 0.013,
+      "empty": 0.103,
+      "full": 0.639,
+      "sardinia": 0.062,
+      "trip_days": 3.812
+    },
+    "gap": 2.47,
+    "wins": 1.0,
+    "rank": 4.548
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 3,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=3 provisions_per_day=0.5 spread=0.1",
+    "random": {
+      "median": 505.3,
+      "p10": 21.3,
+      "p90": 1392.7,
+      "lost": 0.175,
+      "stranded": 0.062,
+      "empty": 0.008,
+      "full": 0.514,
+      "sardinia": 0.102,
+      "trip_days": 7.125
+    },
+    "informed": {
+      "median": 979.1,
+      "p10": 438.9,
+      "p90": 1687.8,
+      "lost": 0.062,
+      "stranded": 0.0,
+      "empty": 0.094,
+      "full": 0.724,
+      "sardinia": 0.058,
+      "trip_days": 3.75
+    },
+    "gap": 1.94,
+    "wins": 1.0,
+    "rank": 4.04
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 4,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=4 provisions_per_day=0.5 spread=0.15",
+    "random": {
+      "median": 456.6,
+      "p10": -4.1,
+      "p90": 1010.4,
+      "lost": 0.188,
+      "stranded": 0.125,
+      "empty": 0.012,
+      "full": 0.493,
+      "sardinia": 0.106,
+      "trip_days": 7.125
+    },
+    "informed": {
+      "median": 899.4,
+      "p10": 222.0,
+      "p90": 1829.3,
+      "lost": 0.087,
+      "stranded": 0.025,
+      "empty": 0.109,
+      "full": 0.658,
+      "sardinia": 0.064,
+      "trip_days": 3.75
+    },
+    "gap": 1.97,
+    "wins": 1.0,
+    "rank": 3.78
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 2,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=2 provisions_per_day=0.5 spread=0.15",
+    "random": {
+      "median": 432.4,
+      "p10": 21.6,
+      "p90": 947.5,
+      "lost": 0.225,
+      "stranded": 0.038,
+      "empty": 0.01,
+      "full": 0.488,
+      "sardinia": 0.119,
+      "trip_days": 7.0
+    },
+    "informed": {
+      "median": 857.0,
+      "p10": 242.9,
+      "p90": 1713.7,
+      "lost": 0.062,
+      "stranded": 0.0,
+      "empty": 0.102,
+      "full": 0.666,
+      "sardinia": 0.062,
+      "trip_days": 3.75
+    },
+    "gap": 1.98,
+    "wins": 1.0,
+    "rank": 3.625
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 3,
+      "ship.provisions_per_day": 0.5,
+      "market.spread": 0.15
+    },
+    "label": "harbor_dues=3 provisions_per_day=0.5 spread=0.15",
+    "random": {
+      "median": 411.4,
+      "p10": -2.5,
+      "p90": 1049.4,
+      "lost": 0.25,
+      "stranded": 0.15,
+      "empty": 0.018,
+      "full": 0.495,
+      "sardinia": 0.108,
+      "trip_days": 7.0
+    },
+    "informed": {
+      "median": 830.4,
+      "p10": 22.3,
+      "p90": 1529.2,
+      "lost": 0.125,
+      "stranded": 0.0,
+      "empty": 0.108,
+      "full": 0.677,
+      "sardinia": 0.06,
+      "trip_days": 3.75
+    },
+    "gap": 2.02,
+    "wins": 1.0,
+    "rank": 3.594
+  },
+  {
+    "setting": {
+      "ship.harbor_dues": 4,
+      "ship.provisions_per_day": 1.0,
+      "market.spread": 0.1
+    },
+    "label": "harbor_dues=4 provisions_per_day=1.0 spread=0.1",
+    "random": {
+      "median": 494.0,
+      "p10": -20.7,
+      "p90": 1358.2,
+      "lost": 0.25,
+      "stranded": 0.175,
+      "empty": 0.011,
+      "full": 0.484,
+      "sardinia": 0.107,
+      "trip_days": 7.25
+    },
+    "informed": {
+      "median": 907.0,
+      "p10": -51.9,
+      "p90": 1598.5,
+      "lost": 0.163,
+      "stranded": 0.013,
+      "empty": 0.112,
+      "full": 0.681,
+      "sardinia": 0.058,
+      "trip_days": 3.875
+    },
+    "gap": 1.84,
+    "wins": 0.88,
+    "rank": 3.443
+  }
+]

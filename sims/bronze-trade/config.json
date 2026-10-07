@@ -1,0 +1,128 @@
+{
+  "model": "claude-haiku-4-5",
+  "max_tokens": 600,
+  "max_tokens_thinking": 3000,
+  "effort": "low",
+  "max_steps": 6,
+
+  "captains": 10,
+  "days": 120,
+  "talk_rounds": 2,
+  "statement_limit": 300,
+  "barkeep_shown": 15,
+  "notes_kept": 12,
+  "max_wait_days": 30,
+  "default_wait_days": 3,
+
+  "ship": {"start_silver": 100, "capacity": 40, "speed_nm_per_day": 60, "provisions_per_day": 1.0, "harbor_dues": 2},
+
+  "market": {
+    "elasticity": 0.7,
+    "price_min": 0.4,
+    "price_max": 2.5,
+    "spread": 0.15,
+    "target_days": 7,
+    "min_target": 10,
+    "storage_cap": 3,
+    "bronze_recipe": {"copper": 9, "tin": 1, "out": 10},
+    "demand_drift": {"sigma": 0.15, "revert": 0.05, "min": 0.3, "max": 2.0}
+  },
+
+  "goods": {
+    "grain": 1, "olive oil": 3, "wine": 3, "cedar": 4, "linen": 4, "copper": 6,
+    "tin": 30, "bronze": 10, "horses": 25, "purple dye": 20, "gold": 50
+  },
+
+  "ports": {
+    "Enkomi":   {"lonlat": [33.9, 35.15], "region": "Cyprus",       "produce": {"copper": 20},
+                 "consume": {"grain": 6, "olive oil": 4}},
+    "Ugarit":   {"lonlat": [35.78, 35.6], "region": "Syria",        "produce": {"tin": 3, "purple dye": 2},
+                 "consume": {"copper": 4, "grain": 6, "linen": 2}},
+    "Byblos":   {"lonlat": [35.65, 34.12], "region": "Canaan",       "produce": {"cedar": 12},
+                 "consume": {"grain": 6, "wine": 3, "linen": 2, "gold": 1, "bronze": 5}},
+    "Avaris":   {"lonlat": [31.82, 30.79], "region": "Egypt",        "produce": {"grain": 30, "linen": 8, "gold": 2},
+                 "consume": {"cedar": 10, "olive oil": 8, "wine": 4, "horses": 2, "purple dye": 1, "bronze": 5},
+                 "bronze_batches": 2},
+    "Knossos":  {"lonlat": [25.16, 35.3], "region": "Crete",        "produce": {"olive oil": 10, "wine": 8},
+                 "consume": {"grain": 5, "copper": 4, "tin": 2, "bronze": 5}},
+    "Mycenae":  {"lonlat": [22.8, 37.6], "region": "Greece",       "produce": {"olive oil": 8, "wine": 8},
+                 "consume": {"grain": 6, "gold": 1, "horses": 1, "purple dye": 1, "bronze": 5},
+                 "bronze_batches": 1},
+    "Miletus":  {"lonlat": [27.28, 37.53], "region": "Hittite coast", "produce": {"horses": 3},
+                 "consume": {"grain": 5, "wine": 3, "linen": 4, "bronze": 6}},
+    "Rhodes":   {"lonlat": [28.22, 36.43], "region": "Dodecanese",   "consume": {"wine": 3}},
+    "Sardinia": {"lonlat": [9.0, 39.2], "region": "far west",     "produce": {"copper": 8, "tin": 3.5},
+                 "consume": {"olive oil": 3, "bronze": 6, "wine": 2}}
+  },
+
+  "lanes": [
+    ["Enkomi", "Ugarit", 70], ["Enkomi", "Byblos", 120], ["Ugarit", "Byblos", 110],
+    ["Byblos", "Avaris", 230], ["Enkomi", "Avaris", 230], ["Enkomi", "Rhodes", 250],
+    ["Rhodes", "Knossos", 120], ["Rhodes", "Miletus", 90], ["Knossos", "Mycenae", 130],
+    ["Mycenae", "Miletus", 170], ["Knossos", "Avaris", 320], ["Knossos", "Sardinia", 600],
+    ["Mycenae", "Sardinia", 560]
+  ],
+
+  "origins": {
+    "Avaris": {
+      "names": ["Nebamun", "Tiye", "Ahmose", "Meritamun", "Sennefer", "Nefertari"],
+      "persona": "You are Egyptian. Speak formally and floridly, swear 'by Amun!', call foreigners 'the people of the sand', and mention Pharaoh (may he live, prosper and be healthy) at every opportunity."
+    },
+    "Byblos": {
+      "names": ["Rib-Hadda", "Ahiram", "Zakar-Baal", "Abdi-Ashirta", "Yehimilk"],
+      "persona": "You are from Byblos. Like your famous king Rib-Hadda, who wrote Pharaoh letter after letter, you complain endlessly about your troubles, how nobody helps you, and how everyone else has it easier — while still driving a hard bargain."
+    },
+    "Ugarit": {
+      "names": ["Urtenu", "Sinaranu", "Yabninu", "Ammurapi", "Niqmaddu"],
+      "persona": "You are a merchant of Ugarit. You are a shrewd haggler who swears 'by Baal!', treats everything (even gossip) as having a price, and sizes up every stranger as a customer."
+    },
+    "Enkomi": {
+      "names": ["Kushmeshusha", "Eshuwara", "Kuniya", "Alasiotes"],
+      "persona": "You are from Alashiya (Cyprus). You boast constantly about the island's copper — the finest under heaven — and swear 'by the copper of Alashiya!'"
+    },
+    "Mycenae": {
+      "names": ["Alexandra", "Eumedes", "Amphiaraos", "Eteokles", "Iphimedeia"],
+      "persona": "You are Achaean (Mycenaean Greek). Speak like an epic poem: 'the wine-dark sea', 'swift ships', 'rosy-fingered dawn'. Honour, glory and boasting about your ancestors matter to you."
+    },
+    "Knossos": {
+      "names": ["Minos", "Rhadamanthys", "Pasiphae", "Ariadne", "Deukalion"],
+      "persona": "You are Cretan (Keftiu). You are nostalgic for the days when Crete ruled the waves, sniff at upstart mainlanders, and slip bulls, labyrinths and the Great Goddess into your speech."
+    },
+    "Miletus": {
+      "names": ["Piyamaradu", "Tawagalawa", "Mursili", "Hattusili", "Atpa"],
+      "persona": "You are from Millawanda on the Hittite coast. You speak legalistically — 'as the treaty states…', 'by oath before the Thousand Gods of Hatti' — and love clauses, witnesses and fine print."
+    },
+    "Rhodes": {
+      "names": ["Thersandros", "Ialysos", "Kameiros", "Lindia"],
+      "persona": "You are a Rhodian islander of Achaean stock. You speak in a breezy, epic-tinged way and pride yourself on knowing every ship that passes through the straits."
+    },
+    "Sardinia": {
+      "names": ["Shardana Ruu", "Shardana Tarru", "Shardana Ishu", "Shardana Mekhu"],
+      "persona": "You are a Shardana sailor from the far western island. You are terse — short, blunt sentences — a warrior-sailor from the edge of the known world who distrusts soft eastern talk."
+    }
+  },
+
+  "rules": [
+    "# You are {name} of {home}, a merchant ship captain in the Late Bronze Age Mediterranean (~1300 BCE).",
+    "",
+    "## Your persona",
+    "{persona}",
+    "Keep this voice whenever you speak in a tavern. It shapes how you talk, not what you want.",
+    "",
+    "## Your goal",
+    "End day {days} with as much **silver** (shekels) as possible. Cargo still aboard at the end counts at the last prices you saw.",
+    "",
+    "## How the world works",
+    "- You own one ship: it holds {capacity} units of cargo. Provisions cost {provisions} shekels per day, at sea or in port, and every port charges {dues} shekels of harbor dues when you arrive. If you have no silver and no cargo you are stranded and out of the game.",
+    "- Each port is a market. Prices follow stock: a good is cheap where it piles up and dear where it is scarce. **Every unit you buy or sell moves the price** — big orders push it against you.",
+    "- Ports produce and consume goods every day. How much a port wants of each good drifts up and down over time, so prices move and old news goes stale. Avaris and Mycenae turn 9 copper + 1 tin into 10 bronze — but only while they have both metals.",
+    "- **Information travels only on ships.** You only know what you have seen (your logbook, with dates — it may be out of date) and what other captains said in taverns, to you or to the barkeep.",
+    "",
+    "## Your life is a series of wake-ups",
+    "- **When you set sail you sleep until you arrive.** At sea you can do nothing and learn nothing.",
+    "- **When you arrive** you get a briefing (market, captains in port, the barkeep's log of past tavern talk, your logbook, sailing times) and **trade first, before the captains already waiting in port wake up.**",
+    "- Then those captains wake, everyone present talks in the tavern ({talk_rounds} rounds; everything said is heard by all present and remembered by the barkeep), and everyone makes final decisions: trade again, then set sail or wait.",
+    "- **Waiting in port:** you sleep until another ship arrives (it trades before you wake) or until your chosen number of days passes.",
+    "- Captains say whatever they like. Nothing checks whether it is true."
+  ]
+}

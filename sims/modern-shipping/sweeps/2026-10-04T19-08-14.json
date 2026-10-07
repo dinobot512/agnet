@@ -1,0 +1,2450 @@
+[
+ {
+  "strategy": {
+   "greedy": {
+    "median": 20192.441666666666,
+    "lost": 0.08888888888888889,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 14.93,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 513.0033333333333,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 19814.793333333335,
+   "tanker": 17838.68,
+   "container": 21973.22333333333
+  },
+  "chain_use": {
+   "fuel": 0.569179604261796,
+   "plastics": 0.3736301369863014,
+   "chocolate": 0.1643835616438356,
+   "copper": 0.3275875190258752,
+   "cars": 0.5129883307965499,
+   "aluminium": 0.19223744292237444,
+   "clothing": 0.2029109589041096,
+   "steel": 0.4545662100456621,
+   "batteries": 0.5958295281582953,
+   "electronics": 0.18679604261796043,
+   "meat": 0.09041095890410959,
+   "chips": 0.19202435312024352,
+   "furniture": 0.21534246575342464
+  },
+  "empty": 0.12337403553466043,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": 2.6638406645662904
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 15212.115,
+    "lost": 0.1,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 5.0633333333333335,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": 1603.6,
+    "lost": 0.9333333333333333,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 17738.043333333335,
+   "tanker": 13325.013333333332,
+   "container": 17740.786666666667
+  },
+  "chain_use": {
+   "fuel": 0.6215022831050229,
+   "plastics": 0.36712328767123287,
+   "chocolate": 0.16529680365296803,
+   "copper": 0.3429984779299848,
+   "cars": 0.48328259766615933,
+   "aluminium": 0.19897260273972603,
+   "clothing": 0.1922945205479452,
+   "steel": 0.4706164383561644,
+   "batteries": 0.5715981735159817,
+   "electronics": 0.17298325722983257,
+   "meat": 0.11506849315068493,
+   "chips": 0.20018264840182648,
+   "furniture": 0.23780821917808218
+  },
+  "empty": 0.14302727193690826,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 2.2171696685205626
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 14632.22,
+    "lost": 0.13333333333333333,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.596666666666667,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": 1144.6000000000001,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 11585.486666666666,
+   "tanker": 12519.416666666666,
+   "container": 19414.586666666666
+  },
+  "chain_use": {
+   "fuel": 0.6289703196347032,
+   "plastics": 0.3621004566210046,
+   "chocolate": 0.16461187214611872,
+   "copper": 0.3576864535768645,
+   "cars": 0.47234906139015725,
+   "aluminium": 0.19680365296803654,
+   "clothing": 0.1851027397260274,
+   "steel": 0.4970091324200913,
+   "batteries": 0.5798630136986301,
+   "electronics": 0.17336377473363776,
+   "meat": 0.1267579908675799,
+   "chips": 0.1865753424657534,
+   "furniture": 0.2420091324200913
+  },
+  "empty": 0.13776198689537178,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.930238006250777
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 13055.886666666665,
+    "lost": 0.15555555555555556,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.78,
+    "lost": 0.711111111111111,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 1269.78,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 12232.503333333334,
+   "tanker": 11734.369999999999,
+   "container": 18769.156666666666
+  },
+  "chain_use": {
+   "fuel": 0.5198401826484018,
+   "plastics": 0.30976027397260275,
+   "chocolate": 0.09200913242009132,
+   "copper": 0.2812024353120243,
+   "cars": 0.46387620497209536,
+   "aluminium": 0.10627853881278539,
+   "clothing": 0.11164383561643836,
+   "steel": 0.48315068493150687,
+   "batteries": 0.4725875190258752,
+   "electronics": 0.09269406392694063,
+   "meat": 0.14520547945205478,
+   "chips": 0.23534246575342466,
+   "furniture": 0.16840182648401825
+  },
+  "empty": 0.16002630643669735,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.5807471246576688
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 13555.566666666668,
+    "lost": 0.2,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.513333333333334,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": 1291.0366666666666,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 16840.446666666667,
+   "tanker": 5232.08,
+   "container": 16417.256666666668
+  },
+  "chain_use": {
+   "fuel": 0.598113394216134,
+   "plastics": 0.36826484018264843,
+   "chocolate": 0.16187214611872144,
+   "copper": 0.4121765601217656,
+   "cars": 0.549847792998478,
+   "aluminium": 0.20787671232876712,
+   "clothing": 0.22003424657534246,
+   "steel": 0.44579908675799085,
+   "batteries": 0.727351598173516,
+   "electronics": 0.20079908675799088,
+   "meat": 0.09625570776255707,
+   "chips": 0.2039573820395738,
+   "furniture": 0.23378995433789954
+  },
+  "empty": 0.11480668165160496,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.4686441349669184
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 10830.36,
+    "lost": 0.23333333333333334,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.9,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.6
+   },
+   "random": {
+    "median": 1143.6066666666668,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 8167.393333333333,
+   "tanker": 10177.72,
+   "container": 17306.456666666665
+  },
+  "chain_use": {
+   "fuel": 0.4886971080669711,
+   "plastics": 0.3513127853881279,
+   "chocolate": 0.09474885844748858,
+   "copper": 0.3467275494672755,
+   "cars": 0.47653475393201417,
+   "aluminium": 0.12728310502283105,
+   "clothing": 0.12922374429223743,
+   "steel": 0.5931278538812785,
+   "batteries": 0.49158295281582953,
+   "electronics": 0.09474885844748858,
+   "meat": 0.10977168949771689,
+   "chips": 0.3097716894977169,
+   "furniture": 0.2157077625570776
+  },
+  "empty": 0.17711263731027105,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.0940702435705196
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 11648.029999999999,
+    "lost": 0.13333333333333333,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.193333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.6666666666666666
+   },
+   "random": {
+    "median": 830.14,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 12454.233333333334,
+   "tanker": 8533.286666666667,
+   "container": 15553.203333333333
+  },
+  "chain_use": {
+   "fuel": 0.4455433789954338,
+   "plastics": 0.35119863013698627,
+   "chocolate": 0.09611872146118722,
+   "copper": 0.31008371385083716,
+   "cars": 0.3085996955859969,
+   "aluminium": 0.15262557077625571,
+   "clothing": 0.12619863013698632,
+   "steel": 0.4130593607305936,
+   "batteries": 0.37534246575342467,
+   "electronics": 0.13607305936073058,
+   "meat": 0.0639269406392694,
+   "chips": 0.2635616438356164,
+   "furniture": 0.26136986301369863
+  },
+  "empty": 0.1644207282590353,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.0860641971257463
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 9747.283333333333,
+    "lost": 0.24444444444444444,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 2.9633333333333334,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 874.6433333333333,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 11157.106666666667,
+   "tanker": 8100.45,
+   "container": 11021.18
+  },
+  "chain_use": {
+   "fuel": 0.5048310502283105,
+   "plastics": 0.32836757990867577,
+   "chocolate": 0.08881278538812785,
+   "copper": 0.3615296803652968,
+   "cars": 0.4812531709791984,
+   "aluminium": 0.10844748858447488,
+   "clothing": 0.10273972602739725,
+   "steel": 0.5473059360730593,
+   "batteries": 0.5415981735159817,
+   "electronics": 0.13211567732115675,
+   "meat": 0.17863013698630137,
+   "chips": 0.29497716894977166,
+   "furniture": 0.35232876712328765
+  },
+  "empty": 0.163493665163056,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 1.0635717496732542
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 19468.035,
+    "lost": 0.12222222222222223,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 17.22,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 23.4,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 13071.038333333334,
+   "tanker": 23222.11,
+   "container": 19875.906666666666
+  },
+  "chain_use": {
+   "fuel": 0.6319436834094369,
+   "plastics": 0.36426940639269406,
+   "chocolate": 0.1643835616438356,
+   "copper": 0.30509893455098935,
+   "cars": 0.5155504819888381,
+   "aluminium": 0.20136986301369864,
+   "clothing": 0.228310502283105,
+   "steel": 0.466324200913242,
+   "batteries": 0.6273211567732115,
+   "electronics": 0.1800608828006088,
+   "meat": 0.136986301369863,
+   "chips": 0.21105022831050227,
+   "furniture": 0.26666666666666666
+  },
+  "empty": 0.14800535422704925,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": 0.9784527893663423
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8598.021666666667,
+    "lost": 0.35555555555555557,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 2.4000000000000004,
+    "lost": 0.7999999999999999,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": 800.5766666666666,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6226.373333333334,
+   "tanker": 8458.24,
+   "container": 11769.859999999999
+  },
+  "chain_use": {
+   "fuel": 0.524158295281583,
+   "plastics": 0.3583904109589041,
+   "chocolate": 0.08493150684931507,
+   "copper": 0.3824200913242009,
+   "cars": 0.5269913749365804,
+   "aluminium": 0.11484018264840183,
+   "clothing": 0.09817351598173515,
+   "steel": 0.5926940639269407,
+   "batteries": 0.5110958904109588,
+   "electronics": 0.10894216133942161,
+   "meat": 0.1384474885844749,
+   "chips": 0.34112633181126334,
+   "furniture": 0.26666666666666666
+  },
+  "empty": 0.18819267742190054,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.6819447584305403
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 9430.475,
+    "lost": 0.24444444444444444,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 8.073333333333334,
+    "lost": 1.0,
+    "bankrupt": 0.6444444444444444
+   },
+   "random": {
+    "median": 774.9366666666666,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6940.151666666667,
+   "tanker": 8878.869999999999,
+   "container": 15939.593333333334
+  },
+  "chain_use": {
+   "fuel": 0.44298173515981737,
+   "plastics": 0.3319063926940639,
+   "chocolate": 0.09954337899543379,
+   "copper": 0.34185692541856927,
+   "cars": 0.30730593607305934,
+   "aluminium": 0.16906392694063926,
+   "clothing": 0.12049086757990868,
+   "steel": 0.441324200913242,
+   "batteries": 0.3645205479452055,
+   "electronics": 0.14741248097412482,
+   "meat": 0.11415525114155252,
+   "chips": 0.2495281582952816,
+   "furniture": 0.25205479452054796
+  },
+  "empty": 0.18813036242486492,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.6233550516347978
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 10357.038333333332,
+    "lost": 0.28888888888888886,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.636666666666667,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 558.3066666666666,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 10119.164999999999,
+   "tanker": 5822.7699999999995,
+   "container": 22776.92
+  },
+  "chain_use": {
+   "fuel": 0.5182435312024353,
+   "plastics": 0.3622716894977169,
+   "chocolate": 0.1643835616438356,
+   "copper": 0.3926940639269406,
+   "cars": 0.5309741248097413,
+   "aluminium": 0.19680365296803654,
+   "clothing": 0.23858447488584475,
+   "steel": 0.47490867579908674,
+   "batteries": 0.6676560121765601,
+   "electronics": 0.18051750380517503,
+   "meat": 0.10593607305936073,
+   "chips": 0.2191780821917808,
+   "furniture": 0.18173515981735158
+  },
+  "empty": 0.10852628157844552,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.5211361856365764
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8741.011666666667,
+    "lost": 0.26666666666666666,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 6.96,
+    "lost": 1.0,
+    "bankrupt": 0.6666666666666666
+   },
+   "random": {
+    "median": 785.6033333333334,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 5572.545,
+   "tanker": 8089.679999999999,
+   "container": 11990.003333333334
+  },
+  "chain_use": {
+   "fuel": 0.4443721461187215,
+   "plastics": 0.33173515981735163,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.27397260273972607,
+   "cars": 0.23386605783866057,
+   "aluminium": 0.1763698630136986,
+   "clothing": 0.3148401826484018,
+   "steel": 0.3404337899543379,
+   "batteries": 0.213089802130898,
+   "electronics": 0.15319634703196347,
+   "meat": 0.07616438356164383,
+   "chips": 0.2503805175038052,
+   "furniture": 0.18995433789954339
+  },
+  "empty": 0.2949013322567295,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.43891767592614644
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 7878.098333333333,
+    "lost": 0.3111111111111111,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 2.4699999999999998,
+    "lost": 1.0,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 522.76,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6715.19,
+   "tanker": 5999.42,
+   "container": 10351.323333333334
+  },
+  "chain_use": {
+   "fuel": 0.45502663622526635,
+   "plastics": 0.3559931506849315,
+   "chocolate": 0.09863013698630137,
+   "copper": 0.3429984779299848,
+   "cars": 0.33792491121258245,
+   "aluminium": 0.16974885844748858,
+   "clothing": 0.11044520547945205,
+   "steel": 0.4462557077625571,
+   "batteries": 0.4028614916286149,
+   "electronics": 0.13793759512937595,
+   "meat": 0.18776255707762557,
+   "chips": 0.30319634703196346,
+   "furniture": 0.28876712328767123
+  },
+  "empty": 0.1723122980866283,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.3912207328249175
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 17163.778333333332,
+    "lost": 0.06666666666666667,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 32.64333333333333,
+    "lost": 0.711111111111111,
+    "bankrupt": 0.6888888888888889
+   },
+   "random": {
+    "median": 13.826666666666668,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 14056.161666666667,
+   "tanker": 17003.57,
+   "container": 23392.923333333332
+  },
+  "chain_use": {
+   "fuel": 0.542255707762557,
+   "plastics": 0.4046232876712329,
+   "chocolate": 0.0821917808219178,
+   "copper": 0.4423135464231354,
+   "cars": 0.5996702181633689,
+   "aluminium": 0.13150684931506848,
+   "clothing": 0.186986301369863,
+   "steel": 0.5282191780821918,
+   "batteries": 0.5422374429223744,
+   "electronics": 0.1288812785388128,
+   "meat": 0.0582648401826484,
+   "chips": 0.4013394216133942,
+   "furniture": 0.27835616438356164
+  },
+  "empty": 0.21810340314397245,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": 0.2911145579697522
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8281.085,
+    "lost": 0.24444444444444444,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.34,
+    "lost": 1.0,
+    "bankrupt": 0.8444444444444444
+   },
+   "random": {
+    "median": 358.51,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 8074.628333333334,
+   "tanker": 8045.323333333334,
+   "container": 10903.663333333332
+  },
+  "chain_use": {
+   "fuel": 0.3259284627092846,
+   "plastics": 0.27659817351598176,
+   "chocolate": 0.05182648401826484,
+   "copper": 0.22214611872146117,
+   "cars": 0.2512430238457636,
+   "aluminium": 0.1608447488584475,
+   "clothing": 0.18613013698630138,
+   "steel": 0.3089497716894977,
+   "batteries": 0.23786910197869102,
+   "electronics": 0.1248097412480974,
+   "meat": 0.15013698630136987,
+   "chips": 0.24057838660578387,
+   "furniture": 0.26575342465753427
+  },
+  "empty": 0.22532623498899,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.24267486949810177
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8265.928333333333,
+    "lost": 0.37777777777777777,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.74,
+    "lost": 1.0,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": 426.8566666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 9850.875,
+   "tanker": 4550.426666666666,
+   "container": 9793.42
+  },
+  "chain_use": {
+   "fuel": 0.41551978691019786,
+   "plastics": 0.3166095890410959,
+   "chocolate": 0.10319634703196347,
+   "copper": 0.32960426179604263,
+   "cars": 0.3145104008117707,
+   "aluminium": 0.13972602739726028,
+   "clothing": 0.10907534246575343,
+   "steel": 0.38942922374429223,
+   "batteries": 0.4097869101978691,
+   "electronics": 0.1269786910197869,
+   "meat": 0.14703196347031963,
+   "chips": 0.2258447488584475,
+   "furniture": 0.28858447488584477
+  },
+  "empty": 0.14756589301970555,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.2121435351471646
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 7943.838333333334,
+    "lost": 0.26666666666666666,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 3.4033333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.8666666666666667
+   },
+   "random": {
+    "median": 444.7066666666667,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6184.8516666666665,
+   "tanker": 7876.183333333333,
+   "container": 10806.88
+  },
+  "chain_use": {
+   "fuel": 0.3409695585996956,
+   "plastics": 0.3050799086757991,
+   "chocolate": 0.06575342465753424,
+   "copper": 0.22050989345509892,
+   "cars": 0.2506341958396753,
+   "aluminium": 0.19075342465753425,
+   "clothing": 0.21957762557077626,
+   "steel": 0.33812785388127853,
+   "batteries": 0.23855403348554036,
+   "electronics": 0.13542617960426181,
+   "meat": 0.1326027397260274,
+   "chips": 0.27838660578386604,
+   "furniture": 0.23689497716894978
+  },
+  "empty": 0.25271750915190244,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.18986809550592776
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6415.676666666666,
+    "lost": 0.4444444444444445,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.55,
+    "lost": 1.0,
+    "bankrupt": 0.6444444444444444
+   },
+   "random": {
+    "median": 487.28666666666663,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6411.2,
+   "tanker": 5974.5,
+   "container": 6844.403333333334
+  },
+  "chain_use": {
+   "fuel": 0.3879467275494673,
+   "plastics": 0.31803652968036533,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.2536529680365297,
+   "cars": 0.2660832064941654,
+   "aluminium": 0.22557077625570776,
+   "clothing": 0.2317351598173516,
+   "steel": 0.348675799086758,
+   "batteries": 0.26487062404870626,
+   "electronics": 0.17640791476407916,
+   "meat": 0.0697716894977169,
+   "chips": 0.2534855403348554,
+   "furniture": 0.24840182648401826
+  },
+  "empty": 0.2714622043311291,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.18454430902008825
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8025.111666666667,
+    "lost": 0.26666666666666666,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 11.806666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.6222222222222222
+   },
+   "random": {
+    "median": 472.95666666666665,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 5575.698333333333,
+   "tanker": 7941.3533333333335,
+   "container": 12362.76
+  },
+  "chain_use": {
+   "fuel": 0.4310936073059361,
+   "plastics": 0.3355593607305936,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.2837138508371385,
+   "cars": 0.2138762049720954,
+   "aluminium": 0.2317351598173516,
+   "clothing": 0.29440639269406393,
+   "steel": 0.3224885844748859,
+   "batteries": 0.1711111111111111,
+   "electronics": 0.17549467275494673,
+   "meat": 0.04767123287671233,
+   "chips": 0.2880669710806697,
+   "furniture": 0.24894977168949772
+  },
+  "empty": 0.32715370728902354,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.11000466801746167
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6856.568333333334,
+    "lost": 0.4444444444444445,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 2.5666666666666664,
+    "lost": 1.0,
+    "bankrupt": 0.9333333333333333
+   },
+   "random": {
+    "median": 297.1566666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 5917.011666666667,
+   "tanker": 6825.443333333334,
+   "container": 6482.099999999999
+  },
+  "chain_use": {
+   "fuel": 0.34301826484018266,
+   "plastics": 0.28527397260273973,
+   "chocolate": 0.057762557077625565,
+   "copper": 0.2101598173515982,
+   "cars": 0.2513444951801116,
+   "aluminium": 0.16221461187214611,
+   "clothing": 0.17077625570776256,
+   "steel": 0.30118721461187214,
+   "batteries": 0.23476407914764078,
+   "electronics": 0.16202435312024352,
+   "meat": 0.1568949771689498,
+   "chips": 0.26943683409436836,
+   "furniture": 0.24365296803652967
+  },
+  "empty": 0.2777732352652708,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": 0.015189698158610779
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5918.128333333333,
+    "lost": 0.5222222222222223,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 9.543333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.5777777777777777
+   },
+   "random": {
+    "median": 406.49333333333334,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4842.24,
+   "tanker": 6299.843333333333,
+   "container": 7772.766666666666
+  },
+  "chain_use": {
+   "fuel": 0.4005494672754947,
+   "plastics": 0.3461187214611872,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.2820015220700152,
+   "cars": 0.1871892440385591,
+   "aluminium": 0.18276255707762556,
+   "clothing": 0.2993150684931507,
+   "steel": 0.30134703196347035,
+   "batteries": 0.13986301369863013,
+   "electronics": 0.16354642313546422,
+   "meat": 0.14356164383561643,
+   "chips": 0.2880669710806697,
+   "furniture": 0.2191780821917808
+  },
+  "empty": 0.2793661087048663,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.1582377109437969
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5655.5233333333335,
+    "lost": 0.5444444444444444,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 4.426666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.8444444444444444
+   },
+   "random": {
+    "median": 453.76,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4523.11,
+   "tanker": 6462.963333333333,
+   "container": 6053.3966666666665
+  },
+  "chain_use": {
+   "fuel": 0.31860045662100456,
+   "plastics": 0.2340753424657534,
+   "chocolate": 0.03287671232876712,
+   "copper": 0.18177321156773213,
+   "cars": 0.10794013191273465,
+   "aluminium": 0.13082191780821917,
+   "clothing": 0.20542237442922376,
+   "steel": 0.17582191780821918,
+   "batteries": 0.07395738203957382,
+   "electronics": 0.10993150684931507,
+   "meat": 0.029406392694063924,
+   "chips": 0.17640791476407916,
+   "furniture": 0.03415525114155251
+  },
+  "empty": 0.4047308549043941,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.29440558098521896
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 4789.406666666667,
+    "lost": 0.8111111111111111,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 1.9333333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.8222222222222222
+   },
+   "random": {
+    "median": 538.5666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 3904.0316666666668,
+   "tanker": 5681.69,
+   "container": 5079.9
+  },
+  "chain_use": {
+   "fuel": 0.32723820395738207,
+   "plastics": 0.2468607305936073,
+   "chocolate": 0.028995433789954336,
+   "copper": 0.18961187214611872,
+   "cars": 0.09205986808726535,
+   "aluminium": 0.16518264840182648,
+   "clothing": 0.20827625570776254,
+   "steel": 0.1886529680365297,
+   "batteries": 0.039360730593607306,
+   "electronics": 0.13310502283105025,
+   "meat": 0.04273972602739726,
+   "chips": 0.19120243531202435,
+   "furniture": 0.058447488584474884
+  },
+  "empty": 0.4145131636784421,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.3613396057725418
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5622.06,
+    "lost": 0.5666666666666667,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 5.593333333333334,
+    "lost": 1.0,
+    "bankrupt": 0.8222222222222223
+   },
+   "random": {
+    "median": 296.0,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4301.86,
+   "tanker": 6310.036666666667,
+   "container": 8108.83
+  },
+  "chain_use": {
+   "fuel": 0.32010654490106544,
+   "plastics": 0.2437214611872146,
+   "chocolate": 0.02945205479452055,
+   "copper": 0.17187975646879758,
+   "cars": 0.09142567224759006,
+   "aluminium": 0.15490867579908676,
+   "clothing": 0.216324200913242,
+   "steel": 0.19182648401826485,
+   "batteries": 0.041780821917808214,
+   "electronics": 0.1350076103500761,
+   "meat": 0.04091324200913242,
+   "chips": 0.16407914764079148,
+   "furniture": 0.02191780821917808
+  },
+  "empty": 0.41328381629354116,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.6314218424816136
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6089.401666666667,
+    "lost": 0.5,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 2.413333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.888888888888889
+   },
+   "random": {
+    "median": 75.68666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4814.6849999999995,
+   "tanker": 6552.34,
+   "container": 7850.793333333334
+  },
+  "chain_use": {
+   "fuel": 0.3465441400304414,
+   "plastics": 0.32009132420091324,
+   "chocolate": 0.06575342465753424,
+   "copper": 0.23036529680365297,
+   "cars": 0.2515220700152207,
+   "aluminium": 0.21084474885844748,
+   "clothing": 0.17248858447488585,
+   "steel": 0.3441780821917808,
+   "batteries": 0.23624048706240486,
+   "electronics": 0.1867199391171994,
+   "meat": 0.17753424657534247,
+   "chips": 0.29558599695586,
+   "furniture": 0.27872146118721464
+  },
+  "empty": 0.29254996799851585,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.8834137392609768
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5072.110000000001,
+    "lost": 0.6888888888888889,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 3.1633333333333336,
+    "lost": 1.0,
+    "bankrupt": 0.8
+   },
+   "random": {
+    "median": 119.34666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4716.203333333333,
+   "tanker": 5843.31,
+   "container": 4451.0633333333335
+  },
+  "chain_use": {
+   "fuel": 0.3231537290715373,
+   "plastics": 0.246175799086758,
+   "chocolate": 0.028995433789954336,
+   "copper": 0.16221461187214611,
+   "cars": 0.11676813800101471,
+   "aluminium": 0.15878995433789955,
+   "clothing": 0.20993150684931508,
+   "steel": 0.2052283105022831,
+   "batteries": 0.07251141552511416,
+   "electronics": 0.12663622526636226,
+   "meat": 0.032146118721461184,
+   "chips": 0.18508371385083716,
+   "furniture": 0.09863013698630137
+  },
+  "empty": 0.39574045939624075,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 0.5,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=0.5 start_cash=6000",
+  "rank": -0.9378600500387004
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 14343.173333333334,
+    "lost": 0.18888888888888888,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 13.696666666666665,
+    "lost": 0.711111111111111,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": -11.423333333333332,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6942.53,
+   "tanker": 17775.306666666667,
+   "container": 16515.893333333333
+  },
+  "chain_use": {
+   "fuel": 0.534455098934551,
+   "plastics": 0.42945205479452053,
+   "chocolate": 0.07534246575342465,
+   "copper": 0.4162861491628615,
+   "cars": 0.5921867072552004,
+   "aluminium": 0.16712328767123288,
+   "clothing": 0.13150684931506848,
+   "steel": 0.5160958904109589,
+   "batteries": 0.5170928462709284,
+   "electronics": 0.1441019786910198,
+   "meat": 0.09187214611872146,
+   "chips": 0.4328767123287671,
+   "furniture": 0.273972602739726
+  },
+  "empty": 0.20817008960521124,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -1.6870749156158305
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 12017.87,
+    "lost": 0.2,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 17.02,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.7333333333333333
+   },
+   "random": {
+    "median": -59.52333333333333,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 9574.723333333333,
+   "tanker": 13203.08,
+   "container": 14993.973333333333
+  },
+  "chain_use": {
+   "fuel": 0.4260372907153729,
+   "plastics": 0.3714611872146119,
+   "chocolate": 0.09657534246575343,
+   "copper": 0.29006849315068495,
+   "cars": 0.32062404870624045,
+   "aluminium": 0.18036529680365296,
+   "clothing": 0.1267123287671233,
+   "steel": 0.39529680365296804,
+   "batteries": 0.3581735159817352,
+   "electronics": 0.14771689497716894,
+   "meat": 0.08474885844748858,
+   "chips": 0.30989345509893457,
+   "furniture": 0.27159817351598176
+  },
+  "empty": 0.19574554639346492,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -1.9564825258542504
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 11053.833333333334,
+    "lost": 0.24444444444444444,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 17.506666666666668,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.7333333333333333
+   },
+   "random": {
+    "median": -102.80666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 8249.881666666666,
+   "tanker": 12425.623333333333,
+   "container": 14909.643333333333
+  },
+  "chain_use": {
+   "fuel": 0.4354185692541857,
+   "plastics": 0.3544520547945205,
+   "chocolate": 0.11826484018264839,
+   "copper": 0.3035007610350076,
+   "cars": 0.32265347539320144,
+   "aluminium": 0.19417808219178082,
+   "clothing": 0.13373287671232878,
+   "steel": 0.4087442922374429,
+   "batteries": 0.39490106544901066,
+   "electronics": 0.13881278538812786,
+   "meat": 0.1645662100456621,
+   "chips": 0.27887366818873666,
+   "furniture": 0.2701369863013699
+  },
+  "empty": 0.19153118876243125,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -2.126690183391136
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 9331.828333333333,
+    "lost": 0.3555555555555555,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.913333333333333,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.7333333333333333
+   },
+   "random": {
+    "median": -97.20333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6898.983333333334,
+   "tanker": 10764.576666666668,
+   "container": 11883.696666666667
+  },
+  "chain_use": {
+   "fuel": 0.5061940639269407,
+   "plastics": 0.33430365296803655,
+   "chocolate": 0.07602739726027397,
+   "copper": 0.35547945205479453,
+   "cars": 0.5310248604769152,
+   "aluminium": 0.1398401826484018,
+   "clothing": 0.10907534246575343,
+   "steel": 0.550365296803653,
+   "batteries": 0.5669406392694064,
+   "electronics": 0.1289193302891933,
+   "meat": 0.23579908675799086,
+   "chips": 0.31077625570776257,
+   "furniture": 0.273972602739726
+  },
+  "empty": 0.18339847172191895,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -2.3404724383603783
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 9926.361666666666,
+    "lost": 0.2777777777777778,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 9.853333333333333,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": -86.72666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 8399.208333333334,
+   "tanker": 5318.133333333333,
+   "container": 12642.37
+  },
+  "chain_use": {
+   "fuel": 0.5228767123287671,
+   "plastics": 0.3715753424657534,
+   "chocolate": 0.1643835616438356,
+   "copper": 0.39467275494672754,
+   "cars": 0.525875190258752,
+   "aluminium": 0.2139269406392694,
+   "clothing": 0.22180365296803653,
+   "steel": 0.49968036529680365,
+   "batteries": 0.6981430745814307,
+   "electronics": 0.1767503805175038,
+   "meat": 0.10940639269406392,
+   "chips": 0.22146118721461186,
+   "furniture": 0.19360730593607306
+  },
+  "empty": 0.10166096997608,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -2.340751315826081
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 10123.868333333334,
+    "lost": 0.2222222222222222,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 12.116666666666667,
+    "lost": 0.9333333333333333,
+    "bankrupt": 0.9111111111111111
+   },
+   "random": {
+    "median": -133.38666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6995.385,
+   "tanker": 10580.236666666666,
+   "container": 12700.703333333333
+  },
+  "chain_use": {
+   "fuel": 0.3292808219178082,
+   "plastics": 0.3036529680365297,
+   "chocolate": 0.05821917808219178,
+   "copper": 0.2273592085235921,
+   "cars": 0.2528919330289193,
+   "aluminium": 0.1552511415525114,
+   "clothing": 0.1832191780821918,
+   "steel": 0.2880821917808219,
+   "batteries": 0.2540487062404871,
+   "electronics": 0.16552511415525115,
+   "meat": 0.15305936073059362,
+   "chips": 0.24785388127853883,
+   "furniture": 0.262648401826484
+  },
+  "empty": 0.272185857737413,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.4369541231287086
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 10248.003333333332,
+    "lost": 0.3111111111111111,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 9.74,
+    "lost": 0.7333333333333333,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": -56.02333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 10871.543333333333,
+   "tanker": 4221.143333333333,
+   "container": 13754.546666666667
+  },
+  "chain_use": {
+   "fuel": 0.49474733637747337,
+   "plastics": 0.36518264840182646,
+   "chocolate": 0.16232876712328767,
+   "copper": 0.3735159817351598,
+   "cars": 0.49203450025367834,
+   "aluminium": 0.20559360730593607,
+   "clothing": 0.19474885844748857,
+   "steel": 0.43360730593607305,
+   "batteries": 0.643013698630137,
+   "electronics": 0.18314307458143073,
+   "meat": 0.12018264840182648,
+   "chips": 0.20158295281582952,
+   "furniture": 0.20438356164383562
+  },
+  "empty": 0.09533342024209135,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.4760894324821257
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8904.636666666667,
+    "lost": 0.35555555555555557,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 10.28,
+    "lost": 0.711111111111111,
+    "bankrupt": 0.711111111111111
+   },
+   "random": {
+    "median": -151.55666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 7025.846666666666,
+   "tanker": 12574.916666666666,
+   "container": 8648.226666666666
+  },
+  "chain_use": {
+   "fuel": 0.5186369863013699,
+   "plastics": 0.27208904109589044,
+   "chocolate": 0.0821917808219178,
+   "copper": 0.2916286149162861,
+   "cars": 0.3987823439878234,
+   "aluminium": 0.12442922374429223,
+   "clothing": 0.09583333333333333,
+   "steel": 0.49319634703196347,
+   "batteries": 0.5165753424657534,
+   "electronics": 0.1126331811263318,
+   "meat": 0.1475799086757991,
+   "chips": 0.21092846270928461,
+   "furniture": 0.26593607305936073
+  },
+  "empty": 0.16836455423611388,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 1.0,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=1.0 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.506109503571644
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8404.963333333333,
+    "lost": 0.28888888888888886,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 9.836666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.8222222222222222
+   },
+   "random": {
+    "median": -165.82999999999998,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 8106.128333333334,
+   "tanker": 5213.863333333334,
+   "container": 10785.213333333333
+  },
+  "chain_use": {
+   "fuel": 0.40081202435312024,
+   "plastics": 0.38881278538812786,
+   "chocolate": 0.09634703196347032,
+   "copper": 0.34364535768645355,
+   "cars": 0.3424150177574835,
+   "aluminium": 0.17374429223744292,
+   "clothing": 0.1269977168949772,
+   "steel": 0.38801369863013696,
+   "batteries": 0.4280974124809741,
+   "electronics": 0.1767503805175038,
+   "meat": 0.09424657534246575,
+   "chips": 0.33503805175038054,
+   "furniture": 0.2880365296803653
+  },
+  "empty": 0.14228885631175178,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.6392485868999893
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 9231.195,
+    "lost": 0.26666666666666666,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 16.15,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.7777777777777778
+   },
+   "random": {
+    "median": -97.81333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 5894.7733333333335,
+   "tanker": 10174.54,
+   "container": 11767.609999999999
+  },
+  "chain_use": {
+   "fuel": 0.4269079147640792,
+   "plastics": 0.323458904109589,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.25814307458143076,
+   "cars": 0.26628614916286153,
+   "aluminium": 0.21038812785388128,
+   "clothing": 0.2563356164383562,
+   "steel": 0.35404109589041094,
+   "batteries": 0.24599695585996956,
+   "electronics": 0.16537290715372907,
+   "meat": 0.0273972602739726,
+   "chips": 0.2613089802130898,
+   "furniture": 0.1930593607305936
+  },
+  "empty": 0.2913674533060344,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.6465190182573344
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6601.426666666666,
+    "lost": 0.43333333333333335,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 5.24,
+    "lost": 1.0,
+    "bankrupt": 0.9777777777777777
+   },
+   "random": {
+    "median": -181.10666666666665,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 6051.963333333333,
+   "tanker": 8718.85,
+   "container": 5835.356666666667
+  },
+  "chain_use": {
+   "fuel": 0.3360479452054794,
+   "plastics": 0.3118150684931507,
+   "chocolate": 0.05365296803652968,
+   "copper": 0.2236681887366819,
+   "cars": 0.2616945712836124,
+   "aluminium": 0.20011415525114154,
+   "clothing": 0.20656392694063927,
+   "steel": 0.3083561643835616,
+   "batteries": 0.27363774733637747,
+   "electronics": 0.19988584474885845,
+   "meat": 0.14593607305936074,
+   "chips": 0.2684322678843227,
+   "furniture": 0.26757990867579906
+  },
+  "empty": 0.28857487673023485,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -2.896091266531169
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8521.904999999999,
+    "lost": 0.39999999999999997,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 15.726666666666667,
+    "lost": 0.888888888888889,
+    "bankrupt": 0.8222222222222223
+   },
+   "random": {
+    "median": -144.31666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4058.536666666667,
+   "tanker": 10546.576666666666,
+   "container": 10491.71
+  },
+  "chain_use": {
+   "fuel": 0.4469421613394216,
+   "plastics": 0.34252283105022835,
+   "chocolate": 0.03675799086757991,
+   "copper": 0.24809741248097414,
+   "cars": 0.21425672247590055,
+   "aluminium": 0.21050228310502284,
+   "clothing": 0.28710045662100453,
+   "steel": 0.3101598173515982,
+   "batteries": 0.1639421613394216,
+   "electronics": 0.17564687975646878,
+   "meat": 0.041461187214611867,
+   "chips": 0.256103500761035,
+   "furniture": 0.1784474885844749
+  },
+  "empty": 0.33968136535601756,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -2.8981276183414857
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6820.466666666667,
+    "lost": 0.43333333333333335,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 9.696666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.7555555555555555
+   },
+   "random": {
+    "median": -142.60333333333335,
+    "lost": 1.0,
+    "bankrupt": 0.044444444444444446
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4496.398333333333,
+   "tanker": 5342.683333333333,
+   "container": 10418.426666666666
+  },
+  "chain_use": {
+   "fuel": 0.3847503805175038,
+   "plastics": 0.35610730593607304,
+   "chocolate": 0.11575342465753426,
+   "copper": 0.32469558599695586,
+   "cars": 0.3206494165398275,
+   "aluminium": 0.13515981735159818,
+   "clothing": 0.1269406392694064,
+   "steel": 0.40614155251141554,
+   "batteries": 0.41986301369863016,
+   "electronics": 0.18116438356164385,
+   "meat": 0.19470319634703195,
+   "chips": 0.2832267884322679,
+   "furniture": 0.28401826484018267
+  },
+  "empty": 0.1480652310082664,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -2.950076751100394
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 8013.5216666666665,
+    "lost": 0.4111111111111111,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 13.693333333333333,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.9111111111111111
+   },
+   "random": {
+    "median": -129.41333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4529.386666666666,
+   "tanker": 10518.550000000001,
+   "container": 11360.28
+  },
+  "chain_use": {
+   "fuel": 0.3177130898021309,
+   "plastics": 0.30262557077625574,
+   "chocolate": 0.06301369863013698,
+   "copper": 0.22884322678843225,
+   "cars": 0.2515728056823947,
+   "aluminium": 0.16050228310502285,
+   "clothing": 0.17922374429223745,
+   "steel": 0.3265753424657534,
+   "batteries": 0.23794520547945205,
+   "electronics": 0.08926940639269407,
+   "meat": 0.03616438356164384,
+   "chips": 0.28027397260273973,
+   "furniture": 0.23141552511415525
+  },
+  "empty": 0.25908849332277867,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -3.000030303213496
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 6201.513333333333,
+    "lost": 0.4222222222222222,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 8.203333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.7333333333333333
+   },
+   "random": {
+    "median": -154.77,
+    "lost": 1.0,
+    "bankrupt": 0.044444444444444446
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4929.88,
+   "tanker": 9209.15,
+   "container": 6268.5
+  },
+  "chain_use": {
+   "fuel": 0.4243896499238965,
+   "plastics": 0.3343607305936073,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.25772450532724506,
+   "cars": 0.2697869101978691,
+   "aluminium": 0.21232876712328766,
+   "clothing": 0.269634703196347,
+   "steel": 0.34374429223744296,
+   "batteries": 0.2580669710806697,
+   "electronics": 0.16103500761035008,
+   "meat": 0.05789954337899543,
+   "chips": 0.28161339421613396,
+   "furniture": 0.16164383561643836
+  },
+  "empty": 0.3024923656874885,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -3.0849517463979024
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5730.706666666667,
+    "lost": 0.5111111111111111,
+    "bankrupt": 0.011111111111111112
+   },
+   "liner": {
+    "median": 6.04,
+    "lost": 1.0,
+    "bankrupt": 0.9333333333333333
+   },
+   "random": {
+    "median": -157.09333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 4198.596666666666,
+   "tanker": 7328.776666666667,
+   "container": 6695.393333333333
+  },
+  "chain_use": {
+   "fuel": 0.3313470319634703,
+   "plastics": 0.30302511415525113,
+   "chocolate": 0.06575342465753424,
+   "copper": 0.2180365296803653,
+   "cars": 0.24731100963977676,
+   "aluminium": 0.19726027397260273,
+   "clothing": 0.2139269406392694,
+   "steel": 0.31771689497716893,
+   "batteries": 0.23228310502283103,
+   "electronics": 0.18885083713850837,
+   "meat": 0.14995433789954338,
+   "chips": 0.24471841704718417,
+   "furniture": 0.25680365296803653
+  },
+  "empty": 0.273856356640703,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 60,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=60 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -3.1247734560579588
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5708.848333333333,
+    "lost": 0.5333333333333333,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 13.883333333333333,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.888888888888889
+   },
+   "random": {
+    "median": -156.28333333333333,
+    "lost": 1.0,
+    "bankrupt": 0.044444444444444446
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 3265.1366666666668,
+   "tanker": 7391.753333333333,
+   "container": 7363.643333333333
+  },
+  "chain_use": {
+   "fuel": 0.30413013698630137,
+   "plastics": 0.21666666666666667,
+   "chocolate": 0.027625570776255704,
+   "copper": 0.14117199391171992,
+   "cars": 0.12473363774733638,
+   "aluminium": 0.11986301369863014,
+   "clothing": 0.08373287671232876,
+   "steel": 0.18447488584474886,
+   "batteries": 0.09471841704718417,
+   "electronics": 0.10270167427701675,
+   "meat": 0.025753424657534246,
+   "chips": 0.13887366818873667,
+   "furniture": 0.02191780821917808
+  },
+  "empty": 0.3813927587215373,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=4.0 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -3.514793328313342
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 5574.611666666667,
+    "lost": 0.5555555555555556,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.173333333333334,
+    "lost": 1.0,
+    "bankrupt": 0.7777777777777778
+   },
+   "random": {
+    "median": -133.22,
+    "lost": 1.0,
+    "bankrupt": 0.06666666666666667
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 2445.895,
+   "tanker": 8397.633333333333,
+   "container": 7043.216666666667
+  },
+  "chain_use": {
+   "fuel": 0.4232633181126332,
+   "plastics": 0.3284246575342466,
+   "chocolate": 0.04452054794520548,
+   "copper": 0.2699391171993912,
+   "cars": 0.2225520040588534,
+   "aluminium": 0.20490867579908675,
+   "clothing": 0.2554794520547945,
+   "steel": 0.33337899543378996,
+   "batteries": 0.20210045662100456,
+   "electronics": 0.17792998477929986,
+   "meat": 0.03561643835616438,
+   "chips": 0.2798477929984779,
+   "furniture": 0.21753424657534248
+  },
+  "empty": 0.3051625273107716,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.6,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.6 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -3.518759573093516
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 4910.046666666667,
+    "lost": 0.6222222222222222,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 16.203333333333333,
+    "lost": 0.9555555555555556,
+    "bankrupt": 0.8444444444444444
+   },
+   "random": {
+    "median": -101.9,
+    "lost": 1.0,
+    "bankrupt": 0.044444444444444446
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 3879.411666666667,
+   "tanker": 6965.2,
+   "container": 5509.913333333333
+  },
+  "chain_use": {
+   "fuel": 0.29717884322678845,
+   "plastics": 0.23607305936073059,
+   "chocolate": 0.02374429223744292,
+   "copper": 0.15285388127853883,
+   "cars": 0.10393201420598681,
+   "aluminium": 0.05319634703196347,
+   "clothing": 0.08304794520547945,
+   "steel": 0.16203196347031965,
+   "batteries": 0.043926940639269406,
+   "electronics": 0.06815068493150685,
+   "meat": 0.026484018264840183,
+   "chips": 0.1528462709284627,
+   "furniture": 0.02191780821917808
+  },
+  "empty": 0.37193833169065366,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 4.0,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=4.0 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -3.5658466706659913
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 4915.345,
+    "lost": 0.6666666666666666,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 6.666666666666667,
+    "lost": 0.9777777777777777,
+    "bankrupt": 0.9333333333333333
+   },
+   "random": {
+    "median": -133.63666666666666,
+    "lost": 1.0,
+    "bankrupt": 0.0
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 3136.326666666667,
+   "tanker": 7058.946666666667,
+   "container": 4801.933333333333
+  },
+  "chain_use": {
+   "fuel": 0.31105479452054796,
+   "plastics": 0.258675799086758,
+   "chocolate": 0.028995433789954336,
+   "copper": 0.15951293759512938,
+   "cars": 0.14249112125824454,
+   "aluminium": 0.1678082191780822,
+   "clothing": 0.18299086757990865,
+   "steel": 0.1908904109589041,
+   "batteries": 0.10974124809741248,
+   "electronics": 0.13519786910197867,
+   "meat": 0.02557077625570776,
+   "chips": 0.16505327245053272,
+   "furniture": 0.02191780821917808
+  },
+  "empty": 0.38147778141222505,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 3,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=2.5 mult.bulk=3 mult.tanker=1 start_cash=6000",
+  "rank": -3.5996720175329378
+ },
+ {
+  "strategy": {
+   "greedy": {
+    "median": 4178.168333333333,
+    "lost": 0.7,
+    "bankrupt": 0.0
+   },
+   "liner": {
+    "median": 7.286666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.9111111111111111
+   },
+   "random": {
+    "median": -96.16666666666667,
+    "lost": 1.0,
+    "bankrupt": 0.022222222222222223
+   }
+  },
+  "greedy_by_type": {
+   "bulk": 3360.04,
+   "tanker": 6873.7300000000005,
+   "container": 5094.443333333334
+  },
+  "chain_use": {
+   "fuel": 0.31323135464231355,
+   "plastics": 0.2374429223744292,
+   "chocolate": 0.028995433789954336,
+   "copper": 0.17374429223744292,
+   "cars": 0.11430745814307458,
+   "aluminium": 0.14463470319634703,
+   "clothing": 0.1829337899543379,
+   "steel": 0.17134703196347031,
+   "batteries": 0.07473363774733638,
+   "electronics": 0.10555555555555556,
+   "meat": 0.03817351598173516,
+   "chips": 0.1775951293759513,
+   "furniture": 0.02191780821917808
+  },
+  "empty": 0.3790727613577028,
+  "start": 6000,
+  "setting": {
+   "market.flow_scale": 0.4,
+   "market.target_days": 30,
+   "market.price_max": 2.5,
+   "mult.bulk": 2,
+   "mult.tanker": 1,
+   "start_cash": 6000
+  },
+  "label": "flow_scale=0.4 target_days=30 price_max=2.5 mult.bulk=2 mult.tanker=1 start_cash=6000",
+  "rank": -3.698771619773861
+ }
+]

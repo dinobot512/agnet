@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modern Shipping Playback</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<style>
+:root {
+  color-scheme: light;
+  --surface-1: #fbfaf7; --surface-2: #f2f0ea; --sea: #eef3f6; --land: #e2ddd0; --land-edge: #cfc8b6;
+  --lane: #b9c4cc; --canal: #e34948; --text-primary: #1d1d1b; --text-secondary: #55544e; --text-muted: #8a897f;
+  --border: #dedbd2; --accent: #2a78d6;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --up: #008300; --down: #e34948;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --surface-2: #232321; --sea: #18232b; --land: #2c2b27; --land-edge: #3c3a34;
+    --lane: #3a4a55; --canal: #e66767; --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #8f8e85;
+    --border: #3a3935; --accent: #3987e5; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --up: #3fae3f; --down: #e66767;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-1: #1a1a19; --surface-2: #232321; --sea: #18232b; --land: #2c2b27; --land-edge: #3c3a34;
+  --lane: #3a4a55; --canal: #e66767; --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #8f8e85;
+  --border: #3a3935; --accent: #3987e5; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --up: #3fae3f; --down: #e66767;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--surface-1); color: var(--text-primary);
+  font: 14px/1.4 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: grid; grid-template-columns: 300px minmax(0, 1fr) 360px; grid-template-rows: 100vh;
+}
+main { display: flex; flex-direction: column; min-width: 0; }
+#mapwrap { flex: 1; min-height: 0; position: relative; background: var(--sea); }
+svg#map { width: 100%; height: 100%; display: block; cursor: grab; }
+svg#map:active { cursor: grabbing; }
+.land { fill: var(--land); stroke: var(--land-edge); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
+.lanes { fill: none; stroke: var(--lane); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
+.canal { fill: none; stroke: var(--canal); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.route { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; }
+.port-dot { fill: var(--surface-1); stroke: var(--text-secondary); stroke-width: 1.5; cursor: pointer; }
+.port-dot.sel { stroke: var(--accent); stroke-width: 3; }
+.port-label { fill: var(--text-primary); font-size: 10px; font-weight: 600; paint-order: stroke;
+  stroke: var(--sea); stroke-width: 3px; pointer-events: none; }
+.ship { cursor: pointer; }
+.ship path { stroke: var(--surface-1); stroke-width: 1.2; }
+.ship.waiting path { stroke: var(--text-secondary); stroke-dasharray: 2 1.5; }
+.ship.selected path { stroke: var(--text-primary); stroke-width: 2.2; }
+.ship text { fill: var(--text-primary); font-size: 7px; font-weight: 700; pointer-events: none; paint-order: stroke;
+  stroke: var(--sea); stroke-width: 2px; }
+.controls { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--border);
+  background: var(--surface-1); flex-wrap: wrap; }
+.controls button, .controls select { font: inherit; color: var(--text-primary); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+#play { min-width: 74px; font-weight: 600; }
+#slider { flex: 1; min-width: 160px; accent-color: var(--accent); }
+#daylabel { font-variant-numeric: tabular-nums; min-width: 118px; font-weight: 600; }
+aside { overflow-y: auto; padding: 14px 16px; background: var(--surface-1); }
+aside#portpanel { border-right: 1px solid var(--border); }
+aside#side { border-left: 1px solid var(--border); }
+h1 { font-size: 16px; margin: 0 0 2px; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); margin: 16px 0 6px; }
+.sub { color: var(--text-muted); font-size: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+td, th { padding: 3px 4px; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: var(--text-muted); font-weight: 500; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover td, .shiprow:hover { background: var(--surface-2); }
+tr.sel td { background: var(--surface-2); font-weight: 600; }
+.scrollbox { max-height: 300px; overflow-y: auto; border: 1px solid var(--border); border-radius: 6px; }
+.scrollbox th { position: sticky; top: 0; background: var(--surface-1); }
+.sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
+.legend { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; font-size: 12px; color: var(--text-secondary); }
+.chip { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 16px; padding: 0 3px;
+  border-radius: 8px; color: #fff; font-size: 9px; font-weight: 700; }
+.shiprow { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 0; cursor: pointer; }
+.shiprow .st { color: var(--text-muted); margin-left: auto; text-align: right; }
+.facts { font-size: 12px; color: var(--text-secondary); margin-top: 6px; }
+.facts b { color: var(--text-primary); font-weight: 600; }
+.up { color: var(--up); } .down { color: var(--down); }
+#portselect { width: 100%; font: inherit; font-weight: 600; color: var(--text-primary); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; }
+#selected { font-size: 12px; background: var(--surface-2); border-radius: 8px; padding: 8px 10px; display: none; margin-top: 10px; }
+.feed .item { padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+#tip { position: absolute; pointer-events: none; z-index: 5; background: var(--surface-1); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; max-width: 300px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.15); display: none; }
+.row { color: var(--text-secondary); }
+@media (max-width: 1150px) {
+  body { grid-template-columns: minmax(0, 1fr) 330px; grid-template-rows: 70vh auto; }
+  aside#portpanel { grid-column: 1 / -1; grid-row: 2; border-right: none; border-top: 1px solid var(--border); }
+}
+@media (max-width: 760px) {
+  body { grid-template-columns: 1fr; grid-template-rows: 60vh auto auto; }
+  aside#side { border-left: none; border-top: 1px solid var(--border); }
+  aside#portpanel { grid-row: auto; }
+}
+</style>
+</head>
+<body>
+<aside id="portpanel" aria-label="Port status">
+  <h2 style="margin-top:0">Port</h2>
+  <select id="portselect" aria-label="Choose a port"></select>
+  <div id="portbody"></div>
+</aside>
+<main>
+  <div id="mapwrap">
+    <svg id="map" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid meet" role="img" aria-label="World map with ships"></svg>
+    <div id="tip"></div>
+  </div>
+  <div class="controls">
+    <button id="play" title="Play / pause (space)">▶ Play</button>
+    <button id="back" title="Back one day (←)">−1 day</button>
+    <button id="fwd" title="Forward one day (→)">+1 day</button>
+    <input id="slider" type="range" min="0" step="0.05" value="0" aria-label="Day">
+    <span id="daylabel">Day 0</span>
+    <label class="sub">Speed
+      <select id="speed">
+        <option value="1">1 day/s</option><option value="3">3 days/s</option><option value="7" selected>7 days/s</option>
+        <option value="15">15 days/s</option><option value="30">30 days/s</option>
+      </select>
+    </label>
+    <button id="reset" title="Reset zoom">Reset zoom</button>
+  </div>
+</main>
+<aside id="side">
+  <h1>Modern shipping</h1>
+  <div class="sub" id="runmeta"></div>
+  <div id="selected"></div>
+  <h2>Legend</h2>
+  <div class="legend" id="legend"></div>
+  <h2>Strategies now (median net worth)</h2>
+  <table id="strats"><thead><tr><th>strategy</th><th class="num">captains</th><th class="num">median</th><th class="num">bankrupt</th></tr></thead><tbody></tbody></table>
+  <h2>Leaderboard (net worth now)</h2>
+  <div class="scrollbox"><table id="board"><thead><tr><th class="num">#</th><th></th><th>Captain</th><th>Ship</th><th class="num">Worth</th></tr></thead><tbody></tbody></table></div>
+  <h2>Recent voyages</h2>
+  <div class="feed" id="feed"></div>
+</aside>
+
+<script>
+const DATA = /*__RUN_DATA__*/null;
+const ATLAS = /*__ATLAS__*/null;
+
+const STRATS = ["greedy", "liner", "random"];
+const STRAT_COLOR = {greedy: "var(--s1)", liner: "var(--s2)", random: "var(--s3)"};
+const SHAPE = {bulk: d3.symbolCircle, tanker: d3.symbolDiamond, container: d3.symbolSquare};
+const SHAPE_CHAR = {bulk: "●", tanker: "◆", container: "■"};
+const DAYS = DATA.meta.days;
+const byId = Object.fromEntries(DATA.captains.map(c => [c.id, c]));
+const NM = 3440.065;
+
+// ---------- map ----------
+const W = 1200, H = 620;
+const svg = d3.select("#map");
+const projection = d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]],
+  {type: "MultiPoint", coordinates: [[-175, -57], [180, -57], [180, 73], [-175, 73]]});
+const geoPath = d3.geoPath(projection);
+const world = svg.append("g");
+const gLand = world.append("g"), gLanes = world.append("g"), gRoute = world.append("g"),
+      gPorts = world.append("g"), gShips = world.append("g"), gLabels = world.append("g");
+let K = 1;
+const zoom = d3.zoom().scaleExtent([1, 14]).on("zoom", e => { world.attr("transform", e.transform); K = e.transform.k; render(true); });
+svg.call(zoom);
+document.getElementById("reset").onclick = () => svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
+
+function drawLand(w) {
+  gLand.selectAll("path").data(topojson.feature(w, w.objects.countries).features).join("path").attr("class", "land").attr("d", geoPath);
+}
+if (ATLAS) drawLand(ATLAS); else d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(drawLand).catch(() => {});
+
+const C = name => DATA.coords[name];
+const canalEdges = new Set(Object.values(DATA.canals).map(e => e.slice().sort().join("|")));
+gLanes.append("path").attr("class", "lanes").attr("d", geoPath({type: "MultiLineString",
+  coordinates: DATA.lanes.filter(l => !canalEdges.has(l.slice().sort().join("|"))).map(l => [C(l[0]), C(l[1])])}));
+for (const [name, e] of Object.entries(DATA.canals)) {
+  gLanes.append("path").attr("class", "canal").attr("d", geoPath({type: "LineString", coordinates: [C(e[0]), C(e[1])]}))
+    .append("title").text(`${name} Canal (toll)`);
+}
+const PORTS = Object.keys(DATA.ports);
+const P = name => projection(C(name));
+gPorts.selectAll("circle").data(PORTS).join("circle").attr("class", "port-dot").attr("r", 3.5)
+  .attr("cx", d => P(d)[0]).attr("cy", d => P(d)[1])
+  .on("mousemove", (ev, d) => showTip(ev, portTip(d))).on("mouseleave", hideTip)
+  .on("click", (ev, d) => selectPort(d));
+const portLabels = gLabels.selectAll("text").data(PORTS).join("text").attr("class", "port-label").text(d => d);
+
+// ---------- time lookups ----------
+function snapAt(cid, t) {
+  const s = DATA.snaps[cid];
+  let lo = 0, hi = s.length - 1, best = -1;
+  while (lo <= hi) { const mid = (lo + hi) >> 1; if (s[mid][0] <= t) { best = mid; lo = mid + 1; } else hi = mid - 1; }
+  if (best < 0) return null;
+  const [day, status, port, origin, dest, depart, arrive, until, cash, fuel, cargo, route] = s[best];
+  return {day, status, port, origin, dest, depart, arrive, until, cash, fuel, cargo, route};
+}
+const segCache = {};
+function routeSegs(key) {
+  if (segCache[key]) return segCache[key];
+  const nodes = DATA.routes[key].map(C);
+  const segs = []; let total = 0;
+  for (let i = 1; i < nodes.length; i++) {
+    const d = d3.geoDistance(nodes[i - 1], nodes[i]) * NM;
+    segs.push({a: nodes[i - 1], b: nodes[i], d, interp: d3.geoInterpolate(nodes[i - 1], nodes[i])}); total += d;
+  }
+  return segCache[key] = {segs, total, nodes};
+}
+function alongRoute(key, f) {
+  const {segs, total} = routeSegs(key);
+  let d = Math.max(0, Math.min(1, f)) * total;
+  for (const s of segs) { if (d <= s.d) return projection(s.interp(s.d ? d / s.d : 0)); d -= s.d; }
+  return projection(segs[segs.length - 1].b);
+}
+const day0 = t => Math.max(0, Math.min(DAYS, Math.floor(t)));
+function priceAt(port, good, day) {
+  const h = DATA.history[port] && DATA.history[port][good];
+  return h ? h.sell[Math.min(day, h.sell.length - 1)] : 0;
+}
+function worth(s, day) {
+  const where = s.port || s.dest;
+  let v = s.cash;
+  for (const [g, q] of Object.entries(s.cargo || {})) v += q * priceAt(where, g, day);
+  return v;
+}
+const load = cargo => Object.values(cargo || {}).reduce((a, b) => a + b, 0);
+const cargoText = cargo => Object.entries(cargo || {}).map(([g, q]) => `${q} ${g}`).join(", ") || "empty";
+
+function shipStates(t) {
+  const out = [], inPort = {};
+  for (const c of DATA.captains) {
+    const s = snapAt(c.id, t);
+    if (!s || s.status === "bankrupt") continue;
+    const st = {c, s};
+    if (s.status === "sea") st.xy = alongRoute(s.route, (t - s.depart) / Math.max(1e-6, s.arrive - s.depart));
+    else (inPort[s.port] = inPort[s.port] || []).push(st);
+    out.push(st);
+  }
+  for (const [port, list] of Object.entries(inPort)) {           // rings around the port, in screen pixels
+    const [x, y] = P(port);
+    list.sort((a, b) => a.c.id < b.c.id ? -1 : 1);
+    let i = 0, ring = 0;
+    while (i < list.length) {
+      const n = Math.min(8 * (ring + 1), list.length - i), r = (11 + ring * 9) / K;
+      for (let k = 0; k < n; k++) {
+        const a = 2 * Math.PI * k / n - Math.PI / 2;
+        list[i + k].xy = [x + r * Math.cos(a), y + r * Math.sin(a)];
+      }
+      i += n; ring++;
+    }
+  }
+  return out;
+}
+
+// ---------- rendering ----------
+let t = 0, playing = false, speed = 7, selected = null, selPort = PORTS[0], lastPanels = "";
+const slider = document.getElementById("slider"); slider.max = DAYS;
+
+function statusText(s) {
+  if (s.status === "sea") {
+    const via = (DATA.voyages.find(v => v[1] && v[0] === s.depart && v[2] === s.origin && v[3] === s.dest) || [])[6] || [];
+    return `Sailing ${s.origin} → <b>${s.dest}</b>, arrives day ${s.arrive}${via.length ? " via " + via.join(" + ") : ""}`;
+  }
+  if (s.status === "waiting") return `Waiting in <b>${s.port}</b> until day ${s.until}`;
+  return `In port at <b>${s.port}</b>`;
+}
+function shipTip(c) {
+  const s = snapAt(c.id, t); if (!s) return "";
+  const ship = DATA.ships[c.ship_type];
+  return `<b>${c.name}</b> <span class="row">${c.label} · ${c.strategy} · ${SHAPE_CHAR[c.ship_type]} ${ship.name}</span>
+    <div class="row">${statusText(s)}</div>
+    <div>Cash: <b>${s.cash.toFixed(0)}</b> · net worth ${worth(s, day0(t)).toFixed(0)}</div>
+    <div>Fuel: ${s.fuel.toFixed(0)} / ${ship.tank.toFixed(0)}</div>
+    <div>Hold (${load(s.cargo)}/${ship.capacity}): ${cargoText(s.cargo)}</div>`;
+}
+function portTip(port) {
+  const info = DATA.ports[port];
+  const here = shipStates(t).filter(st => st.s.status !== "sea" && st.s.port === port).length;
+  return `<b>${port}</b> <span class="row">(${info.region})</span><div class="row">${here} ship(s) in port · click for details</div>`;
+}
+const tip = document.getElementById("tip");
+let tipFor = null;
+function showTip(ev, html) {
+  const box = document.getElementById("mapwrap").getBoundingClientRect();
+  tip.innerHTML = html; tip.style.display = "block";
+  let x = ev.clientX - box.left + 14, y = ev.clientY - box.top + 14;
+  if (x + tip.offsetWidth > box.width) x -= tip.offsetWidth + 28;
+  if (y + tip.offsetHeight > box.height) y -= tip.offsetHeight + 28;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip() { tip.style.display = "none"; tipFor = null; }
+
+function render(zoomOnly = false) {
+  portLabels.attr("x", d => P(d)[0] + 5 / K).attr("y", d => P(d)[1] - 5 / K).style("font-size", `${10 / Math.sqrt(K)}px`)
+    .style("stroke-width", `${3 / K}px`);
+  gPorts.selectAll("circle").attr("r", 3.5 / Math.sqrt(K)).attr("stroke-width", 1.5 / K).classed("sel", d => d === selPort);
+  const states = shipStates(t);
+  const ships = gShips.selectAll("g.ship").data(states, d => d.c.id).join(enter => {
+    const g = enter.append("g").attr("class", "ship");
+    g.append("path"); g.append("text").attr("x", 6).attr("y", 3);
+    g.on("mousemove", (ev, d) => { tipFor = d.c; showTip(ev, shipTip(d.c)); }).on("mouseleave", hideTip)
+     .on("click", (ev, d) => { selected = selected === d.c.id ? null : d.c.id; lastPanels = ""; render(); });
+    return g;
+  });
+  const s = 1 / K ** 0.75;
+  ships.attr("transform", d => `translate(${d.xy[0]},${d.xy[1]}) scale(${s})`)
+    .classed("waiting", d => d.s.status === "waiting").classed("selected", d => d.c.id === selected);
+  ships.select("path").attr("d", d => d3.symbol().type(SHAPE[d.c.ship_type]).size(d.c.id === selected ? 110 : 55)())
+    .attr("fill", d => STRAT_COLOR[d.c.strategy]);
+  ships.select("text").text(d => K >= 2.5 || d.c.id === selected ? d.c.label : "");
+  ships.filter(d => d.c.id === selected).raise();
+  if (tipFor && tip.style.display === "block") tip.innerHTML = shipTip(tipFor);
+  const sel = selected && states.find(st => st.c.id === selected);
+  gRoute.selectAll("path").data(sel && sel.s.status === "sea" ? [sel.s.route] : []).join("path").attr("class", "route")
+    .attr("d", key => geoPath({type: "LineString", coordinates: routeSegs(key).nodes}));
+  if (zoomOnly) return;
+  document.getElementById("daylabel").textContent = `Day ${t.toFixed(1)} / ${DAYS}`;
+  slider.value = t;
+  renderPanels();
+}
+
+function renderPanels() {
+  const day = day0(t);
+  const key = `${day}|${selected}|${selPort}`;
+  if (key === lastPanels) return;
+  lastPanels = key;
+  const box = document.getElementById("selected");
+  if (selected) { box.style.display = "block"; box.innerHTML = shipTip(byId[selected]) + `<div class="sub" style="margin-top:4px">Click the ship again to stop following.</div>`; }
+  else box.style.display = "none";
+
+  const rows = DATA.captains.map(c => { const s = snapAt(c.id, day + 0.999); return {c, s, w: s ? worth(s, day) : 0}; })
+    .filter(r => r.s).sort((a, b) => b.w - a.w);
+  d3.select("#board tbody").selectAll("tr").data(rows, r => r.c.id).join("tr").order()
+    .attr("class", r => "clickable" + (r.c.id === selected ? " sel" : ""))
+    .html((r, i) => `<td class="num">${i + 1}</td><td><span class="chip" style="background:${STRAT_COLOR[r.c.strategy]}">${r.c.label}</span></td>
+      <td>${r.c.name}${r.s.status === "bankrupt" ? ' <span class="down">bankrupt</span>' : ""}</td>
+      <td>${SHAPE_CHAR[r.c.ship_type]} ${r.c.ship_type}</td><td class="num">${r.w.toFixed(0)}</td>`)
+    .on("click", (ev, r) => { selected = r.c.id; lastPanels = ""; render(); });
+
+  d3.select("#strats tbody").selectAll("tr").data(STRATS).join("tr").html(st => {
+    const g = rows.filter(r => r.c.strategy === st); if (!g.length) return `<td>${st}</td><td class="num">0</td><td></td><td></td>`;
+    const ws = g.map(r => r.w).sort((a, b) => a - b);
+    return `<td><span class="sw" style="background:${STRAT_COLOR[st]}"></span>${st}</td><td class="num">${g.length}</td>
+      <td class="num">${ws[Math.floor(ws.length / 2)].toFixed(0)}</td><td class="num">${g.filter(r => r.s.status === "bankrupt").length}</td>`;
+  });
+
+  const recent = DATA.voyages.filter(v => v[0] <= day).slice(-40).reverse();
+  document.getElementById("feed").innerHTML = recent.map(v => { const c = byId[v[1]];
+    return `<div class="item"><span class="chip" style="background:${STRAT_COLOR[c.strategy]}">${c.label}</span>
+      day ${v[0]}: ${v[2]} → ${v[3]} (day ${v[4]})${v[6].length ? " via " + v[6].join("+") : ""} · ${cargoText(v[5])}</div>`; }).join("")
+    || `<div class="sub">No voyages yet.</div>`;
+  renderPort(day);
+}
+
+// ---------- port panel ----------
+const portSelect = document.getElementById("portselect");
+portSelect.innerHTML = PORTS.map(p => `<option value="${p}">${p} (${DATA.ports[p].region})</option>`).join("");
+portSelect.onchange = () => selectPort(portSelect.value);
+function selectPort(p) { selPort = p; portSelect.value = p; lastPanels = ""; render(); }
+function why(recipe, day) {                       // why a factory is idle today: missing input or full warehouse
+  const b = ((DATA.blocked || {})[selPort] || {})[recipe];
+  const reason = b && b[Math.min(day, b.length - 1)];
+  return reason ? `: ${reason}` : "";
+}
+function renderPort(day) {
+  const info = DATA.ports[selPort];
+  const list = o => Object.entries(o || {}).map(([g, r]) => `${g} ${r}/day`).join(", ") || "—";
+  let html = `<div class="facts">Produces: <b>${list(info.produce)}</b><br>Consumes: <b>${list(info.consume)}</b></div>`;
+  const recipes = Object.entries(info.recipes);
+  if (recipes.length) {
+    html += `<h2>Industry</h2><table><tr><th>makes</th><th>from</th><th class="num">rate</th><th class="num">last 7d</th></tr>` +
+      recipes.map(([r, rate]) => { const spec = DATA.recipes[r];
+        const made = ((DATA.made[selPort] || {})[r] || []).slice(Math.max(0, day - 6), day + 1).reduce((a, b) => a + b, 0);
+        return `<tr><td>${Object.entries(spec.out).map(([g, q]) => `${q} ${g}`).join(", ")}</td>
+          <td>${Object.entries(spec.in).map(([g, q]) => `${q} ${g}`).join(" + ")}</td><td class="num">${rate}/d</td>
+          <td class="num">${made}${made === 0 ? ` <span class="down">idle${why(r, day)}</span>` : ""}</td></tr>`; }).join("") + `</table>`;
+  }
+  const here = [], coming = [];
+  for (const c of DATA.captains) {
+    const s = snapAt(c.id, day + 0.999); if (!s || s.status === "bankrupt") continue;
+    if (s.status !== "sea" && s.port === selPort) here.push({c, s}); else if (s.status === "sea" && s.dest === selPort) coming.push({c, s});
+  }
+  const row = (r, st) => `<div class="shiprow" data-id="${r.c.id}"><span class="chip" style="background:${STRAT_COLOR[r.c.strategy]}">${r.c.label}</span>
+    ${SHAPE_CHAR[r.c.ship_type]} ${r.c.name}<span class="st">${st}</span></div>`;
+  html += `<h2>In port (${here.length})</h2>` + (here.map(r => row(r, r.s.status === "waiting" ? `until day ${r.s.until}` : "")).join("") || `<div class="sub">None.</div>`);
+  coming.sort((a, b) => a.s.arrive - b.s.arrive);
+  html += `<h2>Inbound (${coming.length})</h2>` + (coming.map(r => row(r, `from ${r.s.origin}, day ${r.s.arrive}`)).join("") || `<div class="sub">None.</div>`);
+  const h = DATA.history[selPort] || {};
+  html += `<h2>Market, day ${day}</h2><table><tr><th>good</th><th class="num">buy</th><th class="num">sell</th><th class="num">stock</th><th class="num">demand</th><th class="num">7d</th></tr>` +
+    Object.entries(h).map(([g, a]) => {
+      const i = Math.min(day, a.buy.length - 1), j = Math.max(0, i - 7);
+      const ch = a.buy[j] ? (a.buy[i] - a.buy[j]) / a.buy[j] : 0;
+      const arrow = Math.abs(ch) < 0.03 ? "" : ch > 0 ? `<span class="up">▲${Math.round(ch * 100)}%</span>` : `<span class="down">▼${Math.round(-ch * 100)}%</span>`;
+      const dem = info.consume[g] ? `${a.demand[i]}×` : "—";
+      return `<tr><td>${SHAPE_CHAR[DATA.goods[g]]} ${g}</td><td class="num">${a.buy[i]}</td><td class="num">${a.sell[i]}</td>
+        <td class="num">${a.stock[i]}</td><td class="num">${dem}</td><td class="num">${arrow}</td></tr>`;
+    }).join("") + `</table><div class="sub" style="margin-top:4px">● bulk · ◆ tanker · ■ container cargo. Buy/sell = next unit. Demand = consumption vs normal.</div>`;
+  const body = document.getElementById("portbody");
+  body.innerHTML = html;
+  body.querySelectorAll(".shiprow").forEach(el => el.onclick = () => { selected = el.dataset.id; lastPanels = ""; render(); });
+}
+
+// ---------- static bits ----------
+document.getElementById("runmeta").textContent = `Run ${DATA.meta.run} · seed ${DATA.meta.seed} · ${DATA.meta.captains} captains · ${DAYS} days`;
+document.getElementById("legend").innerHTML =
+  STRATS.map(s => `<div><span class="sw" style="background:${STRAT_COLOR[s]}"></span>${s}</div>`).join("") +
+  Object.entries(DATA.ships).map(([k, v]) => `<div>${SHAPE_CHAR[k]} ${v.name} (${v.capacity})</div>`).join("") +
+  `<div style="grid-column:1/-1">Red lanes = Suez and Panama canals (tolls). Dashed outline = waiting in port. Scroll to zoom, drag to pan; hover or click ships and ports.</div>`;
+
+// ---------- playback ----------
+const playBtn = document.getElementById("play");
+let last = null;
+function setPlaying(p) { playing = p; playBtn.textContent = p ? "❚❚ Pause" : "▶ Play"; if (p && t >= DAYS) t = 0; if (p) { last = null; requestAnimationFrame(tick); } }
+function tick(ts) {
+  if (!playing) return;
+  if (last !== null) t = Math.min(DAYS, t + (ts - last) / 1000 * speed);
+  last = ts; render();
+  if (t >= DAYS) { setPlaying(false); return; }
+  requestAnimationFrame(tick);
+}
+playBtn.onclick = () => setPlaying(!playing);
+document.getElementById("back").onclick = () => { t = Math.max(0, Math.ceil(t) - 1); render(); };
+document.getElementById("fwd").onclick = () => { t = Math.min(DAYS, Math.floor(t) + 1); render(); };
+document.getElementById("speed").onchange = e => { speed = +e.target.value; };
+slider.oninput = () => { t = +slider.value; render(); };
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT" || (e.target.tagName === "INPUT" && e.key !== " ")) return;
+  if (e.key === " ") { e.preventDefault(); setPlaying(!playing); }
+  if (e.key === "ArrowRight") document.getElementById("fwd").click();
+  if (e.key === "ArrowLeft") document.getElementById("back").click();
+});
+render();
+</script>
+</body>
+</html>
